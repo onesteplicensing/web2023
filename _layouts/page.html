@@ -13,11 +13,8 @@
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
 
-				<!-- Header -->
-  {% include header.html %}
-
-  <!-- Menu -->
-  {% include menu.html %}
+	<!-- Header; with navigation Menu -->
+	{% include _header.html fname = page.nav_fname %}
 
   {{ content }}
 

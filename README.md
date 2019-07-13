@@ -19,6 +19,11 @@ without, in many cases, touching *any* CSS.
 ## Production
 	Delete index-demo.html and assets/js/demo.js when you're done messing with the demo
 	as neither are needed in production :)
+## Feature list
+* RSS feeds
+* sitemap
+* Multi-language support
+* [text expand](https://jekyllcodex.org/without-plugin/text-expand/)
 
 # Credits:
 

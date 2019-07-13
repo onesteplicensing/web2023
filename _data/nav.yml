@@ -1,12 +1,30 @@
 # pages to appear in navivation
-- title: About
-  path: /about
+en:
+  - title: HOME
+    path: /index
 
-- title: Blog
-  path: /blog
+  - title: WHY
+    path: /pages/why
 
-- title: Example
-  path: /examples
+  - title: HOW
+    path: /home
 
-- title: Home [Lite]
-  path: /index-new.html
+  - title: PRODUCT
+    path: /home
+
+  - title: WHO
+    path: /home
+
+# tc:
+#   - title: 聯繫我們
+#     path: /home_tc#contact
+
+#   - title: 回到主頁
+#     path: /home_tc
+
+# sc:
+#   - title: 联系我们
+#     path: /home_sc#contact
+
+#   - title: 回到主页
+#     path: /home_sc

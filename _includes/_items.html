@@ -2,7 +2,7 @@
 *
 *   This include lets you easily display a Gallery.
 *
-*   usage: {% include _items.html style='style2' size='medium' %}
+*   usage: {% include _items.html key = '' style='style2' size='medium' id='' %}
 *
 *   The content for items is retrived from the calling page's front matter; for example:
 *   items:
@@ -27,15 +27,19 @@
 {% assign _size = include.size %}
 {% if _size %}{% else %}{% assign _size = 'medium' %}{% endif %}
 
+{% assign _data = page[include.key] %}
+{% if _data %}{% else %}{% assign _data = page.items %}{% endif %}
+
 <!-- Items -->
-  <section class="wrapper style1 align-center">
+  <section class="wrapper style1 align-center" {% if include.id %} id="{{ include.id }}"{% endif %}>
     <div class="inner">
-      <h2>{{ page.items.title }}</h2>
-      <p>{{ page.items.content }}</p>
-      <div class="items style1 {{ _size }} onscroll-fade-in">
-        {% for item in page.items.list %}
+      <h2>{{ _data.title }}</h2>
+      <p>{{ _data.content }}</p>
+      <div class="items {{ _style }} {{ _size }} onscroll-fade-in">
+        {% for item in _data.list %}
         <section>
-          <span class="icon {{ _style }} major {{ item.fa_class }}"></span>
+          <span class="icon style2 major {{ item.fa_class }}"></span>
+          <img src="{{ item.image_url }}" width = "350">
           <h3>{{ item.title }}</h3>
           <p>{{ item.content }}</p>
         </section>

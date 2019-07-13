@@ -1,17 +1,21 @@
 # Site settings
-title:       Jekyllized Story
-description: "A simple tale made complicated."  # Used in index.html but also for SEO in _includes/_head.html
-baseurl:     "/jekyllized-story"                # the subpath of your site, e.g. /blog
+title:       SCANCER
+description: "Combining computer vision and deep learning algorithm, SCANCER is capable of detecting and recognising cancer cell in a pathology microscopic images.​"  # Used in index.html but also for SEO in _includes/_head.html
+baseurl:     "" #/fullshare"                    # the subpath of your site, e.g. /blog
 url:         ""                                 # the base hostname & protocol for your site
 date_format: "%b %-d, %Y"                       # see _layouts/post.html
-footer_note: '&copy; Creative Directions. Theme by <a href="https://html5up.net">HTML5 UP</a>.'
-demo_script: true                             # this loads the assets/js/demo.js for index.html
+logo: /images/scancer_logo_500_trans-01.png
+footer_note: |
+  <ul class="actions">
+    <li>&copy; 2019 Scancer Limited. All rights reserved.</li>
+  </ul>
+demo_script: false                             # this loads the assets/js/demo.js for index.html
 
 # SEO
-admin:      "Creative Directions"
+admin:      "Scancer Limited"
 admin_city: "Hong Kong"                         # used for SEO, see _includes/head.html
 admin_state: "Hong Kong"                        # used for SEO, see _includes/head.html
-share-image: "/images/share.png"                # used for SEO, see _includes/_head.html
+share-image: ""                # used for SEO, see _includes/_head.html
 
 # Google services
 google_verification:
@@ -103,5 +107,7 @@ sass:
   style: compressed
 plugins:
   - jekyll-sitemap
+#  - jemoji
+
 # https://github.com/jekyll/jekyll/issues/2938
 exclude: ["Gemfile", "Gemfile.lock", node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/","docker-compose.yml","story_jekyll_theme.gemspec"]

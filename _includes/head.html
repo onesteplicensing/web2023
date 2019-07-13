@@ -51,4 +51,17 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">
     <link rel="alternate" type="application/rss+xml" href="{{ site.baseurl }}/feed.xml">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
+    <!-- Language support -->
+    {% if page.layout == 'page' %}
+      {% assign posts=site.posts | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+      {% if posts.size == 0 %}
+        {% assign posts=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+      {% endif %}
+      {% if posts.size > 1 %}
+        {% for post in posts %}
+        <link rel="alternate" hreflang="{{post.lang}}" href="{{ site.baseurl }}{{ post.url }}" />
+        {% endfor %}
+      {% endif %}
+    {% endif %}
 </head>
