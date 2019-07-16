@@ -41,7 +41,7 @@ lang-ref: aboutus.md
 <!-- Welcome Banner -->
 {% include _banner.html key='' style='style5' scheme='invert' color='' size='fullscreen' content_align='center' img_pos='left' %}
 
-{% include _items.html key='items-hk' style='style3' size='small' scheme='' %}
+{% include _items_about.html key='items-hk' style='style3' size='small' scheme='' %}
 
 <section class="wrapper style1 align-center invert">
   <div class="spotlight style1 fifty content-align-left orient-left invert">
