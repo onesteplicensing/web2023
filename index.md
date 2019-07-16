@@ -29,7 +29,7 @@ banner-model:
   content: |
     Our model has been tested on whole side images.
   button:
-    show: true
+    show: false
     url: "pages/how"
     text: HOW?
   image_url: 'images/biopsy-fb.jpg'
@@ -43,7 +43,7 @@ items-membership:
       fa_class: 
       image_url: "images/idendron.png"
     - title: Google Cloud Startup Program
-      content: <a href="pages/how#cloudcomputing" class="button">LEARN MORE</a>
+      content: 
       fa_class:
       image_url: "images/logo_lockup_cloud_rgb.png"
 
