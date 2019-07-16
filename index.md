@@ -50,7 +50,7 @@ items-membership:
 
 ---
 <!-- Welcome Banner -->
-{% include _banner.html key='' style='style5' scheme='invert' color='' size='fullscreen' content_align='left' img_pos='left' %}
+{% include _banner.html key='' style='style5' scheme='invert' color='' size='fullscreen' content_align='left' img_pos='center' %}
 
 <!-- Scan and Detect -->
 {% include _banner.html key='banner-scan' style='style1' orient='left' scheme='' color='' size='' content_align='left' img_pos='center' id='' %}

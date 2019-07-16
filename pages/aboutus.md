@@ -39,7 +39,7 @@ lang-ref: aboutus.md
 
 ---
 <!-- Welcome Banner -->
-{% include _banner.html key='' style='style5' scheme='invert' color='' size='fullscreen' content_align='center' img_pos='left' %}
+{% include _banner.html key='' style='style5' scheme='invert' color='' size='fullscreen' content_align='center' img_pos='center' %}
 
 {% include _items_about.html key='items-hk' style='style3' size='small' scheme='' %}
 
