@@ -1,7 +1,7 @@
 # Site settings
 title:       SCANCER
 description: "Combining computer vision and deep learning algorithm, SCANCER is capable of detecting and recognising cancer cell in a pathology microscopic images.​"  # Used in index.html but also for SEO in _includes/_head.html
-baseurl:     "" #/fullshare"                    # the subpath of your site, e.g. /blog
+baseurl:     "/website" #/fullshare"                    # the subpath of your site, e.g. /blog
 url:         ""                                 # the base hostname & protocol for your site
 date_format: "%b %-d, %Y"                       # see _layouts/post.html
 logo: /images/scancer_logo_500_trans-01.png
