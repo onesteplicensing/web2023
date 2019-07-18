@@ -6,12 +6,11 @@ lang: en
 lang-ref: home.md
 
 banner:
-  title:
-  desc: |
-    Breast Cancer Cell Detection powered by A.I.<br>
-    <h1>SCANCER</h1>
+  title: |
+    <span style='font-size: 3em'>SCANCER</span>
+  desc: Cancer Cell Detection powered by A.I.
   content: |
-    The Cancer Cell Detector
+    
   image_url: 'images/background/microscope.jpg'
 
 banner-scan:
@@ -39,13 +38,22 @@ items-membership:
   content: 
   list:
     - title: iDENDRON 
-      content: HKU INNOVATION & ENTREPRENEURSHIP HUB
+      content: HKU Innovation & Entrepreneurship Hub
       fa_class: 
       image_url: "images/idendron.png"
     - title: Google Cloud Startup Program
       content: 
       fa_class:
       image_url: "images/logo_lockup_cloud_rgb.png"
+
+items-clients:
+  title: OUR CLIENTS
+  content: 
+  list:
+    - title: 
+      content: 
+      fa_class: 
+      image_url: "images/CU_logo_4C_horizontal_RGB.jpg"
 
 
 ---
@@ -58,6 +66,8 @@ items-membership:
 <!-- Model Deployment -->
 {% include _banner.html key='banner-model' style='style1' orient='right' scheme='' color='' size='' content_align='right' img_pos='center' id='' %}
 
-<!-- Idendron -->
-{% include _items.html key='items-membership' style='style1' size='big' id='membership' %}
+<!-- MEMBERSHIP -->
+{% include _items.html key='items-membership' style='style1' scheme='invert' size='big' id='membership' %}
 
+<!-- clients -->
+{% include _items.html key='items-clients' style='style1' size='big' id='membership' %}

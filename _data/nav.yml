@@ -3,14 +3,14 @@ en:
   - title: HOME
     path: /index
 
-  - title: WHY
-    path: /pages/why
+  # - title: WHY
+  #   path: /pages/why
 
   # - title: HOW
   #   path: /home
 
   - title: PRODUCT
-    path: /index
+    path: /pages/product
 
   - title: ABOUT US
     path: /pages/aboutus

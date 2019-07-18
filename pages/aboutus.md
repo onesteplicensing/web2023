@@ -18,19 +18,19 @@ items-hk:
     - title: Angus LEE
       content: 
       email: mailto:angus.lee@scancer-hk.com
-      linkedin: www.linkedin.com/in/angus-lee-555454178/
+      linkedin: 'www.linkedin.com/in/angus-lee-555454178/'
       img_url: '../images/aboutus/angus_s.jpg'
       url: ''
     - title: Curtis TO
       content: 
       email: mailto:curtis.to@scancer-hk.com
-      linkedin: www.linkedin.com/in/curtis-to-601994ab/
+      linkedin: 'www.linkedin.com/in/curtis-to-601994ab/'
       img_url: '../images/aboutus/curtis_s.jpg'
       url: ''
     - title: Kevin LUK
       content:
       email: mailto:kevin.luk@scancer-hk.com
-      linkedin: www.linkedin.com/in/lukkevin
+      linkedin: 'www.linkedin.com/in/lukkevin'
       img_url: '../images/aboutus/kevin_s.jpg'
       url: ''
 

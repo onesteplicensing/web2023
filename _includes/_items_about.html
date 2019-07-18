@@ -40,8 +40,13 @@
         <section>
           <img src = "{{item.img_url}}" width="200"> 
           <h3>{{ item.title }}</h3>
-          <a href="{{ item.email }}" class="icon style1 far fa-envelope"></a>
-          <a href="{{ item.linkedin }}" class="icon style1 fab fa-linkedin"></a>
+          <!-- <a href="{{ item.email }}" class="icon style1 far fa-envelope"></a>
+          <a href="{{ item.linkedin }}" class="icon style1 fab fa-linkedin"></a> -->
+
+          <ul class="icons">
+                <li><a class="icon style1 far fa-envelope" href="{{item.email}}"><span class="label">{{ item.title }}</span></a></li>
+                <li><a class="icon style1 fab fa-linkedin" href="{{item.linkedin}}"><span class="label">{{ item.title }}</span></a></li>
+          </ul>
         </section>
         {% endfor %}
       </div>
