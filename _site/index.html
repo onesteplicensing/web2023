@@ -213,6 +213,28 @@
   </div>
 </section>
 
+<!-- clients -->
+
+<!-- Set Default Parameters (empty variable allowed if not set) -->
+
+<!-- Items -->
+<section class="wrapper style1 align-center " id="membership">
+    <div class="inner">
+      <h2>OUR CLIENTS</h2>
+      <p></p>
+      <div class="items style1 big onscroll-fade-in">
+        
+        <section>
+          <span class="icon style2 major "></span>
+          <img src="images/CU_logo_4C_horizontal_RGB.jpg" width="350" />
+          <h3></h3>
+          <p>Department of Anatomical &amp; Cellular Pathology</p>
+        </section>
+        
+      </div>
+    </div>
+  </section>
+
 <!-- MEMBERSHIP -->
 
 <!-- Set Default Parameters (empty variable allowed if not set) -->
@@ -242,27 +264,6 @@
     </div>
   </section>
 
-<!-- clients -->
-
-<!-- Set Default Parameters (empty variable allowed if not set) -->
-
-<!-- Items -->
-<section class="wrapper style1 align-center " id="membership">
-    <div class="inner">
-      <h2>OUR CLIENTS</h2>
-      <p></p>
-      <div class="items style1 big onscroll-fade-in">
-        
-        <section>
-          <span class="icon style2 major "></span>
-          <img src="images/CU_logo_4C_horizontal_RGB.jpg" width="350" />
-          <h3></h3>
-          <p></p>
-        </section>
-        
-      </div>
-    </div>
-  </section>
 
 
 		  	<!-- footer -->
@@ -358,18 +359,23 @@
 $(document).ready(function () {
 
   //initialize swiper when document ready
-  var mySwiper = new Swiper ('.swiper-container', {
-    // Optional parameters
-    loop: true,
-    speed: 1000,
-    effect: 'fade',
-    fadeEffect: {
-          crossFade: true
-    },
-    autoplay: {
-        delay: 1500
-      }
-  })
+  var mySwiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    })
+
 
 
 });

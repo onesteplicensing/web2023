@@ -168,6 +168,52 @@
   </div>
 </section>
 
+<!-- <section class="banner fullscreen style5 orient-center invert content-align-center onscroll-image-fade-in">
+  <div class="swiper-container gallery-top">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S4174-12_2019-05-20 17_06_17.scn_heatmap.png)"></div>
+      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S4174-12_2019-05-20 17_06_17.scn_prediction_heatmap.png)"></div>
+      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S5470-5_2019-05-20 15_31_58.scn_heatmap.png)"></div>
+      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S5470-5_2019-05-20 15_31_58.scn_prediction_heatmap.png)"></div>
+      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S5470-7_2019-05-20 19_40_27.scn_heatmap.png)"></div>
+      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S5470-7_2019-05-20 19_40_27.scn_prediction_heatmap.png)"></div>
+    </div>
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+  </div>
+  <div class="swiper-container gallery-thumbs">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S4174-12_2019-05-20 17_06_17.scn_heatmap.png)"></div>
+      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S4174-12_2019-05-20 17_06_17.scn_prediction_heatmap.png)"></div>
+      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S5470-5_2019-05-20 15_31_58.scn_heatmap.png)"></div>
+      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S5470-5_2019-05-20 15_31_58.scn_prediction_heatmap.png)"></div>
+      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S5470-7_2019-05-20 19_40_27.scn_heatmap.png)"></div>
+      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S5470-7_2019-05-20 19_40_27.scn_prediction_heatmap.png)"></div>
+    </div>
+  </div>
+</section> -->
+
+<section class="spotlight mostscreen style6 invert orient-center content-align-center onscroll-image-fade-in">
+  <!-- slider -->
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+      <div class="swiper-slide"><img src="../images/product/slider/18S4174-12_2019-05-20 17_06_17.scn_heatmap.png" /></div>
+      <div class="swiper-slide"><img src="../images/product/slider/18S4174-12_2019-05-20 17_06_17.scn_prediction_heatmap.png" /></div>
+      <div class="swiper-slide"><img src="../images/product/slider/18S5470-5_2019-05-20 15_31_58.scn_heatmap.png" /></div>
+      <div class="swiper-slide"><img src="../images/product/slider/18S5470-5_2019-05-20 15_31_58.scn_prediction_heatmap.png" /></div>
+      <div class="swiper-slide"><img src="../images/product/slider/18S5470-7_2019-05-20 19_40_27.scn_heatmap.png" /></div>
+      <div class="swiper-slide"><img src="../images/product/slider/18S5470-7_2019-05-20 19_40_27.scn_prediction_heatmap.png" /></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
+
 <!-- Make a Difference -->
 
 <!-- Set Default Parameters (empty variable allowed if not set) -->
@@ -349,18 +395,23 @@
 $(document).ready(function () {
 
   //initialize swiper when document ready
-  var mySwiper = new Swiper ('.swiper-container', {
-    // Optional parameters
-    loop: true,
-    speed: 1000,
-    effect: 'fade',
-    fadeEffect: {
-          crossFade: true
-    },
-    autoplay: {
-        delay: 1500
-      }
-  })
+  var mySwiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    })
+
 
 
 });

@@ -51,7 +51,7 @@ items-clients:
   content: 
   list:
     - title: 
-      content: 
+      content: Department of Anatomical & Cellular Pathology
       fa_class: 
       image_url: "images/CU_logo_4C_horizontal_RGB.jpg"
 
@@ -66,8 +66,9 @@ items-clients:
 <!-- Model Deployment -->
 {% include _banner.html key='banner-model' style='style1' orient='right' scheme='' color='' size='' content_align='right' img_pos='center' id='' %}
 
+<!-- clients -->
+{% include _items.html key='items-clients' style='style1' size='big' id='membership' %}
+
 <!-- MEMBERSHIP -->
 {% include _items.html key='items-membership' style='style1' scheme='invert' size='big' id='membership' %}
 
-<!-- clients -->
-{% include _items.html key='items-clients' style='style1' size='big' id='membership' %}

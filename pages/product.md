@@ -79,6 +79,52 @@ lang-ref: product.md
 <!-- Welcome Banner -->
 {% include _banner.html key='' style='style5' scheme='invert' color='' size='fullscreen' content_align='center' img_pos='center' %}
 
+<!-- <section class="banner fullscreen style5 orient-center invert content-align-center onscroll-image-fade-in">
+  <div class="swiper-container gallery-top">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S4174-12_2019-05-20 17_06_17.scn_heatmap.png)"></div>
+      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S4174-12_2019-05-20 17_06_17.scn_prediction_heatmap.png)"></div>
+      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S5470-5_2019-05-20 15_31_58.scn_heatmap.png)"></div>
+      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S5470-5_2019-05-20 15_31_58.scn_prediction_heatmap.png)"></div>
+      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S5470-7_2019-05-20 19_40_27.scn_heatmap.png)"></div>
+      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S5470-7_2019-05-20 19_40_27.scn_prediction_heatmap.png)"></div>
+    </div>
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+  </div>
+  <div class="swiper-container gallery-thumbs">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S4174-12_2019-05-20 17_06_17.scn_heatmap.png)"></div>
+      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S4174-12_2019-05-20 17_06_17.scn_prediction_heatmap.png)"></div>
+      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S5470-5_2019-05-20 15_31_58.scn_heatmap.png)"></div>
+      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S5470-5_2019-05-20 15_31_58.scn_prediction_heatmap.png)"></div>
+      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S5470-7_2019-05-20 19_40_27.scn_heatmap.png)"></div>
+      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S5470-7_2019-05-20 19_40_27.scn_prediction_heatmap.png)"></div>
+    </div>
+  </div>
+</section> -->
+
+<section class="spotlight mostscreen style6 invert orient-center content-align-center onscroll-image-fade-in">
+  <!-- slider -->
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+      <div class="swiper-slide"><img src = '../images/product/slider/18S4174-12_2019-05-20 17_06_17.scn_heatmap.png'></div>
+      <div class="swiper-slide"><img src = '../images/product/slider/18S4174-12_2019-05-20 17_06_17.scn_prediction_heatmap.png'></div>
+      <div class="swiper-slide"><img src = '../images/product/slider/18S5470-5_2019-05-20 15_31_58.scn_heatmap.png'></div>
+      <div class="swiper-slide"><img src = '../images/product/slider/18S5470-5_2019-05-20 15_31_58.scn_prediction_heatmap.png'></div>
+      <div class="swiper-slide"><img src = '../images/product/slider/18S5470-7_2019-05-20 19_40_27.scn_heatmap.png'></div>
+      <div class="swiper-slide"><img src = '../images/product/slider/18S5470-7_2019-05-20 19_40_27.scn_prediction_heatmap.png'></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
+
 <!-- Make a Difference -->
 {% include _spotlight.html key='spotlight-difference' style='style1' orient='right' scheme='' color='' size='' content_align='left' img_pos='center' id='' %}
 
