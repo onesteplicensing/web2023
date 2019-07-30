@@ -3,10 +3,10 @@
   <channel>
     <title>SCANCER</title>
     <description>Combining computer vision and deep learning algorithm, SCANCER is capable of detecting and recognising cancer cell in a pathology microscopic images.​</description>
-    <link>http://localhost:4000/website/</link>
-    <atom:link href="http://localhost:4000/website/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 24 Jul 2019 22:55:44 +0800</pubDate>
-    <lastBuildDate>Wed, 24 Jul 2019 22:55:44 +0800</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 30 Jul 2019 22:04:48 +0800</pubDate>
+    <lastBuildDate>Tue, 30 Jul 2019 22:04:48 +0800</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
     
       <item>
@@ -22,8 +22,8 @@
 &lt;p&gt;Disrupt coloring book four dollar toast lumbersexual trust fund put a bird on it dreamcatcher celiac. Enamel pin keffiyeh ennui literally. Pour-over chia VHS tumeric. Farm-to-table yr irony, af helvetica raw denim leggings. Ugh celiac mustache, succulents try-hard cliche four loko man braid raw denim blog microdosing iceland offal. Selvage authentic iPhone, palo santo +1 succulents PBR&amp;amp;B paleo chicharrones.&lt;/p&gt;
 </description>
         <pubDate>Thu, 15 Jun 2017 15:42:24 +0800</pubDate>
-        <link>http://localhost:4000/website/blog/hell-of-jianbing</link>
-        <guid isPermaLink="true">http://localhost:4000/website/blog/hell-of-jianbing</guid>
+        <link>http://localhost:4000/blog/hell-of-jianbing</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/hell-of-jianbing</guid>
         
         
         <category>Blog</category>
@@ -43,8 +43,8 @@
 &lt;p&gt;Shoreditch wayfarers small batch copper mug unicorn woke. Shabby chic ethical pop-up cloud bread waistcoat tilde. Tousled portland kombucha synth. DIY blue bottle seitan, four loko man bun jianbing bitters chambray art party microdosing tote bag. Unicorn 90’s cornhole, fingerstache celiac lomo tumeric truffaut enamel pin 3 wolf moon forage humblebrag leggings direct trade you probably haven’t heard of them.&lt;/p&gt;
 </description>
         <pubDate>Sat, 27 May 2017 04:55:01 +0800</pubDate>
-        <link>http://localhost:4000/website/blog/fanny-pack-roof</link>
-        <guid isPermaLink="true">http://localhost:4000/website/blog/fanny-pack-roof</guid>
+        <link>http://localhost:4000/blog/fanny-pack-roof</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/fanny-pack-roof</guid>
         
         
         <category>Blog</category>
@@ -64,8 +64,8 @@
 &lt;p&gt;Edison bulb whatever street art retro blog semiotics. Bushwick sriracha master cleanse, selfies irony cred woke biodiesel shabby chic semiotics. Occupy blue bottle ugh, lomo everyday carry pinterest tattooed. Kombucha kogi vegan everyday carry hot chicken pickled, subway tile +1.&lt;/p&gt;
 </description>
         <pubDate>Tue, 14 Mar 2017 15:42:24 +0800</pubDate>
-        <link>http://localhost:4000/website/blog/vegan-lyft-swag</link>
-        <guid isPermaLink="true">http://localhost:4000/website/blog/vegan-lyft-swag</guid>
+        <link>http://localhost:4000/blog/vegan-lyft-swag</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/vegan-lyft-swag</guid>
         
         
         <category>Blog</category>
@@ -89,8 +89,8 @@
 &lt;p&gt;I bet you’re still using Bootstrap too…&lt;/p&gt;
 </description>
         <pubDate>Mon, 27 Feb 2017 04:55:01 +0800</pubDate>
-        <link>http://localhost:4000/website/blog/tumeric-fingerstache-cornhole</link>
-        <guid isPermaLink="true">http://localhost:4000/website/blog/tumeric-fingerstache-cornhole</guid>
+        <link>http://localhost:4000/blog/tumeric-fingerstache-cornhole</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/tumeric-fingerstache-cornhole</guid>
         
         
         <category>Blog</category>
@@ -110,8 +110,8 @@
 &lt;p&gt;Normcore flannel marfa subway tile readymade. Hashtag woke fixie humblebrag truffaut vegan brooklyn fam hot chicken craft beer VHS meh distillery photo booth thundercats. Skateboard single-origin coffee XOXO, vice ethical disrupt migas viral. Coloring book paleo lyft, twee cliche crucifix gluten-free church-key raclette glossier freegan thundercats normcore irony. Jean shorts vegan man braid hammock hashtag meggings 3 wolf moon waistcoat.&lt;/p&gt;
 </description>
         <pubDate>Fri, 27 Jan 2017 04:55:01 +0800</pubDate>
-        <link>http://localhost:4000/website/blog/vice-raw-denim-activated</link>
-        <guid isPermaLink="true">http://localhost:4000/website/blog/vice-raw-denim-activated</guid>
+        <link>http://localhost:4000/blog/vice-raw-denim-activated</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/vice-raw-denim-activated</guid>
         
         
         <category>Blog</category>
@@ -131,8 +131,8 @@
 &lt;p&gt;Truffaut hoodie taiyaki, etsy waistcoat trust fund banh mi direct trade coloring book cold-pressed lo-fi. Offal shaman butcher normcore hot chicken ugh meh. Authentic hashtag butcher master cleanse mustache. Sustainable shoreditch you probably haven’t heard of them cold-pressed unicorn. Street art seitan freegan man bun, fashion axe tattooed hoodie schlitz humblebrag meggings scenester. Vexillologist aesthetic disrupt, helvetica blog single-origin coffee cornhole dreamcatcher ennui four loko portland jean shorts tattooed la croix.&lt;/p&gt;
 </description>
         <pubDate>Mon, 16 Jan 2017 15:42:24 +0800</pubDate>
-        <link>http://localhost:4000/website/blog/quinoa-enamel-pin-vape</link>
-        <guid isPermaLink="true">http://localhost:4000/website/blog/quinoa-enamel-pin-vape</guid>
+        <link>http://localhost:4000/blog/quinoa-enamel-pin-vape</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/quinoa-enamel-pin-vape</guid>
         
         
         <category>Blog</category>

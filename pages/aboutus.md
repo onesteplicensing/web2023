@@ -18,19 +18,19 @@ items-hk:
     - title: Angus LEE
       content: 
       email: mailto:angus.lee@scancer-hk.com
-      linkedin: 'www.linkedin.com/in/angus-lee-555454178/'
+      linkedin: 'https://www.linkedin.com/in/angus-lee-555454178/'
       img_url: '../images/aboutus/angus_s.jpg'
       url: ''
     - title: Curtis TO
       content: 
       email: mailto:curtis.to@scancer-hk.com
-      linkedin: 'www.linkedin.com/in/curtis-to-601994ab/'
+      linkedin: 'https://www.linkedin.com/in/curtis-to-601994ab/'
       img_url: '../images/aboutus/curtis_s.jpg'
       url: ''
     - title: Kevin LUK
       content:
       email: mailto:kevin.luk@scancer-hk.com
-      linkedin: 'www.linkedin.com/in/lukkevin'
+      linkedin: 'https://www.linkedin.com/in/lukkevin'
       img_url: '../images/aboutus/kevin_s.jpg'
       url: ''
 
@@ -47,9 +47,9 @@ lang-ref: aboutus.md
   <div class="spotlight style1 fifty content-align-left orient-left invert">
     <div class="content">
       <h2 class="motto">Scancer Limited</h2>
-      <p>iDendron<br>HKU Innovation & Entrepreneurship Hub<br>1/F Knowles Building,<br>The University of Hong Kong</p>
+      <p>iDendron<br>HKU Innovation & Entrepreneurship Hub<br>1/F Knowles Building<br>The University of Hong Kong</p>
       <a href="mailto:info@scancer-hk.com" class="icon style1 far fa-envelope"></a>
-      <a href="www.linkedin.com/company/14560441/" class="icon style1 fab fa-linkedin"></a>
+      <a href="https://www.linkedin.com/company/14560441/" class="icon style1 fab fa-linkedin"></a>
     </div>
     <div class="map-responsive">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1845.9327791299138!2d114.13616312001159!3d22.28308199859194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403ff86875db4b3%3A0x79b354fa1d9cdfba!2sKnowles+Building!5e0!3m2!1sen!2shk!4v1563294214977!5m2!1sen!2shk" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>

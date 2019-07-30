@@ -47,11 +47,12 @@ items-membership:
       image_url: "images/logo_lockup_cloud_rgb.png"
 
 items-clients:
-  title: OUR CLIENTS
+  title: OUR CLIENT
   content: 
   list:
     - title: 
-      content: Department of Anatomical & Cellular Pathology
+      content: |
+        <h5>Department of Anatomical & Cellular Pathology</h5>
       fa_class: 
       image_url: "images/CU_logo_4C_horizontal_RGB.jpg"
 

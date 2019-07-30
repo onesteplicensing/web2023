@@ -40,6 +40,21 @@
 			}
 		}
 
+		> .swiper-container {
+			@include padding(_size(padding, default), _size(padding, default) * 0.5);
+			margin: 0 auto;
+			max-width: 100%;
+			width: _size(inner);
+
+			&.medium {
+				width: _size(inner) * 0.75;
+			}
+
+			&.small {
+				width: _size(inner) * 0.5;
+			}
+		}
+
 		@include breakpoint(xlarge) {
 			> .inner {
 				@include padding(_size(padding, xlarge), _size(padding, xlarge) * 0.5);
