@@ -5,8 +5,8 @@
     <description>Combining computer vision and deep learning algorithm, SCANCER is capable of detecting and recognising cancer cell in a pathology microscopic images.​</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 30 Jul 2019 22:04:48 +0800</pubDate>
-    <lastBuildDate>Tue, 30 Jul 2019 22:04:48 +0800</lastBuildDate>
+    <pubDate>Tue, 30 Jul 2019 22:30:28 +0800</pubDate>
+    <lastBuildDate>Tue, 30 Jul 2019 22:30:28 +0800</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
     
       <item>
