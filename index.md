@@ -6,8 +6,8 @@ lang: en
 lang-ref: home.md
 
 banner:
-  title: |
-    <span style='font-size: 3em'>SCANCER</span>
+  big_title: SCANCER
+  title: 
   desc: Cancer Cell Detection powered by A.I.
   content: |
     
