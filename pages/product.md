@@ -96,30 +96,6 @@ lang-ref: product.md
 <!-- Background Info -->
 {% include _spotlight.html key='spotlight-info' style='style1' orient='left' scheme='' color='' size='' content_align='left' img_pos='center' id='' %}
 
-<!-- <section class="banner fullscreen style5 orient-center invert content-align-center onscroll-image-fade-in">
-  <div class="swiper-container gallery-top">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S4174-12_2019-05-20 17_06_17.scn_heatmap.png)"></div>
-      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S4174-12_2019-05-20 17_06_17.scn_prediction_heatmap.png)"></div>
-      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S5470-5_2019-05-20 15_31_58.scn_heatmap.png)"></div>
-      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S5470-5_2019-05-20 15_31_58.scn_prediction_heatmap.png)"></div>
-      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S5470-7_2019-05-20 19_40_27.scn_heatmap.png)"></div>
-      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S5470-7_2019-05-20 19_40_27.scn_prediction_heatmap.png)"></div>
-    </div>
-    <div class="swiper-button-next swiper-button-white"></div>
-    <div class="swiper-button-prev swiper-button-white"></div>
-  </div>
-  <div class="swiper-container gallery-thumbs">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S4174-12_2019-05-20 17_06_17.scn_heatmap.png)"></div>
-      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S4174-12_2019-05-20 17_06_17.scn_prediction_heatmap.png)"></div>
-      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S5470-5_2019-05-20 15_31_58.scn_heatmap.png)"></div>
-      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S5470-5_2019-05-20 15_31_58.scn_prediction_heatmap.png)"></div>
-      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S5470-7_2019-05-20 19_40_27.scn_heatmap.png)"></div>
-      <div class="swiper-slide" style="background-image:url(../images/product/slider/18S5470-7_2019-05-20 19_40_27.scn_prediction_heatmap.png)"></div>
-    </div>
-  </div>
-</section> -->
 
 <!-- <section class="spotlight mostscreen style6 invert orient-center content-align-center onscroll-image-fade-in">
 
@@ -152,9 +128,7 @@ lang-ref: product.md
   <div class="content">
     <img src="../images/product/legend.png" style="max-height: 250px;">
   </div>
-
 </section>
-
 
 <!-- <div id="pinContainer">
 	<div id="slideContainer">

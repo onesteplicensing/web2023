@@ -71,5 +71,5 @@ items-clients:
 {% include _items.html key='items-clients' style='style1' size='big' id='membership' %}
 
 <!-- MEMBERSHIP -->
-{% include _items.html key='items-membership' style='style1' scheme='invert' size='big' id='membership' %}
+{% include _items.html key='items-membership' style='style1' scheme='' size='big' id='membership' %}
 
