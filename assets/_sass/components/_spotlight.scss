@@ -1072,6 +1072,37 @@
 			overflow-x: hidden;
 			text-align: center;
 
+			> .twentytwenty-wrapper {
+				@include padding(_size(padding, default), _size(padding, default) * 0.5);
+				margin: 0 auto;
+				max-height: 100%;
+				width: _size(inner);
+	
+				&.medium {
+					width: _size(inner) * 0.75;
+				}
+	
+				&.small {
+					width: _size(inner) * 0.5;
+				}
+
+				// > .twentytwenty-container {
+				// 	@include padding(_size(padding, default), _size(padding, default) * 0.5);
+				// 	margin: 0 auto;
+				// 	max-width: 100%;
+				// 	width: _size(inner);
+		
+				// 	&.medium {
+				// 		width: _size(inner) * 0.75;
+				// 	}
+		
+				// 	&.small {
+				// 		width: _size(inner) * 0.5;
+				// 	}
+				// }
+			}	
+
+
 			.content {
 				@include padding(_size(padding, default) * 0.5, _size(padding, default) * 0.5);
 				position: relative;

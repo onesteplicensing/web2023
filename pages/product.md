@@ -114,21 +114,53 @@ lang-ref: product.md
   </div>
 </section> -->
 
+<section class="wrapper style1 align-center invert">
+  <div class="spotlight onscroll-image-fade-in style6 fullscreen orient-center content-align-center">
+    <div class="content">
+      <h2 class="motto">Model Prediction</h2>
+          <div id="container1" class="twentytwenty-container">
+              <img src="../images/product/slider/display1.png" />
+              <img src="../images/product/slider/display2.png" />
+          </div>
+      </div>
+  </div>
+</section>
 
+<section class="wrapper style1 align-center invert">
+  <div class="spotlight onscroll-image-fade-in style6 fullscreen orient-center content-align-center">
+    <div class="content">
+          <div id="container1" class="twentytwenty-container">
+              <img src="../images/product/slider/display3.png" />
+              <img src="../images/product/slider/display4.png" />
+          </div>
+      </div>
+  </div>
+</section>
 
+<section class="wrapper style1 align-center invert">
+  <div class="spotlight onscroll-image-fade-in style6 fullscreen orient-center content-align-center">
+    <div class="content">
+          <div id="container1" class="twentytwenty-container">
+              <img src="../images/product/slider/display5.png" />
+              <img src="../images/product/slider/display6.png" />
+          </div>
+      </div>
+  </div>
+</section>
 
+<!-- 
 <section class="spotlight fullscreen style6 invert orient-center content-align-center onscroll-image-fade-in">
   <div id="container1" class="twentytwenty-container">
- <!-- The before image is first -->
+
  <img src="../images/product/slider/display1.png" />
- <!-- The after image is last -->
+
  <img src="../images/product/slider/display2.png" />
 </div>
 
   <div class="content">
     <img src="../images/product/legend.png" style="max-height: 250px;">
   </div>
-</section>
+</section> -->
 
 <!-- <div id="pinContainer">
 	<div id="slideContainer">
