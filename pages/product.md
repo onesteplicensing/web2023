@@ -118,28 +118,21 @@ lang-ref: product.md
   <div class="spotlight onscroll-image-fade-in style6 fullscreen orient-center content-align-center">
     <div class="content">
       <h2 class="motto">Model Prediction</h2>
+        <p>Example 1</p>
           <div id="container1" class="twentytwenty-container">
               <img src="../images/product/slider/display1.png" />
               <img src="../images/product/slider/display2.png" />
           </div>
-      </div>
-  </div>
-</section>
-
-<section class="wrapper style1 align-center invert">
-  <div class="spotlight onscroll-image-fade-in style6 fullscreen orient-center content-align-center">
-    <div class="content">
+          <br>
+          <br>
+        <p>Example 2</p>
           <div id="container1" class="twentytwenty-container">
               <img src="../images/product/slider/display3.png" />
               <img src="../images/product/slider/display4.png" />
           </div>
-      </div>
-  </div>
-</section>
-
-<section class="wrapper style1 align-center invert">
-  <div class="spotlight onscroll-image-fade-in style6 fullscreen orient-center content-align-center">
-    <div class="content">
+          <br>
+          <br>
+        <p>Example 3</p>
           <div id="container1" class="twentytwenty-container">
               <img src="../images/product/slider/display5.png" />
               <img src="../images/product/slider/display6.png" />
@@ -147,37 +140,6 @@ lang-ref: product.md
       </div>
   </div>
 </section>
-
-<!-- 
-<section class="spotlight fullscreen style6 invert orient-center content-align-center onscroll-image-fade-in">
-  <div id="container1" class="twentytwenty-container">
-
- <img src="../images/product/slider/display1.png" />
-
- <img src="../images/product/slider/display2.png" />
-</div>
-
-  <div class="content">
-    <img src="../images/product/legend.png" style="max-height: 250px;">
-  </div>
-</section> -->
-
-<!-- <div id="pinContainer">
-	<div id="slideContainer">
-		<section class="panel blue">
-			<b>ONE</b>
-		</section>
-		<section class="panel turqoise">
-			<b>TWO</b>
-		</section>
-		<section class="panel green">
-			<b>THREE</b>
-		</section>
-		<section class="panel bordeaux">
-			<b>FOUR</b>
-		</section>
-	</div>
-</div> -->
 
 
 <!-- Make a Difference -->
