@@ -31,7 +31,7 @@ banner-model:
     show: false
     url: "pages/how"
     text: HOW?
-  image_url: 'images/biopsy-fb.jpg'
+  image_url: 'images/IMG_20190816_155236.jpg'
 
 items-membership:
   title: WE ARE A MEMBER OF
@@ -68,8 +68,8 @@ items-clients:
 {% include _banner.html key='banner-model' style='style1' orient='right' scheme='' color='' size='' content_align='right' img_pos='center' id='' %}
 
 <!-- clients -->
-{% include _items.html key='items-clients' style='style1' size='big' id='membership' %}
+{% include _items.html key='items-clients' style='style1' size='big' id='clients' %}
 
 <!-- MEMBERSHIP -->
-{% include _items.html key='items-membership' style='style1' scheme='' size='big' id='membership' %}
+{% include _items.html key='items-membership' style='style1' scheme='' size='big' id='membership' color='color7' %}
 
