@@ -24,7 +24,7 @@ spotlight-info:
     show: false
     url: ""
     text: LEARN MORE
-  image_url: '../images/product/GA_4.gif'
+  image_url: '../images/product/GA_5.gif'
 
 spotlight-difference:
   title:  MAKE A DIFFERENCE
