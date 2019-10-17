@@ -127,13 +127,6 @@ lang-ref: product.md
           <br>
         <p>Example 2</p>
           <div id="container1" class="twentytwenty-container">
-              <img src="../images/product/slider/display3.png" />
-              <img src="../images/product/slider/display4.png" />
-          </div>
-          <br>
-          <br>
-        <p>Example 3</p>
-          <div id="container1" class="twentytwenty-container">
               <img src="../images/product/slider/display5.png" />
               <img src="../images/product/slider/display6.png" />
           </div>
