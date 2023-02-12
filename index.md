@@ -6,12 +6,12 @@ lang: en
 lang-ref: home.md
 
 banner:
-  big_title: SCANCER
-  title: 
-  desc: Cancer Cell Detection powered by A.I.
+  big_title: ONESTEP LICENSING
+  title:
+  desc: your partner for increasing brand awareness, and revenue and driving customer loyalty.
   content: |
-    
-  image_url: 'images/background/microscope.jpg'
+
+  image_url: 'https://source.unsplash.com/muS2RraYRuQ'
 
 banner-scan:
   title: SCAN AND DETECT
@@ -20,7 +20,7 @@ banner-scan:
   button:
     show: false
     url: ""
-    text: 
+    text:
   image_url: 'images/scan.jpeg'
 
 banner-model:
@@ -35,25 +35,25 @@ banner-model:
 
 items-membership:
   title: WE ARE A MEMBER OF
-  content: 
+  content:
   list:
-    - title: iDENDRON 
+    - title: iDENDRON
       content: HKU Innovation & Entrepreneurship Hub
-      fa_class: 
+      fa_class:
       image_url: "images/idendron.png"
     - title: Google Cloud Startup Program
-      content: 
+      content:
       fa_class:
       image_url: "images/logo_lockup_cloud_rgb.png"
 
 items-clients:
   title: OUR CLIENT
-  content: 
+  content:
   list:
-    - title: 
+    - title:
       content: |
         <h5>Department of Anatomical & Cellular Pathology</h5>
-      fa_class: 
+      fa_class:
       image_url: "images/CU_logo_4C_horizontal_RGB.jpg"
 
 
@@ -72,4 +72,3 @@ items-clients:
 
 <!-- MEMBERSHIP -->
 {% include _items.html key='items-membership' style='style1' scheme='' size='big' id='membership' color='color7' %}
-
