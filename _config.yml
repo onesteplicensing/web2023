@@ -1,7 +1,7 @@
 # Site settings
 title:       ONESTEP LICENSING
 description: "your partner for increasing brand awareness, and revenue and driving customer loyalty."  # Used in index.html but also for SEO in _includes/_head.html
-baseurl:     "/web2023" #/fullshare"                    # the subpath of your site, e.g. /blog
+baseurl:     "" #/fullshare"                    # the subpath of your site, e.g. /blog
 url:         ""                                 # the base hostname & protocol for your site
 date_format: "%b %-d, %Y"                       # see _layouts/post.html
 logo: /images/logo.png
