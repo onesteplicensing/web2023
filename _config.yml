@@ -1,13 +1,13 @@
 # Site settings
 title:       ONESTEP LICENSING
 description: "your partner for increasing brand awareness, and revenue and driving customer loyalty."  # Used in index.html but also for SEO in _includes/_head.html
-baseurl:     "web2023" #/fullshare"                    # the subpath of your site, e.g. /blog
+baseurl:     "" #/fullshare"                    # the subpath of your site, e.g. /blog
 url:         ""                                 # the base hostname & protocol for your site
 date_format: "%b %-d, %Y"                       # see _layouts/post.html
 logo: /images/logo.png
 footer_note: |
   <ul class="actions">
-    <li>&copy; 2019 Scancer Limited. All rights reserved.</li>
+    <li>&copy; 2019 OneStep Licensing. All rights reserved.</li>
   </ul>
 demo_script: false                             # this loads the assets/js/demo.js for index.html
 

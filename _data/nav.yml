@@ -1,7 +1,7 @@
 # pages to appear in navivation
 en:
-  - title: HOME
-    path: /index
+  # - title: HOME
+  #   path: /index
 
   # - title: WHY
   #   path: /pages/why
@@ -9,11 +9,15 @@ en:
   # - title: HOW
   #   path: /home
 
-  - title: PRODUCT
-    path: /pages/product
+  # - title: PRODUCT
+  #   path: /pages/product
 
   - title: ABOUT US
-    path: /pages/aboutus
+    path: /index#aboutus
+  - title: CLIENTS
+    path: /index#clients
+  - title: SERVICES
+    path: /index#services
 
 # tc:
 #   - title: 聯繫我們

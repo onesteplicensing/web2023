@@ -6,69 +6,79 @@ lang: en
 lang-ref: home.md
 
 banner:
-  big_title: ONESTEP LICENSING
-  title:
-  desc: your partner for increasing brand awareness, and revenue and driving customer loyalty.
+  big_title:
+  title: ONESTEP LICENSING
+  desc: your partner for increasing brand awareness, revenue, and driving customer loyalty.
   content: |
 
-  image_url: 'https://source.unsplash.com/muS2RraYRuQ'
-
-banner-scan:
-  title: SCAN AND DETECT
-  content: |
-    Combining computer vision and deep learning algorithm, SCANCER is capable of detecting and recognising cancer cell in pathology microscopic images.​
+  image_url: 'https://source.unsplash.com/ICTjWYzpoc0'
+              #orGJcWVI6js' #garage
+              #muS2RraYRuQ' #tito's
   button:
-    show: false
-    url: ""
-    text:
-  image_url: 'images/scan.jpeg'
+    show: False
+    url: "index#aboutus"
+    text: "&#8595;"
+    custom_class: "small button"
 
-banner-model:
-  title: MODEL DEPLOYMENT
+banner-about:
+  title: ABOUT US
   content: |
-    Our model has been tested on whole side images.
+    <p>OneStep Licensing is focused on developing successful licensed partnerships in the retail marketplace. We view licensing as an extension of our client's core business. These efforts generate successful new product sales, create long-term exposure, as well as enhance and create positive touchpoints with consumers. Our service is designed to provide protection and profit, a full service licensing program that works as a turn-key operation for our Clients. </p>
+
+
+    <p>OneStep Licensing is Bombardier Recreational Product’s official licensing agent and together we oversee BRP's licensing category.</p>
+
+    Our strategy is to position the brand correctly for growth and to grow the licensing sustainably. Our benefit is a clear view of the changing marketplace that needs to nurture a consistent, powerful and emotional connection between the brands and our clients.
+
+  button:
+    show: True
+    url: "index#clients"
+    text: "&#8595;"
+    custom_class: "small button"
+  image_url: 'https://source.unsplash.com/Lks7vei-eAg'
+
+banner-services:
+  title: SERVICES
+  desc: Brand Consultancy- Extension
+  content: |
+    <p>OneStep Licensing is focused on developing successful licensed partnerships in the retail marketplace. We view licensing as an extension of our client's core business. These efforts generate successful new product sales, create long-term exposure, as well as enhance and create positive touchpoints with consumers. Our service is designed to provide protection and profit, a full-service licensing program that works as a turn-key operation for our Clients.</p>
+
+    <p>OneStep Licensing is Bombardier Recreational Product’s official licensing agent and together we oversee BRP's licensing category.</p>
+
+    <p>Our strategy is to position the brand correctly for growth and to grow the licensing sustainably. Our benefit is a clear view of the changing marketplace that needs to nurture a consistent, powerful and emotional connection between the brands and our clients.</p>
+
   button:
     show: false
     url: "pages/how"
     text: HOW?
-  image_url: 'images/IMG_20190816_155236.jpg'
-
-items-membership:
-  title: WE ARE A MEMBER OF
-  content:
-  list:
-    - title: iDENDRON
-      content: HKU Innovation & Entrepreneurship Hub
-      fa_class:
-      image_url: "images/idendron.png"
-    - title: Google Cloud Startup Program
-      content:
-      fa_class:
-      image_url: "images/logo_lockup_cloud_rgb.png"
+  image_url: 'https://source.unsplash.com/RQqFD_XH-MU/500x500' #'images/background/services_gs.jpg'
 
 items-clients:
-  title: OUR CLIENT
+  title: OUR CLIENTS
   content:
   list:
-    - title:
-      content: |
-        <h5>Department of Anatomical & Cellular Pathology</h5>
+    - title: DUCATI
+      content:
       fa_class:
-      image_url: "images/CU_logo_4C_horizontal_RGB.jpg"
-
+      image_url: "images/clients/ducati.png" #should be 250 by 250
+    - title: BRP
+      content:
+      fa_class:
+      image_url: "images/clients/brp.png"
+    - title: YAMAHA
+      content:
+      fa_class:
+      image_url: "images/clients/yamaha_square.png"
 
 ---
 <!-- Welcome Banner -->
-{% include _banner.html key='' style='style5' scheme='invert' color='' size='fullscreen' content_align='left' img_pos='center' %}
+{% include _banner.html key='' style='style5' scheme='invert' color='color5' size='fullscreen' content_align='left' img_pos='center' %}
 
-<!-- Scan and Detect -->
-{% include _banner.html key='banner-scan' style='style1' orient='left' scheme='' color='' size='' content_align='left' img_pos='center' id='' %}
-
-<!-- Model Deployment -->
-{% include _banner.html key='banner-model' style='style1' orient='right' scheme='' color='' size='' content_align='right' img_pos='center' id='' %}
+<!-- About Us -->
+{% include _banner.html key='banner-about' style='style1' orient='left' scheme='' color='' size='' content_align='left' img_pos='center' id='aboutus' %}
 
 <!-- clients -->
-{% include _items.html key='items-clients' style='style1' size='big' id='clients' %}
+{% include _items.html key='items-clients' style='style1' scheme='' size='medium' id='clients' color='color7' %}
 
-<!-- MEMBERSHIP -->
-{% include _items.html key='items-membership' style='style1' scheme='' size='big' id='membership' color='color7' %}
+<!-- Model Deployment -->
+{% include _banner.html key='banner-services' style='style1' orient='right' scheme='' color='' size='' content_align='right' img_pos='center' id='services' %}
