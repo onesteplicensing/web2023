@@ -14,8 +14,8 @@ en:
 
   - title: ABOUT US
     path: /index#aboutus
-  - title: CLIENTS
-    path: /index#clients
+  - title: SHOWCASE
+    path: /index#showcase
   - title: SERVICES
     path: /index#services
 

@@ -22,10 +22,16 @@
   url:
 - title: Email
   fa_class: far fa-envelope
-  url: mailto:info@scancer-hk.com
+  url: mailto:info@onesteplicensing.com
+- title: Whatsapp
+  fa_class: fab fa-whatsapp
+  url: https://wa.me/85267138400?text=I'm%20interested%20in%20ONESTEP%20LICENSING
 - title: Phone
   fa_class: fas fa-phone
-  url: 
+  url:
+- title: Address
+  fa_class: fa fa-location-arrow
+  url: https://goo.gl/maps/3YZz6wJgPA61BqYMA
 - title: Facebook
   fa_class: fab fa-facebook
   url:
@@ -34,7 +40,7 @@
   url:
 - title: LinkedIn
   fa_class: fab fa-linkedin
-  url: https://www.linkedin.com/company/14560441/
+  url: https://www.linkedin.com/in/onestep-licensing-b67299221/
 - title: Medium
   fa_class: fab fa-medium
   url:

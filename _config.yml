@@ -5,14 +5,17 @@ baseurl:     "/web2023" #/fullshare"                    # the subpath of your si
 url:         ""                                 # the base hostname & protocol for your site
 date_format: "%b %-d, %Y"                       # see _layouts/post.html
 logo: /images/logo.png
+color: color5
 footer_note: |
   <ul class="actions">
-    <li>&copy; 2019 OneStep Licensing. All rights reserved.</li>
+    <li>&copy; 2019 OneStep Licensing. All rights reserved.
+    <br/><h6>Address: 48/F, Langham Place Office Tower, 8 Argyle Street, Mong Kok, Hong Kong</h6>
+    </li>
   </ul>
 demo_script: false                             # this loads the assets/js/demo.js for index.html
 
 # SEO
-admin:      "Scancer Limited"
+admin:      "ONESTEP LICENSING"
 admin_city: "Hong Kong"                         # used for SEO, see _includes/head.html
 admin_state: "Hong Kong"                        # used for SEO, see _includes/head.html
 share-image: ""                # used for SEO, see _includes/_head.html

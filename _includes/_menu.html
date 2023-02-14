@@ -6,7 +6,7 @@
 *   usage: {% include _menu.html fname='nav' %}
 {% endcomment %}
 
-<nav id="menu">
+<nav id="menu" class="{{site.color}}">
   <ul>
     {% if page.lang %}
       {% for item in site.data[ include.fname ][page.lang] %}

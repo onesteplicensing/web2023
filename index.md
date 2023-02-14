@@ -32,7 +32,7 @@ banner-about:
 
   button:
     show: True
-    url: "index#clients"
+    url: "index#showcase"
     text: "&#8595;"
     custom_class: "small button"
   image_url: 'https://source.unsplash.com/Lks7vei-eAg'
@@ -48,13 +48,16 @@ banner-services:
     <p>Our strategy is to position the brand correctly for growth and to grow the licensing sustainably. Our benefit is a clear view of the changing marketplace that needs to nurture a consistent, powerful and emotional connection between the brands and our clients.</p>
 
   button:
-    show: false
-    url: "pages/how"
-    text: HOW?
-  image_url: 'https://source.unsplash.com/RQqFD_XH-MU/500x500' #'images/background/services_gs.jpg'
+    show: True
+    url: "index#showcase"
+    text: "&#8593;"
+    custom_class: "small button"
+  image_url: 'https://source.unsplash.com/WUtT8cGRPog'   #MBgK-AHSrVs'
+              #RQqFD_XH-MU/500x500'   # vaporwave
+              #'images/background/services_gs.jpg'
 
 items-clients:
-  title: OUR CLIENTS
+  title: SHOWCASE
   content:
   list:
     - title: DUCATI
@@ -77,8 +80,8 @@ items-clients:
 <!-- About Us -->
 {% include _banner.html key='banner-about' style='style1' orient='left' scheme='' color='' size='' content_align='left' img_pos='center' id='aboutus' %}
 
-<!-- clients -->
-{% include _items.html key='items-clients' style='style1' scheme='' size='medium' id='clients' color='color7' %}
+<!-- SHOWCASE -->
+{% include _items.html key='items-clients' style='style1' scheme='' size='medium' id='showcase' color='color7' %}
 
-<!-- Model Deployment -->
-{% include _banner.html key='banner-services' style='style1' orient='right' scheme='' color='' size='' content_align='right' img_pos='center' id='services' %}
+<!-- Services -->
+{% include _spotlight.html key='banner-services' style='style5' orient='right' scheme='' color='' size='' content_align='left' img_pos='center' id='services' %}
