@@ -71,7 +71,7 @@ items-clients:
     - title: can-am
       content:
       fa_class:
-      image_url: "images/clients/1.png"
+      image_url: "images/clients/canam_square.png"
     - title: ski-doo
       content:
       fa_class:
