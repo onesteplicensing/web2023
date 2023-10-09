@@ -64,39 +64,39 @@ items-clients:
   title: SHOWCASE
   content:
   list:
-    - title: BRP
+    - title: #BRP
       content:
       fa_class:
       image_url: "images/clients/brp.png"
-    - title: can-am
+    - title: #can-am
       content:
       fa_class:
       image_url: "images/clients/canam_square.png"
-    - title: ski-doo
+    - title: #ski-doo
       content:
       fa_class:
       image_url: "images/clients/2.png"
-    - title: sea-doo
+    - title: #sea-doo
       content:
       fa_class:
       image_url: "images/clients/3.png"
-    - title: Koenigsegg
+    - title: #Koenigsegg
       content:
       fa_class:
       image_url: "images/clients/4.png"
-    - title: TOYOTA
+    - title: #TOYOTA
       content:
       fa_class:
       image_url: "images/clients/5.png"
-    - title: LEXUS
+    - title: #LEXUS
       content:
       fa_class:
       image_url: "images/clients/6.png"
-    - title: DUCATI
+    - title: #DUCATI
       content:
       fa_class:
       image_url: "images/clients/ducati.png" #should be 250 by 250
-    - title: YAMAHA
+    - title: #YAMAHA
       content:
       fa_class:
       image_url: "images/clients/yamaha_square.png"
