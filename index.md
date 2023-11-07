@@ -11,7 +11,8 @@ banner:
   desc: your partner for increasing brand awareness, revenue, and driving customer loyalty.
   content: |
 
-  image_url: 'https://source.unsplash.com/ICTjWYzpoc0'
+  image_url: 'images/background/onestep-landing.jpg'
+              #'https://source.unsplash.com/ICTjWYzpoc0'
               #orGJcWVI6js' #garage
               #muS2RraYRuQ' #tito's
   button:
@@ -35,7 +36,8 @@ banner-about:
     url: "index#showcase"
     text: "&#8595;"
     custom_class: "small button"
-  image_url: 'https://source.unsplash.com/Lks7vei-eAg'
+  image_url: 'images/background/onestep-aboutus.jpg'
+            #'https://source.unsplash.com/Lks7vei-eAg'
 
 banner-services:
   title: SERVICES
@@ -56,7 +58,8 @@ banner-services:
     url: "index#showcase"
     text: "&#8593;"
     custom_class: "small button"
-  image_url: 'https://source.unsplash.com/WUtT8cGRPog'   #MBgK-AHSrVs'
+  image_url: 'images/background/onestep-services.jpg'
+              #'https://source.unsplash.com/WUtT8cGRPog'   #MBgK-AHSrVs'
               #RQqFD_XH-MU/500x500'   # vaporwave
               #'images/background/services_gs.jpg'
 
