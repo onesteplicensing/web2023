@@ -32,3 +32,12 @@ en:
 
 #   - title: 回到主页
 #     path: /home_sc
+
+# this is a _header / navigation bar hack
+canam_showcase:
+  - title: Toys
+    path: /pages/showcase_canam#toys_gallery
+  - title: Video Games
+    path: /pages/showcase_canam#video_game
+  - title: Back
+    path: /index

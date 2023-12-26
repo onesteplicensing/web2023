@@ -1,0 +1,80 @@
+{% comment %}
+*
+*   This include lets you easily display a Spotlight.
+*
+*   usage: {% include _spotlight.html key='' style='style1' orient='right' scheme='' color='' size='fullscreen' content_align='left' img_pos='left' id='' %}
+*
+*   note that {{ size }} only works for style 4 + 5
+*
+*   The content for the banner is retrived from the calling page's front matter; for example:
+*   spotlight:
+*     title: This is a Banner Example, which is a H2 Heading
+*     content: 'This is a p tag. You can write HTML here as well.'
+*     button:
+*       show: true
+*       url: "/#"
+*       text: Get Started
+*       custom_class: button
+*     video_id: 'tgbNymZ7vqY'
+*
+*   See this link for reference: https://html5up.net/uploads/demos/story/#reference-banner
+*
+*   inspiration for the responsive youtube container comes from: https://www.youtube.com/watch?v=9YffrCViTVk
+*   and all the youtube video embedded options here: https://www.w3schools.com/html/html_youtube.asp
+*
+{% endcomment %}
+
+<!-- Set Default Parameters (empty variable allowed if not set) -->
+{% assign _style = include.style %}
+{% if _style %}{% else %}{% assign _style = 'style5' %}{% endif %}
+
+{% assign _orient = include.orient %}
+{% if _orient %}{% else %}{% assign _orient = 'right' %}{% endif %}
+
+{% assign _content_align = include.content_align %}
+{% if _content_align %}{% else %}{% assign _content_align = 'left' %}{% endif %}
+
+{% assign _img_pos = include.img_pos %}
+{% if _img_pos %}{% else %}{% assign _img_pos = 'left' %}{% endif %}
+
+{% assign _autoplay = include.autoplay %}
+{% if _autoplay %}{% else %}{% assign _autoplay = 1 %}{% endif %}
+
+{% assign _data = page[include.key] %}
+{% if _data %}{% else %}{% assign _data = page.spotlight %}{% endif %}
+
+<style>
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+<!-- Spotlight -->
+<section class="spotlight {{ _style }} {{ include.size }} {{ include.scheme }} orient-{{ _orient }} content-align-{{ _content_align }} image-position-{{ _img_pos }} onscroll-image-fade-in" {% if include.id %} id="{{ include.id }}" {% endif %}>
+  <div class="content">
+    <h2>{{ _data.title }}</h2>
+    <p>{{ _data.content}}</p>
+
+    {% if _data.button.show %}
+    <ul class="actions vertical">
+      {% assign button_class = _data.button.custom_class %}
+      {% if button_class %}{% else %}{% assign button_class = 'button' %}{% endif %}
+
+      <li><a href="{{ _data.button.url }}" class="{{ button_class }}">{{ _data.button.text }}</a></li>
+    </ul>
+    {% endif %}
+
+  </div>
+  <div class="image iframe-container">
+    <iframe src="https://www.youtube.com/embed/{{_data.video_id}}?autoplay=1&mute=1&loop=1&controls=1"></iframe>
+  </div>
+</section>

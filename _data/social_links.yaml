@@ -31,7 +31,7 @@
   url:
 - title: Address
   fa_class: fa fa-location-arrow
-  url: https://goo.gl/maps/3YZz6wJgPA61BqYMA
+  url: # https://goo.gl/maps/3YZz6wJgPA61BqYMA
 - title: Facebook
   fa_class: fab fa-facebook
   url:

@@ -40,7 +40,9 @@
         {% for item in _data.list %}
         <section>
           <span class="icon style2 major {{ item.fa_class }}"></span>
+          {% if item.url %}<a href="{{item.url}}">{% endif %}
           <img src="{{ item.image_url }}" width = "250" height ="250">
+          {% if item.url %}</a>{% endif %}
           <h3>{{ item.title }}</h3>
           <p>{{ item.content }}</p>
         </section>

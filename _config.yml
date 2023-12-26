@@ -9,7 +9,7 @@ color: color5
 footer_note: |
   <ul class="actions">
     <li>&copy; 2019 OneStep Licensing. All rights reserved.
-    <br/><h6>Address: 48/F, Langham Place Office Tower, 8 Argyle Street, Mong Kok, Hong Kong</h6>
+    <br/><h6>Address: Kowloon, Hong Kong</h6>
     </li>
   </ul>
 demo_script: false                             # this loads the assets/js/demo.js for index.html

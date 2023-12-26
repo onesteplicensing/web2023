@@ -6,55 +6,172 @@ banner:
   title: CANAM Showcase
   desc:
   content: |
-    We partnered with Canada's best maker of off road vehicles!
-  button:
-    show: True
-    url: "#toys"
-    text: Learn More
-  image_url: 'https://lh3.googleusercontent.com/drive-viewer/AK7aPaA-nWrbNrw5vOHOwODmzqvMuljtJtXWuSTaL-O91S7KjeC5-8NwVDYmdzLNtqwHO2t5oK8u8FRkclyLZl-fxBUwAHzEgA=s1600'
+    todo put can-am logo here
+  buttons:
+    - show: True
+      url: "#toys"
+      text: Toys
+    - show: True
+      url: /pages/showcase_canam_video_games
+      text: Video Games
+  image_url: ../images/showcase/canam.jpg
 
-spotlight-toys:
-  title:  Toys
-  content: |
-    <p>Tito made some awesome ride-on toys for them</p>
+gallery-demo:
+  title: A 3 images gallery
+  content: 'Mr. Fong himself prefers style 2 over style 1 (this one); with all the images in the same size, the images below should be of size small'
+  articles:
+    - title:
+      content:
+      img_url: ../images/gallery/canam/thumbs/DK-CA002-BU.jpg
+      url: ../images/gallery/canam/fulls/DK-CA002-BU.jpg
+      button:
+    - title:
+      content:
+      img_url: ../images/gallery/canam/thumbs/DK-CA002-GR.jpg
+      url: ../images/gallery/canam/fulls/DK-CA002-GR.jpg
+      button:
+    - title: full feature example gallery item
+      content: This have a URL link that disables the lightbox effect
+      img_url: ../images/gallery/canam/thumbs/MV_X3-3_YE.jpg
+      url: "https://soundcloud.com"
+      button: soundcloud
 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  button:
-    show: True
-    url: "#video_game"
-    text: And there's more...
-  image_url: 'https://lh3.googleusercontent.com/drive-viewer/AK7aPaDd2k3w0zquJ_hk5rJtyp7KD42-G0RIqNdyVSI9T-nSo9iYxjkn9BYlZzoZsSsUhky1XYoCbxl6OnStupPaQa1szO2r=s1600'
-  #'https://drive.google.com/uc?id=1EN9pBmjf32qhlZ1xX44VeeY2jPh8SN2g'
+gallery-dk:
+  title: Ride On Toys
+  content: 'Franzen vaporware taiyaki semiotics VHS small batch sriracha, meditation tbh la croix umami praxis lyft. JOMO ennui succulents swag sartorial taxidermy tumeric. Chia street art twee photo booth af letterpress vape gorpcore. Everyday carry ramps skateboard yr, poke distillery cray williamsburg selvage butcher. Palo santo asymmetrical prism, helvetica sustainable photo booth vegan hell of skateboard. Listicle kombucha man bun asymmetrical chambray 3 wolf moon.'
+  articles:
+    - title:
+      content:
+      img_url: ../images/gallery/canam/thumbs/DK-CA002-BU.jpg
+      url: ../images/gallery/canam/fulls/DK-CA002-BU.jpg
+      button:
+    - title:
+      content:
+      img_url: ../images/gallery/canam/thumbs/DK-CA002-GR.jpg
+      url: ../images/gallery/canam/fulls/DK-CA002-GR.jpg
+      button:
+    - title:
+      content:
+      img_url: ../images/gallery/canam/thumbs/DK-CA002-K.jpg
+      url: ../images/gallery/canam/fulls/DK-CA002-K.jpg
+      button:
+    - title:
+      content:
+      img_url: ../images/gallery/canam/thumbs/DK-CA002-R.jpg
+      url: ../images/gallery/canam/fulls/DK-CA002-R.jpg
+      button:
+    - title:
+      content:
+      img_url: ../images/gallery/canam/thumbs/DK-CA002-WH.jpg
+      url: ../images/gallery/canam/fulls/DK-CA002-WH.jpg
+      button:
+    - title:
+      content:
+      img_url: ../images/gallery/canam/thumbs/DK-CA002-YE.jpg
+      url: ../images/gallery/canam/fulls/DK-CA002-YE.jpg
+      button:
 
-spotlight-video-games:
-  title:  Video Games
-  content: |
-    <p>We even made some state-of-the-art video games.</p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  button:
-    show: true
-    url: "#trailer"
-    text: Watch Trailer
-  image_url: 'https://lh3.googleusercontent.com/drive-viewer/AK7aPaBh7k-zQ8Yoefc3JNdkClaEMa3Bih1KDE9vglVXKOkZ90NbgE3LXthLyjCCM9x8Ix1Td4O3SoH3BOd1fIIC6Y7cGKYNtA=s1600'
+gallery-mv_x3:
+  title: The MV X3
+  content: 'This is a <strong>Gallery</strong> example with <code>style2</code>
+  (<a href="https://html5up.net/uploads/demos/story/#reference-gallery">details</a>).'
+  articles:
+    - title:
+      content:
+      img_url: ../images/gallery/canam/thumbs/MV_X3_BL.jpg
+      url: ../images/gallery/canam/fulls/MV_X3_BL.jpg
+      button:
+    - title:
+      content:
+      img_url: ../images/gallery/canam/thumbs/MV_X3_DP.jpg
+      url: ../images/gallery/canam/fulls/MV_X3_DP.jpg
+      button:
+    - title:
+      content:
+      img_url: ../images/gallery/canam/thumbs/MV_X3_GR.jpg
+      url: ../images/gallery/canam/fulls/MV_X3_GR.jpg
+      button:
+    - title:
+      content:
+      img_url: ../images/gallery/canam/thumbs/MV_X3_LP.jpg
+      url: ../images/gallery/canam/fulls/MV_X3_LP.jpg
+      button:
+    - title:
+      content:
+      img_url: ../images/gallery/canam/thumbs/MV_X3_OR.jpg
+      url: ../images/gallery/canam/fulls/MV_X3_OR.jpg
+      button:
+    - title:
+      content:
+      img_url: ../images/gallery/canam/thumbs/MV_X3_RE.jpg
+      url: ../images/gallery/canam/fulls/MV_X3_RE.jpg
+      button:
+    - title:
+      content:
+      img_url: ../images/gallery/canam/thumbs/MV_X3_RS.jpg
+      url: ../images/gallery/canam/fulls/MV_X3_RS.jpg
+      button:
+    - title:
+      content:
+      img_url: ../images/gallery/canam/thumbs/MV_X3_YE.jpg
+      url: ../images/gallery/canam/fulls/MV_X3_YE.jpg
+      button:
 
-lang: en
-lang-ref: why.md
+gallery-mv_x3-3:
+  title: The MV X3-3
+  content: 'This is a <strong>Gallery</strong> example with <code>style2</code>
+  (<a href="https://html5up.net/uploads/demos/story/#reference-gallery">details</a>).'
+  articles:
+    - title:
+      content:
+      img_url: ../images/gallery/canam/thumbs/MV_X3-3_BL.jpg
+      url: ../images/gallery/canam/fulls/MV_X3-3_BL.jpg
+      button:
+    - title:
+      content:
+      img_url: ../images/gallery/canam/thumbs/MV_X3-3_DT.jpg
+      url: ../images/gallery/canam/fulls/MV_X3-3_DT.jpg
+      button:
+    - title:
+      content:
+      img_url: ../images/gallery/canam/thumbs/MV_X3-3_GR.jpg
+      url: ../images/gallery/canam/fulls/MV_X3-3_GR.jpg
+      button:
+    - title:
+      content:
+      img_url: ../images/gallery/canam/thumbs/MV_X3-3_OR.jpg
+      url: ../images/gallery/canam/fulls/MV_X3-3_OR.jpg
+      button:
+    - title:
+      content:
+      img_url: ../images/gallery/canam/thumbs/MV_X3-3_RE.jpg
+      url: ../images/gallery/canam/fulls/MV_X3-3_RE.jpg
+      button:
+    - title:
+      content:
+      img_url: ../images/gallery/canam/thumbs/MV_X3-3_RS.jpg
+      url: ../images/gallery/canam/fulls/MV_X3-3_RS.jpg
+      button:
+    - title:
+      content:
+      img_url: ../images/gallery/canam/thumbs/MV_X3-3_YE.jpg
+      url: ../images/gallery/canam/fulls/MV_X3-3_YE.jpg
+      button:
+
+# this is a _header / navigation bar hack
+lang: en #canam_showcase
 ---
 <!-- Welcome Banner -->
-{% include _banner.html key='' style='style5' scheme='invert' color='' size='fullscreen' content_align='center' img_pos='left' %}
+{% include _banner_v2.html key='' style='style5' scheme='invert' color='' size='fullscreen' content_align='center' img_pos='left' %}
 
-<!-- Toys: style1 is cropped and style2 is full image in a bubble -->
-{% include _spotlight.html key='spotlight-toys' style='style1' orient='left' scheme='' color='' size='fifty' content_align='left' img_pos='center' id='toys' %}
+<!-- DK-CA002 gallery -->
+{% include _gallery.html key='gallery-dk' style='style2' lightbox=true size='medium' id='toys' %}
 
-<!-- Video Game -->
-{% include _spotlight.html key='spotlight-video-games' style='style1' orient='right' scheme='' color='' size='' content_align='left' img_pos='center' id='video_game' %}
+<!-- MV_X3 gallery -->
+{% include _gallery.html key='gallery-mv_x3' style='style2' lightbox=true size='medium' id='' %}
 
-<!-- Video Game Youtube -->
-<section class="wrapper style1 align-center invert">
-  <div class="spotlight onscroll-image-fade-in style6 fullscreen orient-center content-align-center">
-    <div class="content">
-      <h3 class="motto" id="trailer">Dakar Desert Rally Trailer</h3>
-      <iframe width="720" height="480" src="https://www.youtube-nocookie.com/embed/ar7xWaoEqpI?si=0gLO62U6Y31Qc0xg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-  </div>
-</section>
+<!-- MV_X3-3 gallery -->
+{% include _gallery.html key='gallery-mv_x3-3' style='style2' lightbox=true size='medium' id='' %}
+
+<!-- gallery demo -->
+<!-- include _gallery.html key='gallery-demo' style='style1' lightbox=true size='small' -->
