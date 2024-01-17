@@ -40,10 +40,23 @@
 {% if _data %}{% else %}{% assign _data = page.banner %}{% endif %}
 
 <!-- Banner -->
+<style>
+.logo_container{
+  width: 50%;
+  height: auto;
+}
+</style>
 <section class="banner {{ _style }} orient-{{ _orient }} {{ include.size }} {{ include.scheme }} {{ include.color }} content-align-{{ _content_align }} image-position-{{ _img_pos }} onload-image-fade-in-slow onload-content-fade-in" {% if include.id %} id = "{{ include.id }}" {% endif %}>
   <div class="content">
     {% if _data.big_title %}<hh1 class="motto">{{ _data.big_title }}</hh1>{% endif %}
+    {% if _data.logo_url %}
+    <ul class="actions horizontal">
+      <li class = "logo_container"><img src = "{{_data.logo_url}}" width = "100%"/></li>
+      <li><h2>{{_data.title}}</h2></li>
+    </ul>
+    {% else %}
     <h2 class="motto">{{ _data.title }}</h2>
+    {% endif %}
     <h3>{{ _data.desc }}</h3>
     <p>{{ _data.content }}</p>
 

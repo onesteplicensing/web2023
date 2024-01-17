@@ -1,12 +1,13 @@
 ---
 layout: page
-title: CANAM Showcase
+title: can-am showcase
 
 banner:
-  title: CANAM Showcase
+  title: Showcase
+  logo_url: ../images/clients/1.png
   desc:
   content: |
-    todo put can-am logo here
+
   buttons:
     - show: True
       url: "#toys"
@@ -37,8 +38,14 @@ gallery-demo:
       button: soundcloud
 
 gallery-dk:
-  title: Ride On Toys
-  content: 'Franzen vaporware taiyaki semiotics VHS small batch sriracha, meditation tbh la croix umami praxis lyft. JOMO ennui succulents swag sartorial taxidermy tumeric. Chia street art twee photo booth af letterpress vape gorpcore. Everyday carry ramps skateboard yr, poke distillery cray williamsburg selvage butcher. Palo santo asymmetrical prism, helvetica sustainable photo booth vegan hell of skateboard. Listicle kombucha man bun asymmetrical chambray 3 wolf moon.'
+  title: RENEGADE
+  content: |
+    Introducing the Can-Am Powerful <b>Ride-On toys</b>&#58; <br/>
+    <br/>
+    Experience the thrill of adventure from an early age with our Can-Am Powerful Ride-On Toy. Created by the esteemed Can-Am team, this dynamic toy is designed with a clear purpose in mind.<br/>
+    <br/>
+    Firstly, we understand the importance of brand exposure. By introducing a ride-on toy bearing the Can-Am name, we aim to captivate a younger audience and instil a sense of brand loyalty from the outset. This early exposure can lay the foundation for future brand affinity and potentially lead to future sales of Can-Am vehicles as these young enthusiasts grow older.
+
   articles:
     - title:
       content:
@@ -72,9 +79,8 @@ gallery-dk:
       button:
 
 gallery-mv_x3:
-  title: The MV X3
-  content: 'This is a <strong>Gallery</strong> example with <code>style2</code>
-  (<a href="https://html5up.net/uploads/demos/story/#reference-gallery">details</a>).'
+  title: MAVERICK X3
+  content: "Furthermore, our ride-on toy serves as more than just a plaything. It doubles as a fun and engaging marketing tool for the Can-Am brand. With its dynamic design and realistic features, our toy sparks curiosity and generates interest among children and adults alike. It becomes a conversation starter, igniting conversations about the Can-Am legacy and its commitment to delivering thrilling experiences."
   articles:
     - title:
       content:
@@ -118,9 +124,8 @@ gallery-mv_x3:
       button:
 
 gallery-mv_x3-3:
-  title: The MV X3-3
-  content: 'This is a <strong>Gallery</strong> example with <code>style2</code>
-  (<a href="https://html5up.net/uploads/demos/story/#reference-gallery">details</a>).'
+  title: MAVERICK X3
+  content: "In addition, diversifying our product offerings is a key driver behind our powerful ride-on toy. By expanding beyond traditional vehicles and venturing into the realm of toys, we appeal to a wider range of consumers. Whether it's a young child's first off-road adventure or a family's shared outdoor experience, our ride-on toy provides a gateway to the world of Can-Am excitement for all."
   articles:
     - title:
       content:
