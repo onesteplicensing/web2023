@@ -8,7 +8,7 @@ banner:
   desc: Video Games
   content: |
     Introducing Can-Am in the World of Video Games&#58;<br/><br/>
-    The Can-Am team has embarked on an exciting new venture by entering into the realm of video games with Forza, GTA and Dakar Rally.
+    The Can-Am team has embarked on an exciting new venture by entering into the realm of video games with Forza and Dakar Rally.
   buttons:
     - show: True
       url: "#video_game"

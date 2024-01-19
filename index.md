@@ -75,6 +75,7 @@ items-clients:
       content:
       fa_class:
       image_url: "images/clients/canam_square.png"
+      url: "pages/showcase_canam"
     - title: #ski-doo
       content:
       fa_class:
