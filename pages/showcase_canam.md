@@ -1,6 +1,7 @@
 ---
 layout: page
 title: can-am showcase
+lang: en
 
 banner:
   title: Showcase
@@ -163,8 +164,6 @@ gallery-mv_x3-3:
       url: ../images/gallery/canam/fulls/MV_X3-3_YE.jpg
       button:
 
-# this is a _header / navigation bar hack
-lang: en
 ---
 <!-- Welcome Banner -->
 {% include _banner_v2.html key='' style='style5' scheme='invert' color='' size='fullscreen' content_align='center' img_pos='left' %}
