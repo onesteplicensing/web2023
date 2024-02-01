@@ -164,7 +164,7 @@ gallery-mv_x3-3:
       button:
 
 # this is a _header / navigation bar hack
-lang: en #canam_showcase
+lang: en
 ---
 <!-- Welcome Banner -->
 {% include _banner_v2.html key='' style='style5' scheme='invert' color='' size='fullscreen' content_align='center' img_pos='left' %}

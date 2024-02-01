@@ -32,6 +32,8 @@
     <!--
     Language Support
       Currently only for Page
+
+      this shows all the posts! might wanna switch it off
     -->
     {% if page.layout == 'page' or page.layout == 'index' %}
       {% assign posts = site.posts | where: "lang-ref", page.lang-ref | sort: 'lang' %}

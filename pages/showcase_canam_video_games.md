@@ -41,7 +41,7 @@ spotlight-dakar:
   video_id: SNLE0Eywwv8 #ar7xWaoEqpI
 
 # this is a _header / navigation bar hack
-lang: en #canam_showcase
+lang: en
 ---
 <!-- Welcome Banner -->
 {% include _banner_v2.html key='' style='style5' scheme='invert' color='' size='fullscreen' content_align='left' img_pos='left' id='banner' %}
