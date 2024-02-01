@@ -2,6 +2,7 @@
 layout: page
 title: can-am showcase
 lang: en
+lang-ref: showcase_canam.md
 
 banner:
   title: Showcase
