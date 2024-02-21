@@ -75,7 +75,7 @@ items-clients:
       content:
       fa_class:
       image_url: "images/clients/canam_square.png"
-      url: "pages/showcase_canam"
+      showcase: "pages/showcase_canam"
     - title: #ski-doo
       content:
       fa_class:
@@ -113,7 +113,7 @@ items-clients:
 {% include _banner.html key='banner-about' style='style1' orient='left' scheme='' color='' size='' content_align='left' img_pos='center' id='aboutus' %}
 
 <!-- SHOWCASE -->
-{% include _items.html key='items-clients' style='style3' scheme='' size='medium' id='showcase' color='color7' %}
+{% include _items_showcase.html key='items-clients' style='style3' scheme='' size='medium' id='showcase' color='color7' %}
 
 <!-- Services -->
 {% include _spotlight.html key='banner-services' style='style5' orient='right' scheme='' color='' size='' content_align='left' img_pos='center' id='services' %}

@@ -11,15 +11,15 @@
 *     articles:
 *       - title: 1st Title
 *         content: text for first item
-*         fa_class: "far fa-gem"
+*         image_url: "images/clients/2.png"
+*         showcase: "pages/showcase_canam"
 *       - title: 2nd title
 *         content: text for second item
-*         fa_class: "far fa-save"
+*         image_url: "images/clients/3.png"
+*         showcase: "pages/showcase_second"
 *
 *   See this link for reference: https://html5up.net/uploads/demos/story/#reference-banner
-*   this project uses FontAwesome 5, see icon reference here: https://fontawesome.com/v5/search
 *
-* TODO: make image size a parameter and maybe a switch for grayscale of images: https://stackoverflow.com/a/8612047
 {% endcomment %}
 
 <!-- Set Default Parameters (empty variable allowed if not set) -->
@@ -33,19 +33,21 @@
 {% if _data %}{% else %}{% assign _data = page.items %}{% endif %}
 
 <!-- Items -->
-  <section class="wrapper {{include.color}} style1 align-center {{ include.scheme }}" {% if include.id %} id="{{ include.id }}"{% endif %}>
+  <section class="wrapper style1 align-center {{include.scheme}}" {% if include.id %} id="{{ include.id }}"{% endif %}>
     <div class="inner">
       <h2>{{ _data.title }}</h2>
       <p>{{ _data.content }}</p>
       <div class="items {{ _style }} {{ _size }} onscroll-fade-in">
         {% for item in _data.list %}
         <section>
-          <span class="icon style2 major {{ item.fa_class }}"></span>
-          {% if item.url %}<a href="{{item.url}}">{% endif %}
-          <img src="{{ item.image_url }}" width = "250" height ="250">
-          {% if item.url %}</a>{% endif %}
+          <img src = "{{item.image_url}}" width="250" height = "250">
           <h3>{{ item.title }}</h3>
-          <p>{{ item.content }}</p>
+
+          {% if item.showcase %}
+          <ul class="icons">
+                <li><a class="icon style1 fas fa-link" href="{{item.showcase}}"><span class="label">{{ item.title }}</span></a></li>
+          </ul>
+          {% endif %}
         </section>
         {% endfor %}
       </div>
