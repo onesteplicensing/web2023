@@ -67,10 +67,10 @@ items-clients:
   title: SHOWCASE
   content:
   list:
-    - title: #BRP
+    - title: #sea-doo
       content:
       fa_class:
-      image_url: "images/clients/brp.png"
+      image_url: "images/clients/3.png"
     - title: #can-am
       content:
       fa_class:
@@ -80,14 +80,14 @@ items-clients:
       content:
       fa_class:
       image_url: "images/clients/2.png"
-    - title: #sea-doo
-      content:
-      fa_class:
-      image_url: "images/clients/3.png"
     - title: #Koenigsegg
       content:
       fa_class:
       image_url: "images/clients/4.png"
+    - title: #Porche
+      content:
+      fa_class:
+      image_url: "images/clients/porsche.png"
     - title: #TOYOTA
       content:
       fa_class:
