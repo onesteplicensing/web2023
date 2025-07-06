@@ -37,7 +37,7 @@ share-image: "" # used for SEO, see _includes/_head.html
 animated: true
 
 sass:
-  sass_dir: _sass
+  sass_dir: css
 
 text:
   pagination:
