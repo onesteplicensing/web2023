@@ -36,6 +36,9 @@ share-image: "" # used for SEO, see _includes/_head.html
 # Optional features
 animated: true
 
+sass:
+  sass_dir: css
+
 text:
   pagination:
     newer: "Newer"

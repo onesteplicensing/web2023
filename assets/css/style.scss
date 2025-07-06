@@ -1,16 +1,16 @@
 ---
 ---
-@import 'reset';
-@import 'header';
-@import 'hero';
-@import 'showcase';
-@import 'about';
-@import 'timeline';
-@import 'services';
-@import 'videogames';
-@import 'contact';
-@import 'mobile';
-@import 'pages';
+@use 'reset';
+@use 'header';
+@use 'hero';
+@use 'showcase';
+@use 'about';
+@use 'timeline';
+@use 'services';
+@use 'videogames';
+@use 'contact';
+@use 'mobile';
+@use 'pages';
 
 
 :root {
