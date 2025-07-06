@@ -36,6 +36,9 @@ share-image: "" # used for SEO, see _includes/_head.html
 # Optional features
 animated: true
 
+sass:
+  sass_dir: _sass
+
 text:
   pagination:
     newer: "Newer"
@@ -68,7 +71,6 @@ text:
       error: "Error!"
   thanks: "Thanks for contacting us. We will reply as soon as possible."
   og_locale: "en_US"
-
 # Build settings
 # plugins:
 #  - jekyll-feed
