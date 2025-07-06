@@ -1,0 +1,302 @@
+// cam-am 
+.can-am {
+    .can-header {
+        background-color: var(--bg-primary);
+
+        ul.navigation {
+            margin-top: 50px;
+            display: flex;
+            gap: 10px;
+
+            li {
+                a {
+                    border-radius: 12px 12px 0px 0px;
+                    background-color: inherit;
+                    border-top: 1px solid #D5DFEA;
+                    border-right: 1px solid #D5DFEA;
+                    border-left: 1px solid #D5DFEA;
+                    display: flex;
+                    text-decoration: none;
+                    height: 58px;
+                    padding: 16px;
+                    gap: 10px;
+                    cursor: pointer;
+
+                    &.active {
+                        background: rgba(131, 152, 172, 0.25);
+                    }
+                }
+            }
+        }
+
+        .inner {
+            flex-basis: 50%;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &.slider {
+                position: relative;
+
+                button.slide {
+                    position: absolute;
+                    border: 0;
+                    transition: all 0.4s ease;
+                    background: none;
+                    width: 570px;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    padding: 0;
+                    margin: 0;
+                    border: 5px solid #FFF;
+
+                    box-sizing: border-box;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+
+                    &:nth-child(2) {
+                        right: -30px;
+                        height: calc(360px - 10%);
+                        top: 5%;
+                        z-index: 2;
+                        opacity: 0.6;
+                    }
+
+                    &:nth-child(3) {
+                        right: -60px;
+                        height: calc(360px - 20%);
+                        top: 10%;
+                        z-index: 1;
+                        opacity: 0.3;
+                    }
+
+                    &.active {
+                        height: 360px;
+                        opacity: 1;
+                        top: 0;
+                        right: 0;
+                        z-index: 3;
+                    }
+                }
+            }
+
+            &.toys-hero {
+                position: relative;
+
+                img {
+                    border-radius: 20px;
+                    box-shadow: 0px 4px 10px -2px rgba(17, 29, 48, 0.10);
+                    border: 1px solid #DBE5EC;
+                    position: absolute;
+
+                    &:first-child {
+                        width: 80%;
+                        height: 375px;
+                        z-index: 1;
+                        left: 15%;
+                    }
+
+                    &:nth-child(2) {
+                        height: 130px;
+                        width: auto;
+                        bottom: -20px;
+                        z-index: 2;
+                        left: 0;
+                    }
+
+                    &:nth-child(3) {
+                        width: auto;
+                        height: 100px;
+                        top: 50px;
+                        z-index: 3;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .tab-content {
+        padding-top: 80px;
+
+        .p-secondary {
+            font-size: 27px;
+        }
+    }
+
+    .item-video {
+        background-color: var(--bg-primary);
+        border-radius: 40px;
+
+        .inner {
+            width: 50%;
+
+            img {
+                width: 70px;
+                border-radius: 8px;
+            }
+        }
+    }
+
+    .grid-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+
+        .toy-card {
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 40px;
+            background: #F9FAFC;
+            position: relative;
+            padding: 36px;
+            display: flex;
+            flex-direction: column;
+
+            h3 {
+                font-weight: 600;
+                font-size: 20px;
+            }
+
+            p {
+                font-weight: 300;
+                font-size: 16px;
+                color: var(--color-faded);
+            }
+
+            .read-more {
+                margin-top: auto;
+                text-decoration: none;
+                border-top: 1px dashed #E7EBEE;
+                padding-top: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: var(--color-primary);
+                font-weight: 600;
+                letter-spacing: 0.64px;
+            }
+        }
+    }
+
+    .gallery {
+
+        .gallery-image {
+            max-width: 100%;
+            height: 358px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .main-img {
+                max-width: 100%;
+                max-height: 100%;
+                width: auto;
+                height: auto;
+                object-fit: contain;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+
+        .gallery-thumbs {
+            margin-top: 20px;
+            position: relative;
+
+            .gallery-nav {
+                position: absolute;
+                top: 0;
+                border: 0;
+                background-color: transparent;
+                padding: 0;
+                width: 20px;
+                height: 85px;
+
+                &.prev-carousel {
+                    left: -21px;
+                }
+
+                &.next-carousel {
+                    right: -21px;
+                    transform: rotate(180deg);
+                }
+            }
+
+            .thumbs-wrapper {
+                display: flex;
+                width: 100%;
+                overflow: auto;
+                gap: 5px;
+                max-width: 100%;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+
+
+                button {
+                    flex: 0 0 auto;
+                    border: none;
+                    background: #FFF;
+                    border-radius: 12px;
+                    padding: 0;
+                    max-width: 130px;
+                    height: 85px;
+                    box-sizing: border-box;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                    .active {
+                        border: 1px solid #C0D0DE;
+                        border-radius: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    // toy details page
+    .toy-details {
+        max-width: 834px;
+        margin: auto;
+
+        .toy-card {
+            background: #F9FAFC;
+            padding: 45px;
+            border-radius: 50px;
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 280px;
+            background: #F9FAFC;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        h3 {
+            font-size: 36px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+
+}

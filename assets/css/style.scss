@@ -1,0 +1,59 @@
+---
+---
+@use 'reset';
+@use 'header';
+@use 'hero';
+@use 'showcase';
+@use 'about';
+@use 'timeline';
+@use 'services';
+@use 'videogames';
+@use 'contact';
+@use 'mobile';
+@use 'pages';
+
+
+:root {
+    --color-primary: #088DE5;
+    --color-secondary: #FFF;
+    --color-muted: #54677A;
+    --color-faded: #8398AC;
+    --bg-primary: #FAFCFF;
+    --bg-secondary: #fff;
+    --border-color: #DBE5EC;
+}
+
+body {
+    font-family: "Encode Sans Condensed", sans-serif;
+    color: var(--color-muted);
+}
+
+@keyframes float {
+    0% {
+        transform: rotate(var(--rotate-angle)) translateY(0px);
+    }
+
+    50% {
+        transform: rotate(var(--rotate-angle)) translateY(-10px);
+    }
+
+    100% {
+        transform: rotate(var(--rotate-angle)) translateY(0px);
+    }
+}
+
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+footer p {
+    color: #9CA4AB;
+}
