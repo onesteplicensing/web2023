@@ -1,16 +1,16 @@
 ---
 ---
-@use '../_sass/reset';
-@use '../_sass/header';
-@use '../_sass/hero';
-@use '../_sass/showcase';
-@use '../_sass/about';
-@use '../_sass/timeline';
-@use '../_sass/services';
-@use '../_sass/videogames';
-@use '../_sass/contact';
-@use '../_sass/mobile';
-@use '../_sass/pages';
+@import 'reset';
+@import 'header';
+@import 'hero';
+@import 'showcase';
+@import 'about';
+@import 'timeline';
+@import 'services';
+@import 'videogames';
+@import 'contact';
+@import 'mobile';
+@import 'pages';
 
 
 :root {
