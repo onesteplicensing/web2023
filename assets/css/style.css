@@ -141,6 +141,7 @@ header nav.sticky {
 .hero .carousel-inner .carousel-item {
   display: flex;
   height: 340px;
+  justify-content: space-between;
 }
 .hero .carousel-inner .carousel-item h1 {
   position: relative;
@@ -151,15 +152,11 @@ header nav.sticky {
   font-size: 38px;
 }
 .hero .partial {
-  flex-basis: 50%;
+  flex-shrink: 0;
   background-color: var(--bg-primary);
 }
 .hero .slide-1 .partial .main-bg {
   position: relative;
-  border-radius: 20px;
-  border: 1px solid var(--border-color);
-  background: #FFF;
-  box-shadow: 0px 4px 10px -2px rgba(17, 29, 48, 0.1);
   text-align: center;
   width: 550px;
   margin: 0 auto;
@@ -168,8 +165,8 @@ header nav.sticky {
   display: inline-block;
 }
 .hero .slide-1 .partial .main-bg > img:nth-child(1) {
-  top: 145px;
-  left: -100px;
+  top: 165px;
+  left: -130px;
   position: absolute;
   width: 204px;
   display: block;
@@ -183,10 +180,13 @@ header nav.sticky {
 .hero .slide-1 .partial .main-bg > img:nth-child(2) {
   padding-bottom: 20px;
   margin-top: 30px;
-  width: 400px;
-  height: 340px;
-  --rotate-angle: -7deg;
+  width: 570px;
+  border-radius: 20px;
+  height: 400px;
+  --rotate-angle: -3.5deg;
   animation: float 5s ease-in-out infinite;
+  border: 1px solid var(--border-color);
+  box-shadow: 0px 4px 10px -2px rgba(17, 29, 48, 0.1);
 }
 .hero .slide-1 .partial .main-bg > img:nth-child(3) {
   --rotate-angle: -8.5deg;
@@ -202,10 +202,6 @@ header nav.sticky {
 .hero .slide-2 .partial .main-bg {
   position: relative;
   transform: rotate(5deg);
-  border-radius: 20px;
-  border: 1px solid var(--border-color);
-  background: #FFF;
-  box-shadow: 0px 4px 10px -2px rgba(17, 29, 48, 0.1);
   text-align: center;
   width: 550px;
   margin: 0 auto;
@@ -231,6 +227,9 @@ header nav.sticky {
   width: 458px;
   --rotate-angle: 0deg;
   animation: float 5s ease-in-out infinite;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0px 4px 10px -2px rgba(17, 29, 48, 0.1);
 }
 .hero .slide-2 .partial .main-bg > img:nth-child(3) {
   position: absolute;
@@ -264,7 +263,7 @@ header nav.sticky {
 .hero .slide-3 .partial .main-bg > img:nth-child(2) {
   width: 570px;
   height: 400px;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0px 4px 10px -2px rgba(17, 29, 48, 0.1);
   border: 1px solid var(--border-color);
   --rotate-angle: -3deg;
@@ -277,7 +276,7 @@ header nav.sticky {
   --rotate-angle: 6.5deg;
   animation: float 2.5s ease-in-out infinite;
   top: 80px;
-  right: 40px;
+  right: -40px;
   border: 1px solid var(--border-color);
   background-color: #FFF;
   border-radius: 10px;
@@ -359,6 +358,7 @@ header nav.sticky {
   margin: 0;
   border: 5px solid #FFF;
   box-sizing: border-box;
+  opacity: 0;
 }
 .about .inner.slider button.slide img {
   width: 100%;
@@ -391,7 +391,7 @@ header nav.sticky {
   width: 95%;
   margin-left: auto;
   margin-right: auto;
-  height: 680px;
+  max-height: 680px;
   border-radius: 40px 40px 100px 100px;
 }
 .timeline h3 {
@@ -400,7 +400,7 @@ header nav.sticky {
 }
 .timeline .nav-link {
   width: 280px;
-  padding: 10px 0px;
+  padding: 0;
   margin-bottom: 12px;
   justify-content: center;
   align-items: center;
@@ -409,97 +409,182 @@ header nav.sticky {
   background: #FFF;
   box-shadow: 0px 4px 10px -2px rgba(17, 29, 48, 0.1);
   backdrop-filter: blur(2px);
+  height: 64px;
 }
 .timeline .nav-link > div {
   font-weight: 400;
   color: var(--color-faded);
   font-size: 25px;
-  line-height: 42px;
+  line-height: 64px;
 }
-.timeline .nav-link.active {
+.timeline .nav-link.active, .timeline .nav-link:hover {
   background-color: white;
   color: #000;
 }
-.timeline .nav-link.active div {
+.timeline .nav-link.active div, .timeline .nav-link:hover div {
   color: #000 !important;
-  font-weight: bolder !important;
-  border-left: 4px solid var(--color-primary);
-  margin-left: 13px;
+  font-weight: bold !important;
+  position: relative;
 }
-.timeline .tab-content .tab-pane.three-imgs-temp .top-img {
-  text-align: end;
+.timeline .nav-link.active div::before, .timeline .nav-link:hover div::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 4px;
+  background-color: var(--color-primary);
+  height: 44px;
+  border-radius: 2px;
 }
-.timeline .tab-content .tab-pane.three-imgs-temp .top-img img {
-  transform: rotate(13.254deg);
-  border-radius: 14px;
-  background: #FFF;
-  box-shadow: 0px 4px 10px -2px rgba(17, 29, 48, 0.1);
-  display: inline-block;
-  width: 110px;
-  height: 80px;
-  padding: 10px;
+.timeline .nav-link:hover {
+  border: 3px solid #DBE5EC;
 }
-.timeline .tab-content .tab-pane.three-imgs-temp .content {
-  display: flex;
-  gap: 20px;
-  font-weight: 300;
-  margin-top: -40px;
-  padding-left: 10%;
+.timeline .nav-link:hover div {
+  line-height: 60px;
 }
-.timeline .tab-content .tab-pane.three-imgs-temp .content img {
-  width: 132px;
-  height: 178px;
-  transform: rotate(10.5deg);
-  border-radius: 16px;
-  box-shadow: 0px 4px 10px -2px rgba(17, 29, 48, 0.1);
+.timeline .nav-link:hover div::before {
+  height: 40px;
 }
-.timeline .tab-content .tab-pane.three-imgs-temp .content p {
+.timeline .tab-content .tab-pane {
+  height: 100%;
+}
+.timeline .tab-content .tab-pane .content {
+  height: 100%;
+}
+.timeline .tab-content .tab-pane .content p {
+  font-size: 37px;
   color: var(--color-faded);
-  font-size: 38px;
-}
-.timeline .tab-content .tab-pane.three-imgs-temp .btm-img {
-  text-align: end;
-}
-.timeline .tab-content .tab-pane.three-imgs-temp .btm-img img {
-  width: 120px;
-  height: 110px;
-  transform: rotate(-20deg);
-  padding: 10px;
-  display: inline-block;
-  border-radius: 16px;
-  background: #FFF;
-  box-shadow: 0px 4px 10px -2px rgba(17, 29, 48, 0.1);
-}
-.timeline .tab-content .tab-pane.two-imgs-temp .top-img {
-  text-align: center;
-  margin: 30px 0;
-}
-.timeline .tab-content .tab-pane.two-imgs-temp .top-img img {
-  padding: 10px;
-  width: 190px;
-  transform: rotate(-7deg);
-  flex-shrink: 0;
-  border-radius: 16px;
-  background: #FFF;
-  box-shadow: 0px 5.856px 14.639px -2.928px rgba(17, 29, 48, 0.1);
-}
-.timeline .tab-content .tab-pane.two-imgs-temp .content {
-  display: flex;
-  gap: 20px;
   font-weight: 300;
-  margin-top: -10px;
-  padding-left: 10%;
 }
-.timeline .tab-content .tab-pane.two-imgs-temp .content img {
-  width: 132px;
-  height: 178px;
-  transform: rotate(10.5deg);
+.timeline .tab-content .img-container {
+  background-color: #FFF;
   border-radius: 16px;
   box-shadow: 0px 4px 10px -2px rgba(17, 29, 48, 0.1);
+  width: fit-content;
+  padding: 20px;
 }
-.timeline .tab-content .tab-pane.two-imgs-temp .content p {
-  color: var(--color-faded);
-  font-size: 38px;
+.timeline .tab-content #v-2019 .content {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 150px;
+  padding-inline-start: 50px;
+}
+.timeline .tab-content #v-2019 .content p {
+  width: 50%;
+  padding-inline-start: 50px;
+}
+.timeline .tab-content #v-2019 .content .img-container {
+  margin-top: 30px;
+  margin-left: 10px;
+  padding: 30px;
+  transform: rotate(-15deg);
+}
+.timeline .tab-content #v-2019 .content p + .img-container {
+  padding: 20px;
+  margin-top: -50px;
+  transform: rotate(-5deg);
+}
+.timeline .tab-content #v-2021 {
+  padding-top: 25px;
+}
+.timeline .tab-content #v-2021 .content {
+  display: flex;
+  padding-left: 20px;
+}
+.timeline .tab-content #v-2021 .content p {
+  padding-inline-start: 200px;
+  padding-top: 50px;
+}
+.timeline .tab-content #v-2021 .content ul {
+  position: absolute;
+}
+.timeline .tab-content #v-2021 .content ul li .img-container {
+  transform: rotate(-15deg);
+}
+.timeline .tab-content #v-2021 .content ul li:last-child {
+  margin-top: 85px;
+}
+.timeline .tab-content #v-2021 .content ul li:last-child .img-container {
+  transform: rotate(15deg);
+}
+.timeline .tab-content #v-2021 .content p + ul {
+  right: 140px;
+}
+.timeline .tab-content #v-2021 .content p + ul li {
+  margin-top: -49px;
+  padding-right: 50px;
+}
+.timeline .tab-content #v-2021 .content p + ul li .img-container {
+  transform: rotate(10deg);
+}
+.timeline .tab-content #v-2021 .content p + ul li:last-child {
+  margin-top: 255px;
+  padding: 0;
+}
+.timeline .tab-content #v-2021 .content p + ul li:last-child .img-container {
+  margin-left: 60px;
+  transform: rotate(-10deg);
+}
+.timeline .tab-content #v-2022 .content {
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+  padding-inline-start: 95px;
+  padding-top: 100px;
+}
+.timeline .tab-content #v-2022 .content .img-container {
+  transform: rotate(-15deg);
+}
+.timeline .tab-content #v-2023 .content {
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+  padding-inline-start: 95px;
+  padding-top: 100px;
+}
+.timeline .tab-content #v-2023 .content .img-container {
+  transform: rotate(-15deg);
+}
+.timeline .tab-content #v-2024 .content {
+  padding-inline-start: 95px;
+  padding-top: 100px;
+}
+.timeline .tab-content #v-2024 .content p {
+  float: left;
+  z-index: 9;
+  position: relative;
+}
+.timeline .tab-content #v-2024 .content .img-container {
+  transform: rotate(-10deg);
+  float: left;
+  z-index: 0;
+  position: relative;
+  margin-left: -35px;
+  margin-top: -15px;
+  padding: 34px 27px;
+}
+.timeline .tab-content #v-2025 .content {
+  padding-inline-start: 50px;
+  display: flex;
+  align-items: flex-start;
+}
+.timeline .tab-content #v-2025 .content p {
+  margin-top: -30px;
+  margin-left: -50px;
+  position: relative;
+  z-index: 9;
+}
+.timeline .tab-content #v-2025 .content .img-container {
+  margin-top: 20px;
+  margin-left: 10px;
+  padding: 30px;
+  transform: rotate(-10deg);
+}
+.timeline .tab-content #v-2025 .content p + .img-container {
+  padding: 30px;
+  margin-top: 260px;
+  margin-left: -100px;
+  transform: rotate(10deg);
 }
 
 .services h3 {
@@ -709,6 +794,13 @@ header nav.sticky {
   }
   header .hero .carousel-inner .carousel-item {
     height: auto;
+    flex-direction: column-reverse;
+  }
+  header .hero .carousel-inner .carousel-item h1 span {
+    font-size: 18px;
+  }
+  header .hero .carousel-inner .carousel-item .partial .main-bg {
+    width: 500px;
   }
   .p-secondary {
     font-size: 18px !important;
@@ -729,50 +821,72 @@ header nav.sticky {
     white-space: nowrap;
     scroll-behavior: smooth;
   }
+  .timeline .nav::-webkit-scrollbar {
+    display: none;
+  }
   .timeline .nav .nav-link {
     width: 70px !important;
     padding: 0 !important;
     border-radius: 5px;
     flex-shrink: 0;
+    height: 40px;
   }
   .timeline .nav .nav-link > div {
     font-size: 14px;
+    line-height: 40px;
   }
   .timeline .nav .nav-link.active div {
     height: 30px;
     line-height: 30px;
   }
-  .timeline .tab-content .inner {
-    display: flex;
-    flex-direction: row-reverse;
+  .timeline .nav .nav-link.active div::before {
+    height: 20px;
+    top: 5px;
   }
-  .timeline .tab-content .inner .content {
-    margin-top: 25px !important;
-    display: block !important;
+  .timeline .tab-content #v-2019 .content {
+    margin-top: 0;
+    padding: 50px 0 0 0;
+  }
+  .timeline .tab-content #v-2019 .content p {
+    padding: 0;
+  }
+  .timeline .tab-content #v-2019 .content .img-container {
+    zoom: 0.5;
+  }
+  .timeline .tab-content #v-2021 .content ul {
+    zoom: 0.3;
+  }
+  .timeline .tab-content #v-2021 .content p {
+    padding: 0 0 0 56px;
+    font-size: 18px;
     position: relative;
-    padding: 0 !important;
+    z-index: 9;
   }
-  .timeline .tab-content .inner .content img {
-    width: 100px !important;
-    height: 140px !important;
-    position: absolute;
-    left: -70px;
+  .timeline .tab-content #v-2022 .content,
+  .timeline .tab-content #v-2023 .content,
+  .timeline .tab-content #v-2024 .content {
+    padding: 30px 0 0 0;
+    gap: 30px;
   }
-  .timeline .tab-content .inner .content p {
-    font-size: 18px !important;
-    text-align: center;
-    padding: 40px 60px 0;
+  .timeline .tab-content #v-2022 .content p,
+  .timeline .tab-content #v-2023 .content p,
+  .timeline .tab-content #v-2024 .content p {
+    font-size: 18px;
   }
-  .timeline .tab-content .inner .content p br {
-    display: none;
+  .timeline .tab-content #v-2022 .content .img-container,
+  .timeline .tab-content #v-2023 .content .img-container,
+  .timeline .tab-content #v-2024 .content .img-container {
+    zoom: 0.5;
   }
-  .timeline .tab-content .inner .top-img {
-    position: absolute;
-    right: -44px;
-    top: 31px;
+  .timeline .tab-content #v-2025 .content {
+    padding: 0;
+    gap: 30px;
   }
-  .timeline .tab-content .inner .btm-img {
-    display: none;
+  .timeline .tab-content #v-2025 .content p {
+    font-size: 18px;
+  }
+  .timeline .tab-content #v-2025 .content .img-container {
+    zoom: 0.4;
   }
   .video-games h2 {
     margin-bottom: -15.5%;
@@ -1058,6 +1172,7 @@ header nav.sticky {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .can-am .gallery .gallery-image .main-img {
   max-width: 100%;
@@ -1067,6 +1182,11 @@ header nav.sticky {
   object-fit: contain;
   display: block;
   margin: 0 auto;
+  transition: all 0.5s ease;
+  position: relative;
+}
+.can-am .gallery .gallery-image .main-img.fade-out {
+  opacity: 0.2;
 }
 .can-am .gallery .gallery-thumbs {
   margin-top: 20px;
