@@ -191,6 +191,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
 
             .main-img {
                 max-width: 100%;
@@ -200,6 +201,12 @@
                 object-fit: contain;
                 display: block;
                 margin: 0 auto;
+                transition: all 0.5s ease;
+                position: relative;
+
+                &.fade-out {
+                    opacity: .2;
+                }
             }
         }
 

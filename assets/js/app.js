@@ -8,7 +8,7 @@ if (track.children.length < 10) {
     });
 }
 
-// Tabs
+// Tabs timeline
 const _timeline = document.getElementById("timeline");
 const tabsContainer = _timeline.querySelector('.nav-pills');
 const tabs = tabsContainer.querySelectorAll('button');
