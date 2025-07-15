@@ -972,7 +972,6 @@ header nav.sticky {
   }
   .inner-page .can-am .can-header .navigation h4 {
     font-size: 14px;
-    margin: 0;
   }
   .inner-page .can-am .toys-cards {
     flex-direction: column;
@@ -1044,6 +1043,9 @@ header nav.sticky {
   padding: 16px;
   gap: 10px;
   cursor: pointer;
+}
+.can-am .can-header ul.navigation li a h4 {
+  margin: 0;
 }
 .can-am .can-header ul.navigation li a.active {
   background: rgba(131, 152, 172, 0.25);
