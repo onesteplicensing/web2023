@@ -967,8 +967,12 @@ header nav.sticky {
   .inner-page .can-am .can-header .navigation {
     width: 180%;
   }
+  .inner-page .can-am .can-header .navigation img {
+    width: 30px;
+  }
   .inner-page .can-am .can-header .navigation h4 {
-    font-size: 16px;
+    font-size: 14px;
+    margin: 0;
   }
   .inner-page .can-am .toys-cards {
     flex-direction: column;
@@ -1014,6 +1018,11 @@ header nav.sticky {
     flex-direction: column-reverse;
   }
 }
+@media (max-width: 380px) {
+  .top-menu {
+    zoom: 0.65 !important;
+  }
+}
 .can-am .can-header {
   background-color: var(--bg-primary);
 }
@@ -1029,6 +1038,7 @@ header nav.sticky {
   border-right: 1px solid #D5DFEA;
   border-left: 1px solid #D5DFEA;
   display: flex;
+  align-items: center;
   text-decoration: none;
   height: 58px;
   padding: 16px;
