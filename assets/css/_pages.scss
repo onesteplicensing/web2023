@@ -3,121 +3,125 @@
     .can-header {
         background-color: var(--bg-primary);
 
-        ul.navigation {
-            margin-top: 50px;
+        .inner-header {
             display: flex;
-            gap: 10px;
 
-            li {
-                a {
-                    border-radius: 12px 12px 0px 0px;
-                    background-color: inherit;
-                    border-top: 1px solid #D5DFEA;
-                    border-right: 1px solid #D5DFEA;
-                    border-left: 1px solid #D5DFEA;
-                    display: flex;
-                    align-items: center;
-                    text-decoration: none;
-                    height: 58px;
-                    padding: 16px;
-                    gap: 10px;
-                    cursor: pointer;
+            ul.navigation {
+                margin-top: 50px;
+                display: flex;
+                gap: 10px;
 
-                    h4 {
-                        margin: 0;
-                    }
+                li {
+                    a {
+                        border-radius: 12px 12px 0px 0px;
+                        background-color: inherit;
+                        border-top: 1px solid #D5DFEA;
+                        border-right: 1px solid #D5DFEA;
+                        border-left: 1px solid #D5DFEA;
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        height: 58px;
+                        padding: 16px;
+                        gap: 10px;
+                        cursor: pointer;
 
-                    &.active {
-                        background: rgba(131, 152, 172, 0.25);
+                        h4 {
+                            margin: 0;
+                        }
+
+                        &.active {
+                            background: rgba(131, 152, 172, 0.25);
+                        }
                     }
                 }
             }
-        }
 
-        .inner {
-            flex-basis: 50%;
-            flex-direction: column;
-            justify-content: space-between;
+            .inner {
+                flex-direction: column;
+                justify-content: space-between;
+                width: 50%;
 
-            &.slider {
-                position: relative;
+                &.slider {
+                    position: relative;
 
-                button.slide {
-                    position: absolute;
-                    border: 0;
-                    transition: all 0.4s ease;
-                    background: none;
-                    width: 570px;
-                    border-radius: 20px;
-                    overflow: hidden;
-                    padding: 0;
-                    margin: 0;
-                    border: 5px solid #FFF;
+                    button.slide {
+                        position: absolute;
+                        border: 0;
+                        transition: all 0.4s ease;
+                        background: none;
+                        width: 100%;
+                        border-radius: 20px;
+                        overflow: hidden;
+                        padding: 0;
+                        margin: 0;
+                        border: 5px solid #FFF;
 
-                    box-sizing: border-box;
+                        box-sizing: border-box;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+
+                        &:nth-child(2) {
+                            right: -30px;
+                            height: calc(360px - 10%);
+                            top: 5%;
+                            z-index: 2;
+                            opacity: 0.6;
+                        }
+
+                        &:nth-child(3) {
+                            right: -60px;
+                            height: calc(360px - 20%);
+                            top: 10%;
+                            z-index: 1;
+                            opacity: 0.3;
+                        }
+
+                        &.active {
+                            height: 360px;
+                            opacity: 1;
+                            top: 0;
+                            right: 0;
+                            z-index: 3;
+                        }
+                    }
+                }
+
+                &.toys-hero {
+                    position: relative;
 
                     img {
-                        width: 100%;
-                        height: 100%;
-                    }
+                        border-radius: 20px;
+                        box-shadow: 0px 4px 10px -2px rgba(17, 29, 48, 0.10);
+                        border: 1px solid #DBE5EC;
+                        position: absolute;
 
+                        &:first-child {
+                            width: 80%;
+                            // height: 375px;
+                            z-index: 1;
+                            left: 15%;
+                        }
 
-                    &:nth-child(2) {
-                        right: -30px;
-                        height: calc(360px - 10%);
-                        top: 5%;
-                        z-index: 2;
-                        opacity: 0.6;
-                    }
+                        &:nth-child(2) {
+                            height: 130px;
+                            width: auto;
+                            bottom: 60px;
+                            z-index: 2;
+                            left: 0;
+                        }
 
-                    &:nth-child(3) {
-                        right: -60px;
-                        height: calc(360px - 20%);
-                        top: 10%;
-                        z-index: 1;
-                        opacity: 0.3;
-                    }
-
-                    &.active {
-                        height: 360px;
-                        opacity: 1;
-                        top: 0;
-                        right: 0;
-                        z-index: 3;
-                    }
-                }
-            }
-
-            &.toys-hero {
-                position: relative;
-
-                img {
-                    border-radius: 20px;
-                    box-shadow: 0px 4px 10px -2px rgba(17, 29, 48, 0.10);
-                    border: 1px solid #DBE5EC;
-                    position: absolute;
-
-                    &:first-child {
-                        width: 80%;
-                        height: 375px;
-                        z-index: 1;
-                        left: 15%;
-                    }
-
-                    &:nth-child(2) {
-                        height: 130px;
-                        width: auto;
-                        bottom: -20px;
-                        z-index: 2;
-                        left: 0;
-                    }
-
-                    &:nth-child(3) {
-                        width: auto;
-                        height: 100px;
-                        top: 50px;
-                        z-index: 3;
-                        right: 0;
+                        &:nth-child(3) {
+                            width: auto;
+                            height: 100px;
+                            top: 40px;
+                            z-index: 3;
+                            right: 0;
+                        }
                     }
                 }
             }
@@ -208,7 +212,9 @@
                 margin: 0 auto;
                 transition: all 0.5s ease;
                 position: relative;
-
+                border-radius: 20px;
+                border: solid 1px #eeeeee;
+                
                 &.fade-out {
                     opacity: .2;
                 }
@@ -260,6 +266,7 @@
                     max-width: 130px;
                     height: 85px;
                     box-sizing: border-box;
+                    overflow: hidden;
 
                     img {
                         width: 100%;
