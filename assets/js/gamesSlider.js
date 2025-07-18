@@ -56,27 +56,3 @@ carousel.addEventListener('mouseleave', startAutoplay);
 
 updateCarousel();
 startAutoplay();
-
-document.addEventListener('DOMContentLoaded', function () {
-    const buttons = document.querySelectorAll('.video-overlay');
-    const modalSlide3 = document.getElementById('slide3Modal');
-    const bootstrapSlide3Modal = new bootstrap.Modal(modalSlide3);
-    const iframe = modalSlide3.querySelector('iframe');
-
-    modalSlide3.addEventListener('hidden.bs.modal', () => {
-        if (iframe) {
-            const src = iframe.src;
-            iframe.src = '';
-            iframe.src = src;
-        }
-    });
-
-    buttons.forEach(button => {
-        button.addEventListener('click', (e) => {
-            const parentDiv = button.parentElement;
-            if (parentDiv.classList.contains('center')) {
-                bootstrapSlide3Modal.show();
-            }
-        });
-    });
-});
