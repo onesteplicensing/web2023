@@ -227,57 +227,65 @@
             .can-header {
                 overflow: hidden;
 
-                .inner {
-                    width: 55%;
+                .inner-header {
+                    flex-direction: column-reverse;
 
-                    h2 {
-                        font-size: 20px;
-                    }
+                    .inner {
+                        width: 100%;
 
-                    &.slider {
-                        position: absolute;
-                        right: 0px;
-                        zoom: 0.8;
-                        width: 45%;
-                        overflow: hidden;
-                        height: 300px;
+                        h2 {
+                            font-size: 20px;
+                        }
 
-                        .slide {
-                            &.active {
-                                height: 300px;
-                                left: 0;
+                        &.slider {
+                            // position: absolute;
+                            right: 0px;
+                            zoom: 0.8;
+                            // width: 45%;
+                            overflow: hidden;
+                            height: 300px;
+
+                            .slide {
+                                &.active {
+                                    height: 300px;
+                                    left: 0;
+                                }
+                            }
+                        }
+
+                        &.toys-hero {
+                            min-height: 200px;
+
+                            img:first-child {
+                                top: 24%;
+                                width: 60%;
+                                left: 25%;
+                            }
+
+                            img:nth-child(2) {
+                                bottom: 55px;
+                                height: 85px;
+                            }
+
+                            img:nth-child(3) {
+                                height: 70px;
                             }
                         }
                     }
 
-                    &.toys-hero {
-                        zoom: .7;
+                    .navigation {
+                        width: 180%;
 
-                        // img{
-                        //     width: auto !important;
-                        // }
-                        img:first-child {
-                            height: 166px !important;
-                            top: 24%;
+                        img {
+                            width: 30px;
                         }
 
-                        img:nth-child(2) {
-                            bottom: 185px;
+                        h4 {
+                            font-size: 14px;
                         }
                     }
                 }
 
-                .navigation {
-                    width: 180%;
-
-                    img {
-                        width: 30px;
-                    }
-
-                    h4 {
-                        font-size: 14px;
-                    }
-                }
             }
 
             .toys-cards {
@@ -318,6 +326,13 @@
         overflow: hidden;
         text-overflow: ellipsis;
         display: block;
+    }
+
+    .toys-hero {
+
+        img:first-child {
+            top: 18%;
+        }
     }
 }
 
