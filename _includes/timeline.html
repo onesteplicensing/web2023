@@ -1,143 +1,98 @@
 <div class="my-5 timeline pb-5 pt-4" id="timeline">
     <div class="container">
         <h3>our timeline</h3>
-
         <div class="row">
+            <!-- Year tabs -->
             <div class="col-md-3">
-                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="">
-                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-2019"
-                        type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
-                        <div class="my-auto active-year">2019</div>
+                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist">
+                    {% for item in site.data.timeline %}
+                    <button class="nav-link {% if item.active %}active{% endif %}" data-bs-toggle="pill"
+                        data-bs-target="#v-{{ item.year }}" type="button" role="tab"
+                        aria-selected="{% if item.active %}true{% else %}false{% endif %}">
+                        <div class="my-auto {% if item.active %}active-year{% endif %}">{{ item.year }}</div>
                     </button>
-                    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-2021"
-                        type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
-                        <div class="my-auto">2021</div>
-                    </button>
-
-                    <button class="nav-link " id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-2022"
-                        type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
-                        <div class="my-auto">2022</div>
-                    </button>
-                    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-2023"
-                        type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
-                        <div class="my-auto">2023</div>
-                    </button>
-                    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-2024"
-                        type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
-                        <div class="my-auto">2024</div>
-                    </button>
-                    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-2025"
-                        type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
-                        <div class="my-auto">2025</div>
-                    </button>
+                    {% endfor %}
                 </div>
             </div>
 
+            <!-- Timeline content -->
             <div class="tab-content col-md-9 position-relative">
-                <div class="tab-pane fade show active" id="v-2019">
+                {% for item in site.data.timeline %}
+                <div class="tab-pane fade {% if item.active %}show active{% endif %}" id="{{ item.id }}">
                     <div class="content">
+                        {% if item.id == "v-2019" %}
+                        {% assign block = item.content[0] %}
                         <div class="img-container">
-                            <img src="../assets/images/timeline/2019-1.svg" alt="">
+                            <img src="{{ block.src }}" alt="">
                         </div>
-                        <p>Established</p>
+                        {{ block.text | markdownify }}
                         <div class="img-container rounded-3">
-                            <img src="../assets/images/timeline/2019-2.svg" alt="">
+                            <img src="{{ block.extra_src }}" alt="">
                         </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="v-2021">
 
-                    <div class="content">
+
+                        {% elsif item.id == "v-2021" %}
+                        {% for block in item.content %}
+                        {% if block.images %}
                         <ul>
+                            {% for img in block.images %}
                             <li>
-                                <div class="img-container">
-                                    <img width="113" src="../assets/images/timeline/2021-1.svg" alt="">
+                                <div
+                                    class="img-container {% if forloop.last %}rounded-4 p-0 overflow-hidden{% endif %}">
+                                    <img src="{{ img }}" alt="" {% if forloop.first %}width="113" {% endif %} {% if
+                                        forloop.last %}width="130" {% endif %}>
                                 </div>
                             </li>
-                            <li>
-                                <div class="img-container rounded-4 p-0 overflow-hidden">
-                                    <img width="130" src="../assets/images/timeline/2021-2.png" alt="">
-                                </div>
-                            </li>
+                            {% endfor %}
                         </ul>
-                        <p>
-                            Became BRP Can-Am, Skidoo &<br> Seadoo
-                            exclusive brand licensing<br> agent
-                            <br><br>
-                            BRP Can-Am x Dakar Game<br>2019
-                        </p>
-
+                        {% elsif block.text %}
+                        {{ block.text | markdownify }}
+                        {% elsif block.extraImages %}
                         <ul>
+                            {% for img in block.extraImages %}
                             <li>
                                 <div class="img-container">
-                                    <img width="180" src="../assets/images/timeline/2021-3.svg" alt="">
+                                    <img width="180" src="{{ img }}" alt="">
                                 </div>
                             </li>
-                            <li>
-                                <div class="img-container">
-                                    <img width="180" src="../assets/images/timeline/2021-4.svg" alt="">
-                                </div>
-                            </li>
+                            {% endfor %}
                         </ul>
-                    </div>
-                </div>
+                        {% endif %}
+                        {% endfor %}
 
-                <div class="tab-pane fade" id="v-2022">
-                    <div class="content">
+                        {% elsif item.id == "v-2022" %}
+                        {% assign block = item.content[0] %}
                         <div class="img-container">
-                            <img width="120" src="../assets/images/timeline/2021-1.svg" alt="">
+                            <img width="120" src="{{ block.src }}" alt="">
                         </div>
-                        <p>
-                            <br>
-                            BRP x Diecast Models
-                        </p>
-                    </div>
-                </div>
+                        {{ block.text | markdownify }}
 
-                <div class="tab-pane fade" id="v-2023">
-                    <div class="content">
+                        {% elsif item.id == "v-2023" %}
+                        {% assign block = item.content[0] %}
                         <div class="img-container">
-                            <img width="245" src="../assets/images/timeline/2023.png" alt="">
+                            <img width="245" src="{{ block.src }}" alt="">
                         </div>
-                        <p>
-                            <br>
-                            BRP launched their brand new Maverick R SxS
-                        </p>
-                    </div>
-                </div>
+                        {{ block.text | markdownify }}
 
-                <div class="tab-pane fade" id="v-2024">
-                    <div class="content">
-                        <p>
-                            <br>
-                            OSL start collaborating with<br>Porsche
-                        </p>
+                        {% elsif item.id == "v-2024" %}
+                        {% assign block = item.content[0] %}
+                        {{ block.text | markdownify }}
                         <div class="img-container">
-                            <img width="245" src="../assets/images/timeline/2024.png" alt="">
+                            <img width="245" src="{{ block.src }}" alt="">
                         </div>
-                    </div>
-                </div>
-
-                <div class="tab-pane fade" id="v-2025">
-                    <div class="content">
+                        {% else %}
                         <div class="img-container">
-                            <img width="210" src="../assets/images/timeline/2025-1.png" alt="">
+                            <img width="210" src="{{ item.content.image }}" alt="">
                         </div>
-                        <p>
-                            <br><br>
-
-                            BRP x Roblox
-                            <br><br>
-                            Became Nilu27's official brand<br> licensing agent
-                        </p>
+                        {{ item.content.text | markdownify }}
                         <div class="img-container rounded-3">
-                            <img width="160" src="../assets/images/timeline/2025-2.png" alt="">
+                            <img width="160" src="{{ item.content.extraImage }}" alt="">
                         </div>
+                        {% endif %}
                     </div>
                 </div>
-
+                {% endfor %}
             </div>
-
         </div>
     </div>
 </div>
