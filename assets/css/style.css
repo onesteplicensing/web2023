@@ -124,6 +124,10 @@ header nav a {
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
+  transition: all 0.3s;
+}
+header nav a:hover {
+  color: black;
 }
 header nav.sticky {
   position: fixed;
@@ -192,8 +196,8 @@ header nav.sticky {
   --rotate-angle: -8.5deg;
   animation: float 2.5s ease-in-out infinite;
   position: absolute;
-  top: -30px;
-  right: 80px;
+  top: -35px;
+  right: 35px;
   border: 1px solid var(--border-color);
   background-color: #FFF;
   border-radius: 10px;
@@ -417,16 +421,16 @@ header nav.sticky {
   font-size: 25px;
   line-height: 64px;
 }
-.timeline .nav-link.active, .timeline .nav-link:hover {
+.timeline .nav-link.active {
   background-color: white;
   color: #000;
 }
-.timeline .nav-link.active div, .timeline .nav-link:hover div {
+.timeline .nav-link.active div {
   color: #000 !important;
   font-weight: bold !important;
   position: relative;
 }
-.timeline .nav-link.active div::before, .timeline .nav-link:hover div::before {
+.timeline .nav-link.active div::before {
   content: "";
   position: absolute;
   left: 10px;
@@ -936,41 +940,47 @@ header nav.sticky {
   .inner-page .can-am .can-header {
     overflow: hidden;
   }
-  .inner-page .can-am .can-header .inner {
-    width: 55%;
+  .inner-page .can-am .can-header .inner-header {
+    flex-direction: column-reverse;
   }
-  .inner-page .can-am .can-header .inner h2 {
+  .inner-page .can-am .can-header .inner-header .inner {
+    width: 100%;
+  }
+  .inner-page .can-am .can-header .inner-header .inner h2 {
     font-size: 20px;
   }
-  .inner-page .can-am .can-header .inner.slider {
-    position: absolute;
+  .inner-page .can-am .can-header .inner-header .inner.slider {
     right: 0px;
     zoom: 0.8;
-    width: 45%;
     overflow: hidden;
     height: 300px;
   }
-  .inner-page .can-am .can-header .inner.slider .slide.active {
+  .inner-page .can-am .can-header .inner-header .inner.slider .slide.active {
     height: 300px;
     left: 0;
   }
-  .inner-page .can-am .can-header .inner.toys-hero {
-    zoom: 0.7;
+  .inner-page .can-am .can-header .inner-header .inner.toys-hero {
+    min-height: 200px;
   }
-  .inner-page .can-am .can-header .inner.toys-hero img:first-child {
-    height: 166px !important;
+  .inner-page .can-am .can-header .inner-header .inner.toys-hero img:first-child {
     top: 24%;
+    width: 60%;
+    left: 25%;
   }
-  .inner-page .can-am .can-header .inner.toys-hero img:nth-child(2) {
-    bottom: 185px;
+  .inner-page .can-am .can-header .inner-header .inner.toys-hero img:nth-child(2) {
+    bottom: 55px;
+    height: 85px;
   }
-  .inner-page .can-am .can-header .navigation {
+  .inner-page .can-am .can-header .inner-header .inner.toys-hero img:nth-child(3) {
+    height: 70px;
+  }
+  .inner-page .can-am .can-header .inner-header .navigation {
     width: 180%;
   }
-  .inner-page .can-am .can-header .navigation img {
+  .inner-page .can-am .can-header .inner-header .navigation img {
     width: 30px;
   }
-  .inner-page .can-am .can-header .navigation h4 {
+  .inner-page .can-am .can-header .inner-header .navigation h4 {
     font-size: 14px;
   }
   .inner-page .can-am .toys-cards {
@@ -1000,6 +1010,9 @@ header nav.sticky {
     text-overflow: ellipsis;
     display: block;
   }
+  .toys-hero img:first-child {
+    top: 18%;
+  }
 }
 @media (max-width: 999px) {
   .about .inner {
@@ -1025,12 +1038,15 @@ header nav.sticky {
 .can-am .can-header {
   background-color: var(--bg-primary);
 }
-.can-am .can-header ul.navigation {
+.can-am .can-header .inner-header {
+  display: flex;
+}
+.can-am .can-header .inner-header ul.navigation {
   margin-top: 50px;
   display: flex;
   gap: 10px;
 }
-.can-am .can-header ul.navigation li a {
+.can-am .can-header .inner-header ul.navigation li a {
   border-radius: 12px 12px 0px 0px;
   background-color: inherit;
   border-top: 1px solid #D5DFEA;
@@ -1044,26 +1060,26 @@ header nav.sticky {
   gap: 10px;
   cursor: pointer;
 }
-.can-am .can-header ul.navigation li a h4 {
+.can-am .can-header .inner-header ul.navigation li a h4 {
   margin: 0;
 }
-.can-am .can-header ul.navigation li a.active {
+.can-am .can-header .inner-header ul.navigation li a.active {
   background: rgba(131, 152, 172, 0.25);
 }
-.can-am .can-header .inner {
-  flex-basis: 50%;
+.can-am .can-header .inner-header .inner {
   flex-direction: column;
   justify-content: space-between;
+  width: 50%;
 }
-.can-am .can-header .inner.slider {
+.can-am .can-header .inner-header .inner.slider {
   position: relative;
 }
-.can-am .can-header .inner.slider button.slide {
+.can-am .can-header .inner-header .inner.slider button.slide {
   position: absolute;
   border: 0;
   transition: all 0.4s ease;
   background: none;
-  width: 570px;
+  width: 100%;
   border-radius: 20px;
   overflow: hidden;
   padding: 0;
@@ -1071,57 +1087,56 @@ header nav.sticky {
   border: 5px solid #FFF;
   box-sizing: border-box;
 }
-.can-am .can-header .inner.slider button.slide img {
+.can-am .can-header .inner-header .inner.slider button.slide img {
   width: 100%;
   height: 100%;
 }
-.can-am .can-header .inner.slider button.slide:nth-child(2) {
+.can-am .can-header .inner-header .inner.slider button.slide:nth-child(2) {
   right: -30px;
   height: calc(360px - 10%);
   top: 5%;
   z-index: 2;
   opacity: 0.6;
 }
-.can-am .can-header .inner.slider button.slide:nth-child(3) {
+.can-am .can-header .inner-header .inner.slider button.slide:nth-child(3) {
   right: -60px;
   height: calc(360px - 20%);
   top: 10%;
   z-index: 1;
   opacity: 0.3;
 }
-.can-am .can-header .inner.slider button.slide.active {
+.can-am .can-header .inner-header .inner.slider button.slide.active {
   height: 360px;
   opacity: 1;
   top: 0;
   right: 0;
   z-index: 3;
 }
-.can-am .can-header .inner.toys-hero {
+.can-am .can-header .inner-header .inner.toys-hero {
   position: relative;
 }
-.can-am .can-header .inner.toys-hero img {
+.can-am .can-header .inner-header .inner.toys-hero img {
   border-radius: 20px;
   box-shadow: 0px 4px 10px -2px rgba(17, 29, 48, 0.1);
   border: 1px solid #DBE5EC;
   position: absolute;
 }
-.can-am .can-header .inner.toys-hero img:first-child {
+.can-am .can-header .inner-header .inner.toys-hero img:first-child {
   width: 80%;
-  height: 375px;
   z-index: 1;
   left: 15%;
 }
-.can-am .can-header .inner.toys-hero img:nth-child(2) {
+.can-am .can-header .inner-header .inner.toys-hero img:nth-child(2) {
   height: 130px;
   width: auto;
-  bottom: -20px;
+  bottom: 60px;
   z-index: 2;
   left: 0;
 }
-.can-am .can-header .inner.toys-hero img:nth-child(3) {
+.can-am .can-header .inner-header .inner.toys-hero img:nth-child(3) {
   width: auto;
   height: 100px;
-  top: 50px;
+  top: 40px;
   z-index: 3;
   right: 0;
 }
@@ -1196,6 +1211,8 @@ header nav.sticky {
   margin: 0 auto;
   transition: all 0.5s ease;
   position: relative;
+  border-radius: 20px;
+  border: solid 1px #eeeeee;
 }
 .can-am .gallery .gallery-image .main-img.fade-out {
   opacity: 0.2;
@@ -1239,6 +1256,7 @@ header nav.sticky {
   max-width: 130px;
   height: 85px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 .can-am .gallery .gallery-thumbs .thumbs-wrapper button img {
   width: 100%;
