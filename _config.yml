@@ -64,3 +64,7 @@ contact_section:
   success_message: "Thank you. <br> Your message is sent successfully and we will contact you soon."
   submit_text: "SUBMIT"
 
+collections:
+  toys:
+    output: true
+    permalink: /toys/:name/

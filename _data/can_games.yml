@@ -1,0 +1,72 @@
+header:
+  image: "/assets/images/showcase/showcase_02_canam.png"
+  title: "video games"
+  description: >
+    Introducing Can-Am in the World of Video Games.
+    <br>
+    The Can-Am team has embarked on an exciting new
+    venture by entering into the realm of video games with Forza and Dakar Rally.
+
+navigation:
+  - title: "Explore Video Games"
+    link: "#"
+    image: "/assets/images/Group.svg"
+    active: true
+  - title: "Explore Toys"
+    link: "/can-am-toys"
+    image: "/assets/images/Layer_1.svg"
+    active: false
+
+slider_images:
+  - "/assets/images/can-am/video_game_1.jpg"
+  - "/assets/images/can-am/video_game_2.jpg"
+  - "../assets/images/can-am/video_game_3.jpg"
+
+intro_paragraph: >
+  By incorporating Can-Am vehicles into the virtual realm, we create an immersive experience that
+  captures the attention and interest of players. It becomes a platform for showcasing our capabilities,
+  craftsmanship, and commitment to delivering unparalleled excitement. Through the fun and interactive
+  nature of video games, we ensure that the Can-Am brand remains at the forefront of enthusiasts' minds.
+
+games:
+  - title: "Forza Horizon 5"
+    logo: "../assets/images/logo_games.png"
+    description: >
+      First and foremost, brand exposure lies at the heart of this strategic move. By immersing ourselves in
+      the world of video games, we can connect with a younger audience and introduce them to the thrilling Can-Am brand
+      from an early age. This exposure lays the foundation for building lasting brand loyalty and establishes a strong
+      connection that may translate into future sales of our exceptional vehicles.
+      <br><br>
+      Diversifying our product offerings is another key motivation behind our entry into the world of video games.
+      By expanding beyond the traditional boundaries of automotive manufacturing, we can appeal to a wider range
+      of consumers. Through interactive gameplay experiences featuring Can-Am vehicles, we provide a unique and
+      captivating way for enthusiasts of all ages to engage with our brand.
+    image: "/assets/images/can-am/image.png"
+
+  - title: "Forza Horizon 5"
+    logo: "/assets/images/logo_games.png"
+    description: >
+      First and foremost, brand exposure lies at the heart of this strategic move. By immersing ourselves in
+      the world of video games, we can connect with a younger audience and introduce them to the thrilling Can-Am brand
+      from an early age. This exposure lays the foundation for building lasting brand loyalty and establishes a strong
+      connection that may translate into future sales of our exceptional vehicles.
+      <br><br>
+      Diversifying our product offerings is another key motivation behind our entry into the world of video games.
+      By expanding beyond the traditional boundaries of automotive manufacturing, we can appeal to a wider range
+      of consumers. Through interactive gameplay experiences featuring Can-Am vehicles, we provide a unique and
+      captivating way for enthusiasts of all ages to engage with our brand.
+    image: "/assets/images/can-am/image-1.png"
+
+  - title: "Video Games"
+    logo: "/assets/images/logo_games.png"
+    description: >
+      By incorporating Can-Am vehicles into the virtual realm, we create an immersive experience that
+      captures the attention and interest of players. It becomes a platform for showcasing our capabilities,
+      craftsmanship, and commitment to delivering unparalleled excitement. Through the fun and interactive
+      nature of video games, we ensure that the Can-Am brand remains at the forefront of enthusiasts' minds.
+      <br><br>
+      Diversifying our product offerings is another key motivation behind our entry into the world of video games.
+      By expanding beyond the traditional boundaries of automotive manufacturing, we can appeal to a wider range
+      of consumers. Through interactive gameplay experiences featuring Can-Am vehicles, we provide a unique and
+      captivating way for enthusiasts of all ages to engage with our brand.
+    image: "/assets/images/can-am/image-2.png"
