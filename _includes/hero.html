@@ -1,58 +1,25 @@
 <div class="container my-3 mt-lg-5">
     <div id="carouselExampleFade" class="carousel slide carousel-fade hero" data-bs-ride="carousel">
         <div class="carousel-inner">
-
-            <!-- carousel item -->
-            <div class="carousel-item active slide-1">
+            {% for slide in site.data.hero.carousel %}
+            <div class="carousel-item {{ slide.id }} {% if slide.active %}active{% endif %}">
                 <div class="partial">
-                    <h1 class="p-secondary mt-5"><span class="text-black text-uppercase">OneStep Licensing</span>
-                        —
-                        your partner<br>for increasing brand awareness,revenue,<br>
-                        and driving customer loyalty.</h1>
+                    <h1 class="p-secondary mt-5">
+                        <span class="text-black text-uppercase">{{ slide.title }}</span>
+                        {{ slide.subtitle }}
+                    </h1>
                 </div>
                 <div class="partial images">
                     <div class="main-bg">
-                        <img src="../assets/images/slider/slide-1/img-1.png" alt="">
-                        <img src="../assets/images/slider/slide-1/img-2.jpg" alt="">
-                        <img src="../assets/images/slider/slide-1/img-3.png" alt="">
+                        {% for img in slide.images %}
+                        <img src="{{ img }}" alt="">
+                        {% endfor %}
                     </div>
                 </div>
             </div>
-            <!-- carousel item  -->
-            <div class="carousel-item slide-2">
-                <div class="partial">
-                    <h1 class="p-secondary mt-5"><span class="text-black text-uppercase">OneStep Licensing</span>
-                        —
-                        your partner<br>for increasing brand awareness,revenue,<br>
-                        and driving customer loyalty.</h1>
-                </div>
-                <div class="partial images">
-                    <div class="main-bg">
-                        <img src="../assets/images/slider/slide-2/img-1.png" alt="">
-                        <img src="../assets/images/slider/slide-2/img-2.png" alt="">
-                        <img src="../assets/images/slider/slide-2/img-3.png" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <!-- carousel item  -->
-            <div class="carousel-item slide-3">
-                <div class="partial">
-                    <h1 class="p-secondary mt-5"><span class="text-black text-uppercase">OneStep Licensing</span>
-                        —
-                        your partner<br>for increasing brand awareness,revenue,<br>
-                        and driving customer loyalty.</h1>
-                </div>
-                <div class="partial images">
-                    <div class="main-bg">
-                        <img src="../assets/images/slider/slide-3/img-1.png" alt="">
-                        <img src="../assets/images/slider/slide-3/img-2.png" alt="">
-                        <img src="../assets/images/slider/slide-3/img-3.png" alt="">
-                    </div>
-                </div>
-            </div>
-
+            {% endfor %}
         </div>
+
         <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>

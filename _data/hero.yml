@@ -1,0 +1,31 @@
+carousel:
+  - id: slide-1
+    active: true
+    title: OneStep Licensing
+    subtitle: >
+      — your partner<br>for increasing brand awareness, revenue,<br>
+      and driving customer loyalty.
+    images:
+      - /assets/images/slider/slide-1/img-1.png
+      - /assets/images/slider/slide-1/img-2.jpg
+      - /assets/images/slider/slide-1/img-3.png
+
+  - id: slide-2
+    title: OneStep Licensing
+    subtitle: >
+      your partner<br>for increasing brand awareness, revenue,<br>
+      and driving customer loyalty.
+    images:
+      - /assets/images/slider/slide-2/img-1.png
+      - /assets/images/slider/slide-2/img-2.png
+      - /assets/images/slider/slide-2/img-3.png
+
+  - id: slide-3
+    title: OneStep Licensing
+    subtitle: >
+      your partner<br>for increasing brand awareness, revenue,<br>
+      and driving customer loyalty.
+    images:
+      - /assets/images/slider/slide-3/img-1.png
+      - /assets/images/slider/slide-3/img-2.png
+      - /assets/images/slider/slide-3/img-3.png
