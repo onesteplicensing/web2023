@@ -1,96 +1,21 @@
 <div id="services" class="my-5 services">
     <div class="container">
         <div>
-            <h3>our services</h3>
-            <p class="p-primary py-2">Our agency specializes in brand licensing and consultancy services and we have
-                been in operation
-                since 2019. Our goal is to help brands create a strong image that resonates with their target audience
-                and
-                sets them apart from their competitors.
-            </p>
+            <h3>{{ site.data.services.title }}</h3>
+            <p class="p-primary py-2">{{ site.data.services.description }}</p>
         </div>
         <div class="row g-3 boxes">
-            <div class="col-md-4 col-sm-6">
+            {% for service in site.data.services.items %}
+            <div class="col-sm-6 {% if forloop.index0 > 2 %}col-md-3{% else %}col-md-4{% endif %}">
                 <div class="services-item">
                     <div class="d-flex align-items-center gap-4">
-                        <img src="../assets/images/services/licensing-strategy-ico.svg"
-                            alt="licensing-strategy">
-                        <h3>Licensing Strategy<br>Development</h3>
+                        <img src="{{ service.icon }}" alt="{{ service.alt }}">
+                        <h3>{{ service.title }}</h3>
                     </div>
-                    <p>Crafting tailored licensing strategies to align with brand goals and market
-                        trends.
-                    </p>
+                    {{ service.text }}
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="services-item">
-                    <div class="d-flex align-items-center gap-4">
-                        <img src="../assets/images/services/brand-ico.svg" alt="brand">
-                        <h3>Brand<br>Positioning</h3>
-                    </div>
-                    <p>Enhancing brand visibility and positioning in relevant markets to attract
-                        potential
-                        licensees.
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="services-item">
-                    <div class="d-flex align-items-center gap-4">
-                        <img src="../assets/images/services/market-ico.svg" alt="market">
-                        <h3>Market<br>Analysis</h3>
-                    </div>
-                    <p>Conducting thorough market research to identify opportunities and assess
-                        competitive landscapes.</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="services-item">
-                    <div class="d-flex align-items-center gap-4">
-                        <img src="../assets/images/services/license-ide-ico.svg" alt="license">
-                        <h3>Licensee<br>Identification</h3>
-                    </div>
-                    <p>Finding and vetting suitable licensees that align with the brand's values
-                        and
-                        objectives.
-                    </p>
-                </div>
-            </div>
-             <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="services-item">
-                    <div class="d-flex align-items-center gap-4">
-                        <img src="../assets/images/services/contract-ico.svg" alt="contract-strategy">
-                        <h3>Contract<br>Negotiation</h3>
-                    </div>
-                    <p>Assisting in negotiating licensing agreements to ensure favourable terms
-                        and
-                        compliance.
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="services-item">
-                    <div class="d-flex align-items-center gap-4">
-                        <img src="../assets/images/services/brand-man-ico.svg" alt="brand-strategy">
-                        <h3>Brand<br>Management</h3>
-                    </div>
-                    <p>Providing ongoing support to manage brand integrity and consistency across
-                        licensed
-                        products.
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="services-item">
-                    <div class="d-flex align-items-center gap-4">
-                        <img src="../assets/images/services/creative-ico.svg" alt="creative-strategy">
-                        <h3>Creative<br>Development</h3>
-                    </div>
-                    <p>Advising on product design and development to ensure alignment with brand
-                        identity.
-                    </p>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </div>

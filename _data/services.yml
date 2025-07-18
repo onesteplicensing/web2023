@@ -1,0 +1,48 @@
+title: our services
+description: >
+  Our agency specializes in brand licensing and consultancy services and we have been in operation
+  since 2019. Our goal is to help brands create a strong image that resonates with their target audience
+  and sets them apart from their competitors.
+
+items:
+  - title: Licensing Strategy<br>Development
+    icon: /assets/images/services/licensing-strategy-ico.svg
+    alt: licensing-strategy
+    text: >
+      Crafting tailored licensing strategies to align with brand goals and market trends.
+
+  - title: Brand<br>Positioning
+    icon: /assets/images/services/brand-ico.svg
+    alt: brand
+    text: >
+      Enhancing brand visibility and positioning in relevant markets to attract potential licensees.
+
+  - title: Market<br>Analysis
+    icon: /assets/images/services/market-ico.svg
+    alt: market
+    text: >
+      Conducting thorough market research to identify opportunities and assess competitive landscapes.
+
+  - title: Licensee<br>Identification
+    icon: /assets/images/services/license-ide-ico.svg
+    alt: license
+    text: >
+      Finding and vetting suitable licensees that align with the brand's values and objectives.
+
+  - title: Contract<br>Negotiation
+    icon: /assets/images/services/contract-ico.svg
+    alt: contract-strategy
+    text: >
+      Assisting in negotiating licensing agreements to ensure favourable terms and compliance.
+
+  - title: Brand<br>Management
+    icon: /assets/images/services/brand-man-ico.svg
+    alt: brand-strategy
+    text: >
+      Providing ongoing support to manage brand integrity and consistency across licensed products.
+
+  - title: Creative<br>Development
+    icon: /assets/images/services/creative-ico.svg
+    alt: creative-strategy
+    text: >
+      Advising on product design and development to ensure alignment with brand identity.

@@ -1,0 +1,48 @@
+- year: 2019
+  id: v-2019
+  active: true
+  content:
+    - src: /assets/images/timeline/2019-1.svg
+      text: "Established"
+      extra_src: /assets/images/timeline/2019-2.svg
+
+- year: 2021
+  id: v-2021
+  content:
+    - images:
+        - /assets/images/timeline/2021-1.svg
+        - /assets/images/timeline/2021-2.png
+    - text: |
+        Became BRP Can-Am, Skidoo &<br>Seadoo exclusive brand licensing<br>agent
+        <br><br>BRP Can-Am x Dakar Game<br>2019
+    - extraImages:
+        - /assets/images/timeline/2021-3.svg
+        - /assets/images/timeline/2021-4.svg
+
+- year: 2022
+  id: v-2022
+  content:
+    - src: /assets/images/timeline/2021-1.svg
+      text: "BRP x Diecast Models"
+
+- year: 2023
+  id: v-2023
+  content:
+    - text: |
+        BRP launched their brand new<br>Maverick R SxS
+      src: /assets/images/timeline/2023.png
+
+- year: 2024
+  id: v-2024
+  content:
+    - text: |
+        OSL start collaborating with<br>Porsche
+      src: /assets/images/timeline/2024.png
+
+- year: 2025
+  id: v-2025
+  content:
+    image: /assets/images/timeline/2025-1.png
+    text: |
+      <br><br>BRP x Roblox<br><br>Became Nilu27's official brand<br>licensing agent
+    extraImage: /assets/images/timeline/2025-2.png

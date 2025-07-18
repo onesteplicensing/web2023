@@ -3,26 +3,12 @@
 
         <div class="row position-relative">
             <div class="contact-title my-auto ps-5 col-md-3">
-                <h3>Get ready. <br> Contact us!</h3>
-                <p class="p-primary">OneStep Licensing, <br> Kowloon, Hong Kong</p>
+                <h3>{{ site.contact_section.title | markdownify }}</h3>
+                <p class="p-primary">{{ site.contact_section.address | markdownify }}</p>
             </div>
 
             <div class="col-md-9 contact-form">
-
-
-
-                <!-- <iframe id="JotFormIFrame-251855089016057" title="Contact Us" onload="window.parent.scrollTo(0,0)"
-                    allowtransparency="true" allow="geolocation; microphone; camera; fullscreen; payment"
-                    src="https://form.jotform.com/251855089016057" frameborder="0"
-                    style="min-width:100%;max-width:100%;height:539px;border:none;" scrolling="no">
-                </iframe>
-                <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
-                <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-251855089016057']", "https://form.jotform.com/")</script> -->
-
-
-
-                <form action="https://submit.jotform.com/submit/251855089016057" method="post" class="row g-3"
-                    id="contactForm">
+                <form action="{{ site.contact_section.form_action }}" method="post" class="row g-3" id="contactForm">
                     <div class="col-md-6">
                         <input type="text" name="q4_name" placeholder="Name" required>
                     </div>
@@ -34,16 +20,17 @@
                     </div>
                     <div class="d-flex align-items-center justify-content-between flex-lg-row flex-column gap-3">
                         <div class="success-mail-submission">
-                            Thank you. <br> Your message is sent successfully and we will contact you soon.
+                            {{ site.contact_section.success_message | markdownify }}
                         </div>
                         <button type="submit" class="btn btn-dark px-5 py-2 btn-sm rounded-3 fw-bold">
                             <div class="spinner-border d-none" role="status"></div>
-                            SUBMIT
+                            {{ site.contact_section.submit_text }}
                         </button>
                     </div>
                 </form>
             </div>
         </div>
+
     </div>
 </div>
 
