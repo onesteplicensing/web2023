@@ -1,0 +1,42 @@
+---
+layout: page
+---
+<div class="can-am">
+    <div class="toy-details">
+        <div class="toy-card mt-5">
+            <div class="gallery">
+                <div class="gallery-image">
+                    <img src="{{ page.main_image }}" class="main-img" alt="{{ page.title }}">
+                </div>
+                <div class="gallery-thumbs">
+                    <button class="gallery-nav prev-carousel">
+                        <img src="/assets/images/gallery-nav-arrow.svg" alt="Previous">
+                    </button>
+                    <div class="thumbs-wrapper">
+                        {% for image in page.thumbnails %}
+                        <button>
+                            <img src="{{ image }}" {% if forloop.index==2 %}class="active" {% endif %}>
+                        </button>
+                        {% endfor %}
+                    </div>
+                    <button class="gallery-nav next-carousel">
+                        <img src="/assets/images/gallery-nav-arrow.svg" alt="Next">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4 px-2">
+            <h3 class="py-3">{{ page.title }}</h3>
+            <p class="p-primary more-text">
+                {{ page.description }}
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<script src="{{ '/assets/js/toysGallery.js' | relative_url }}" defer></script>
+
+
+
