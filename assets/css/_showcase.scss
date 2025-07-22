@@ -1,6 +1,7 @@
 .showcase {
     .scroller-container {
-        width: 100%;
+        width: 90%;
+        margin: auto;
         overflow: hidden;
         padding: 20px 0;
         position: relative;
@@ -46,7 +47,7 @@
                     font-weight: 600;
                     letter-spacing: 0.6px;
                     padding: 16px 22px;
-                    border-top: 1px solid var(--border-color);
+                    border-top: 1px dotted var(--border-color);
                 }
 
                 span.card-action {
