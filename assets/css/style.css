@@ -288,7 +288,8 @@ header nav.sticky {
 }
 
 .showcase .scroller-container {
-  width: 100%;
+  width: 90%;
+  margin: auto;
   overflow: hidden;
   padding: 20px 0;
   position: relative;
@@ -332,7 +333,7 @@ header nav.sticky {
   font-weight: 600;
   letter-spacing: 0.6px;
   padding: 16px 22px;
-  border-top: 1px solid var(--border-color);
+  border-top: 1px dotted var(--border-color);
 }
 .showcase .scroller-container .showcase-track .card span.card-action {
   color: #C2CFDB;
@@ -498,6 +499,8 @@ header nav.sticky {
 .timeline .tab-content #v-2021 .content p {
   padding-inline-start: 200px;
   padding-top: 50px;
+  position: relative;
+  z-index: 99;
 }
 .timeline .tab-content #v-2021 .content ul {
   position: absolute;
@@ -784,7 +787,12 @@ header nav.sticky {
     overflow: hidden !important;
   }
   header .top-menu {
-    zoom: 0.8;
+    transform: scale(0.8) !important;
+    transform-origin: top left;
+  }
+  header .top-menu.sticky {
+    left: auto;
+    top: auto;
   }
   header .hero {
     overflow: hidden !important;
@@ -969,13 +977,12 @@ header nav.sticky {
   }
   .inner-page .can-am .can-header .inner-header .inner.toys-hero img:nth-child(2) {
     bottom: 55px;
-    height: 85px;
+    height: 63px;
+    border-radius: 10px;
   }
   .inner-page .can-am .can-header .inner-header .inner.toys-hero img:nth-child(3) {
-    height: 70px;
-  }
-  .inner-page .can-am .can-header .inner-header .navigation {
-    width: 180%;
+    height: 50px;
+    border-radius: 10px;
   }
   .inner-page .can-am .can-header .inner-header .navigation img {
     width: 30px;
@@ -1031,8 +1038,9 @@ header nav.sticky {
   }
 }
 @media (max-width: 380px) {
-  .top-menu {
-    zoom: 0.65 !important;
+  body .top-menu {
+    transform: scale(0.65) !important;
+    transform-origin: top left;
   }
 }
 .can-am .can-header {
@@ -1149,6 +1157,7 @@ header nav.sticky {
 .can-am .item-video {
   background-color: var(--bg-primary);
   border-radius: 40px;
+  padding: 50px;
 }
 .can-am .item-video .inner {
   width: 50%;
