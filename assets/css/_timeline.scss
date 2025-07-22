@@ -130,6 +130,8 @@
                 p {
                     padding-inline-start: 200px;
                     padding-top: 50px;
+                    position: relative;
+                    z-index: 99;
                 }
 
                 ul {
