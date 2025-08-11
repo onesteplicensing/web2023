@@ -4,12 +4,25 @@
         <div class="row">
             <!-- Year tabs -->
             <div class="col-md-3">
-                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist">
+                <div
+                    class="nav flex-column nav-pills me-3"
+                    id="v-pills-tab"
+                    role="tablist"
+                >
                     {% for item in site.data.timeline %}
-                    <button class="nav-link {% if item.active %}active{% endif %}" data-bs-toggle="pill"
-                        data-bs-target="#v-{{ item.year }}" type="button" role="tab"
-                        aria-selected="{% if item.active %}true{% else %}false{% endif %}">
-                        <div class="my-auto {% if item.active %}active-year{% endif %}">{{ item.year }}</div>
+                    <button
+                        class="nav-link {% if item.active %}active{% endif %}"
+                        data-bs-toggle="pill"
+                        data-bs-target="#v-{{ item.year }}"
+                        type="button"
+                        role="tab"
+                        aria-selected="{% if item.active %}true{% else %}false{% endif %}"
+                    >
+                        <div
+                            class="my-auto {% if item.active %}active-year{% endif %}"
+                        >
+                            {{ item.year }}
+                        </div>
                     </button>
                     {% endfor %}
                 </div>
@@ -18,75 +31,100 @@
             <!-- Timeline content -->
             <div class="tab-content col-md-9 position-relative">
                 {% for item in site.data.timeline %}
-                <div class="tab-pane fade {% if item.active %}show active{% endif %}" id="{{ item.id }}">
+                <div
+                    class="tab-pane fade {% if item.active %}show active{% endif %}"
+                    id="{{ item.id }}"
+                >
                     <div class="content">
-                        {% if item.id == "v-2019" %}
-                        {% assign block = item.content[0] %}
+                        <!-- 2019 -->
+                        {% if item.id == "v-2019" %} {% assign block =
+                        item.content[0] %}
                         <div class="img-container">
-                            <img src="{{ block.src }}" alt="">
+                            <img src="{{ block.src }}" alt="" />
                         </div>
                         {{ block.text | markdownify }}
                         <div class="img-container rounded-3">
-                            <img src="{{ block.extra_src }}" alt="">
+                            <img src="{{ block.extra_src }}" alt="" />
                         </div>
-
-
-                        {% elsif item.id == "v-2021" %}
-                        {% for block in item.content %}
-                        {% if block.images %}
+                        <!-- 2021: Special format -->
+                        {% elsif item.id == "v-2021" %} {% for block in
+                        item.content %} {% if block.images %}
                         <ul>
                             {% for img in block.images %}
                             <li>
                                 <div
-                                    class="img-container {% if forloop.last %}rounded-4 p-0 overflow-hidden{% endif %}">
-                                    <img src="{{ img }}" alt="" {% if forloop.first %}width="113" {% endif %} {% if
-                                        forloop.last %}width="130" {% endif %}>
+                                    class="img-container {% if forloop.last %}rounded-4 p-0 overflow-hidden{% endif %}"
+                                >
+                                    <img
+                                        src="{{ img }}"
+                                        alt=""
+                                        {%
+                                        if
+                                        forloop.first
+                                        %}width="113"
+                                        {%
+                                        endif
+                                        %}
+                                        {%
+                                        if
+                                        forloop.last
+                                        %}width="130"
+                                        {%
+                                        endif
+                                        %}
+                                    />
                                 </div>
                             </li>
                             {% endfor %}
                         </ul>
-                        {% elsif block.text %}
-                        {{ block.text | markdownify }}
-                        {% elsif block.extraImages %}
+                        {% elsif block.text %} {{ block.text | markdownify }} {%
+                        elsif block.extraImages %}
                         <ul>
                             {% for img in block.extraImages %}
                             <li>
                                 <div class="img-container">
-                                    <img width="180" src="{{ img }}" alt="">
+                                    <img width="180" src="{{ img }}" alt="" />
                                 </div>
                             </li>
                             {% endfor %}
                         </ul>
-                        {% endif %}
-                        {% endfor %}
-
-                        {% elsif item.id == "v-2022" %}
+                        {% endif %} {% endfor %}
+                        <!-- 2022 and 2020 -->
+                        {% elsif item.id == "v-2022" or item.id == "v-2020" %}
                         {% assign block = item.content[0] %}
                         <div class="img-container">
-                            <img width="120" src="{{ block.src }}" alt="">
+                            <img width="120" src="{{ block.src }}" alt="" />
                         </div>
                         {{ block.text | markdownify }}
-
-                        {% elsif item.id == "v-2023" %}
-                        {% assign block = item.content[0] %}
+                        <!--2023 -->
+                        {% elsif item.id =="v-2023" %} {% assign block =
+                        item.content[0] %}
                         <div class="img-container">
-                            <img width="245" src="{{ block.src }}" alt="">
+                            <img width="245" src="{{ block.src }}" alt="" />
                         </div>
                         {{ block.text | markdownify }}
-
-                        {% elsif item.id == "v-2024" %}
-                        {% assign block = item.content[0] %}
-                        {{ block.text | markdownify }}
+                        <!-- 2024 -->
+                        {% elsif item.id == "v-2024" %} {% assign block =
+                        item.content[0] %} {{ block.text | markdownify }}
                         <div class="img-container">
-                            <img width="245" src="{{ block.src }}" alt="">
+                            <img width="245" src="{{ block.src }}" alt="" />
                         </div>
                         {% else %}
+                        <!-- Catch all for all other years -->
                         <div class="img-container">
-                            <img width="210" src="{{ item.content.image }}" alt="">
+                            <img
+                                width="210"
+                                src="{{ item.content.image }}"
+                                alt=""
+                            />
                         </div>
                         {{ item.content.text | markdownify }}
                         <div class="img-container rounded-3">
-                            <img width="160" src="{{ item.content.extraImage }}" alt="">
+                            <img
+                                width="160"
+                                src="{{ item.content.extraImage }}"
+                                alt=""
+                            />
                         </div>
                         {% endif %}
                     </div>
