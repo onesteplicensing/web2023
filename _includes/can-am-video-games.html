@@ -53,22 +53,6 @@
         {{ site.data.can_games.intro_paragraph }}
     </p>
     <h3 class="my-3">explore games</h3>
-    <div class="d-flex flex-column gap-3">
-        {% for game in site.data.can_games.games %}
-        <div class="d-flex flex-wrap item-video py-3 pt-5">
-            <div class="inner">
-                <div class="d-flex align-items-center pt-2 pb-4">
-                    <img src="{{ game.logo }}" class="me-3" alt="" />
-                    <h3>{{ game.title }}</h3>
-                </div>
-                <p class="p-primary pe-3">{{ game.description }}</p>
-            </div>
-            <div class="inner">
-                <img src="{{ game.image }}" class="w-100" alt="" />
-            </div>
-        </div>
-        {% endfor %}
-    </div>
 </div>
 
 {% for game in site.data.canam_video_games %}
@@ -124,12 +108,11 @@
         </div>
     </div>
 </div>
-{% endfor %}
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const buttons = document.querySelectorAll(".video-overlay");
-        const modalId = "{{ site.data.videogames.modal.id }}";
+        const modalId = "{{ game.modal.id }}";
         const _modal = document.getElementById(modalId);
         const bootstrapSlide3Modal = new bootstrap.Modal(_modal);
         const iframe = _modal.querySelector("iframe");
@@ -153,3 +136,4 @@
         });
     });
 </script>
+{% endfor %}
