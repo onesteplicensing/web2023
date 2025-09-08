@@ -5,8 +5,11 @@ permalink: /can-am-games
 ---
 
 <div class="can-am">
-{% include can-am/can_games.html %}
-  {% include videoGames.html %}
+{% include can-am-video-games.html %}
+{% comment %}
+    {% include can-am/can_games.html %}
+    {% include videoGames.html %}
+{% endcomment %}
 </div>
 
 
