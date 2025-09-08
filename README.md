@@ -6,6 +6,21 @@ This is a Jekyll-based static website built with modular includes, SCSS styling,
 
 ## 📁 Project Structure Overview
 
+---
+## Web Assets
+most media files are on [Google Drive](https://drive.google.com/drive/u/3/folders/0AHkTIHonbsj8Uk9PVA)
+
+---
+## TO-DO
+
+Timeline:
+- [ ] 2020: add the seadoos and skidoos logos
+- [ ] 2022 and 2023: canam logo, BRP, and one of the car
+- [ ] 2024: replace porsche logo, add a diecast toy (the defender), and add the green outlander
+
+Show Cases:
+- [ ] canam video game showcase: add dakar above forza in slideshow
+- [ ] canam toys add outlander, renegade, maverick 1 and maverick 2
 
 ---
 
