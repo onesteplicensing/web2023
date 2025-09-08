@@ -12,7 +12,7 @@
     - images:
         - https://i.ibb.co/0R4r2WNR/skidoo.png
         - https://i.ibb.co/p61cLG81/seadoo.png
-    - extraImage:
+    - extraImages:
         - /assets/images/timeline/2025-2.png
     - text: "OSL start collaboration with BRP, Can-Am, Skidoo & Seadoo"
 
