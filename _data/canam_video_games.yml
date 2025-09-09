@@ -49,4 +49,4 @@
 
   modal:
     id: slide3Modal-copy
-    videoUrl: "https://www.youtube.com/watch?v=SNLE0Eywwv8?autoplay=1&mute=1&loop=1&controls=1&playlist=SNLE0Eywwv8"
+    videoUrl: "https://www.youtube.com/embed/SNLE0Eywwv8?autoplay=1&mute=1&loop=1&controls=1&playlist=SNLE0Eywwv8"
