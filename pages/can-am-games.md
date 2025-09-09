@@ -15,3 +15,4 @@ permalink: /can-am-games
 
 <script src="{{ '/assets/js/slideShifter.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/js/gamesSlider.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/gamesModal.js' | relative_url }}" defer></script>

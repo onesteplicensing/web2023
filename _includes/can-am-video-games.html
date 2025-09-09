@@ -108,32 +108,4 @@
         </div>
     </div>
 </div>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const buttons = document.querySelectorAll(".video-overlay");
-        const modalId = "{{ game.modal.id }}";
-        const _modal = document.getElementById(modalId);
-        const bootstrapSlide3Modal = new bootstrap.Modal(_modal);
-        const iframe = _modal.querySelector("iframe");
-        const src = iframe.src;
-        iframe.src = "";
-
-        _modal.addEventListener("hidden.bs.modal", () => {
-            if (iframe) {
-                iframe.src = "";
-            }
-        });
-
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                const parentSlide = button.closest("div");
-                if (parentSlide && parentSlide.classList.contains("center")) {
-                    bootstrapSlide3Modal.show();
-                    iframe.src = src;
-                }
-            });
-        });
-    });
-</script>
 {% endfor %}
