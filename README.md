@@ -16,11 +16,12 @@ most media files are on [Google Drive](https://drive.google.com/drive/u/3/folder
 Timeline:
 - [ ] 2020: add the seadoos and skidoos logos
 - [ ] 2022 and 2023: canam logo, BRP, and one of the car
-- [ ] 2024: replace porsche logo, add a diecast toy (the defender), and add the green outlander
+- [X] 2024: replace porsche logo,
+- [ ] 2024: add a diecast toy (the defender), and add the green outlander
 
 Show Cases:
-- [ ] canam video game showcase: add dakar above forza in slideshow
-- [ ] canam toys add outlander, renegade, maverick 1 and maverick 2
+- [X] canam video game showcase: add dakar above forza in slideshow
+- [X] canam toys add outlander, renegade, maverick 1 and maverick 2
 
 ---
 
