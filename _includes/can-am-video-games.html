@@ -84,28 +84,29 @@
             <p class="p-primary">{{ game.highlight.description }}</p>
         </div>
     </div>
-</div>
 
-<!-- Modal -->
-<div
-    class="modal fade video-modal"
-    id="{{ game.modal.id }}"
-    tabindex="-1"
-    aria-hidden="true"
->
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-                <iframe
-                    width="560"
-                    height="315"
-                    src="{{ game.modal.videoUrl }}"
-                    frameborder="0"
-                    allow="autoplay; encrypted-media"
-                    allowfullscreen
-                ></iframe>
+    <!-- Modal -->
+    <div
+        class="modal fade video-modal"
+        id="{{ game.modal.id }}"
+        tabindex="-1"
+        aria-hidden="true"
+    >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <iframe
+                        width="560"
+                        height="315"
+                        src="{{ game.modal.videoUrl }}"
+                        frameborder="0"
+                        allow="autoplay; encrypted-media"
+                        allowfullscreen
+                    ></iframe>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
 {% endfor %}
