@@ -17,7 +17,7 @@ navigation:
     active: true
 
 hero_images:
-  - "/assets/images/can-am/toy_blue.png"
+  - https://i.ibb.co/TDK6qB05/maverick2-Blue-Grey-RS.jpg
   - "/assets/images/can-am/can-car-black.png"
   - "/assets/images/can-am/can-car-roose.png"
 
