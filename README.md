@@ -23,6 +23,9 @@ Timeline:
 Show Cases:
 - [X] canam video game showcase: add dakar above forza in slideshow
 - [X] canam toys add outlander, renegade, maverick 1 and maverick 2
+- [ ] make the hero images bounce around like on the landing page
+- [ ] add toyota showcase
+- [ ] add lexus showcase
 
 ---
 
