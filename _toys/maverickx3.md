@@ -1,7 +1,7 @@
 ---
 layout: toy_details
-title: Maverick X3
-name: "Maverick X3"
+title: Maverick X3 2 Seater
+name: "Maverick X3 2 Seater"
 toy_id: maverickx3
 main_image: "/assets/images/can-am/maverickx3/MV_X3_DP.jpg"
 description: >
