@@ -1,7 +1,7 @@
 ---
 layout: toy_details
-title: Maverick 1 Seater
-name: "Maverick 1 Seater"
+title: Maverick X3 1 Seater
+name: "Maverick X3 1 Seater"
 toy_id: maverick1
 main_image: https://i.ibb.co/Kcn2TTyH/canam-maverick-biege.jpg
 description: >
