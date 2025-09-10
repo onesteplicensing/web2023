@@ -18,6 +18,7 @@ Timeline:
 - [ ] 2022 and 2023: canam logo, BRP, and one of the car
 - [X] 2024: replace porsche logo,
 - [ ] 2024: add a diecast toy (the defender), and add the green outlander
+- [ ] 2025: add Koenigsegg logo
 
 Show Cases:
 - [X] canam video game showcase: add dakar above forza in slideshow
