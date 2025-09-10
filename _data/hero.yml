@@ -7,7 +7,7 @@ carousel:
       and driving customer loyalty.
     images:
       - https://i.ibb.co/9H2NN2Cb/slide1-img1.jpg
-      - /assets/images/slider/slide-1/img-2.jpg
+      - https://i.ibb.co/dJkxTW65/makerick-x3-grey.jpg
       - /assets/images/slider/slide-1/img-3.png
 
   - id: slide-2
@@ -27,5 +27,7 @@ carousel:
       and driving customer loyalty.
     images:
       - /assets/images/slider/slide-3/img-1.png
-      - https://i.ibb.co/KpRqFN4g/slide2-img2.jpg
+      - https://i.ibb.co/KpRqFN4g/slide2-img2.jpg # white porsche
       - /assets/images/slider/slide-3/img-3.png
+
+https://i.ibb.co/dJkxTW65/makerick-x3-grey.jpg
