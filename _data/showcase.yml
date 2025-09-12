@@ -19,6 +19,7 @@
 
 - name: "Toyota"
   image: "/assets/images/showcase/showcase_08_toyota.png"
+  page: "/toyota-toys"
 
 - name: "Lexus"
   image: "/assets/images/showcase/showcase_09_lexus.png"
