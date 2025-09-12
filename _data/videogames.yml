@@ -1,0 +1,25 @@
+title: videogames
+
+carousel:
+  - image: /assets/images/hero_banner.jpg
+    videoModalId: slide3Modal
+    hasVideo: true
+  - image: /assets/images/image_game1.png
+    hasVideo: false
+  - image: /assets/images/image_game2.png
+    hasVideo: false
+
+logo: /assets/images/logo_games.png
+
+highlight:
+  title: Forza Horizon 5
+  description: |
+    First and foremost, brand exposure lies at the heart of this strategic move.
+    By immersing ourselves in the world of video games, we can connect with a younger
+    audience and introduce them to the thrilling Can-Am brand from an early age. This
+    exposure lays the foundation for building lasting brand loyalty and establishes a
+    strong connection that may translate into future...
+
+modal:
+  id: slide3Modal
+  videoUrl: "https://www.youtube.com/embed/U3mEOHvSUyw?autoplay=1&mute=1&loop=1&controls=1&playlist=U3mEOHvSUyw"

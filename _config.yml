@@ -1,116 +1,70 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
 # Site settings
-title:       ONESTEP LICENSING
-description: "your partner for increasing brand awareness, and revenue and driving customer loyalty."  # Used in index.html but also for SEO in _includes/_head.html
-baseurl:     #"/web2023" #/fullshare"                    # the subpath of your site, e.g. /blog
-url:         ""                                 # the base hostname & protocol for your site
-date_format: "%b %-d, %Y"                       # see _layouts/post.html
-logo: /images/logo.png
-color: color5
-footer_note: |
-  <ul class="actions">
-    <li>&copy; 2019 OneStep Licensing. All rights reserved.
-    <br/><h6>Address: Kowloon, Hong Kong</h6>
-    </li>
-  </ul>
-demo_script: false                             # this loads the assets/js/demo.js for index.html
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: ONE STEP LICENSING
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  your partner for increasing brand awareness, and revenue and driving customer loyalty.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+date_format: "%b %-d, %Y"
+github_username: sabrymuhamad
 
 # SEO
-admin:      "ONESTEP LICENSING"
-admin_city: "Hong Kong"                         # used for SEO, see _includes/head.html
-admin_state: "Hong Kong"                        # used for SEO, see _includes/head.html
-share-image: ""                # used for SEO, see _includes/_head.html
-
-# Google services
-google_verification:
-# Use either direct GA implementation or set up GTM account
-# - using both will skew your data (leave blank to not use at all)
-google_analytics: #UA-148798331-1
-google_tag_manager:
-# Bing services
-bing_verification:
+admin: "ONE STEP LICENSING"
+admin_city: "Hong Kong" # used for SEO, see _includes/head.html
+admin_state: "Hong Kong" # used for SEO, see _includes/head.html
+share-image: "" # used for SEO, see _includes/_head.html
 
 # Optional features
-animated:             true
-show_related_posts:   false
-show_post_footers:    false
-show_social_icons:    true
-ajaxify_contact_form: false
-enable_mathjax: false
-extended_fonts: false
-enable_anchorjs: true
+animated: true
 
-# Facebook Page integration
-# (for instant articles and other stuff)
-fb_page: false
-fb_page_id:
+menu:
+  - title: "About"
+    url: "/#about"
+  - title: "Services"
+    url: "/#services"
+  - title: "Showcase"
+    url: "/#showcase"
+  - title: "Contact"
+    url: "/#contact"
 
-# Disqus post comments
-# (leave blank to disable Disqus)
-disqus_shortname:
+social_icons:
+  - name: linkedin
+    url: "https://www.linkedin.com/in/onestep-licensing-b67299221/"
+    icon: "/assets/images/icon__linkedin.svg"
+  - name: x
+    url: "#"
+    icon: "/assets/images/icon__x.svg"
+  - name: whatsapp
+    url: "https://wa.me/85267138400?text=I'm%20interested%20in%20ONESTEP%20LICENSING"
+    icon: "/assets/images/whatsapp.svg"
+    
+contact_section:
+  title: "Get ready. <br> Contact us!"
+  address: "OneStep Licensing, <br> Kowloon, Hong Kong"
+  form_action: "https://submit.jotform.com/submit/251855089016057"
+  success_message: "Thank you. <br> Your message is sent successfully and we will contact you soon."
+  submit_text: "SUBMIT"
 
-# Facebook Comments plugin
-# (leave blank to disable Facebook Comments, otherwise set it to true)
-facebook_comments:
-facebook_appid:
-facebook_comments_number: 10
-
-# Post sharing icons
-show_sharing_icons: false
-# Change to 'true' to enable individual icons
-share_facebook: false
-share_twitter: false
-share_googleplus: false
-share_linkedin: false
-share_digg: false
-share_tumblr: false
-share_reddit: false
-share_stumbleupon: false
-share_hackernews: false
-
-text:
-  pagination:
-    newer: 'Newer'
-    older: 'Older'
-  share_buttons:
-    text:         'Share this post!'
-    facebook:     'Share on Facebook'
-    twitter:      'Share on Twitter'
-    googleplus:   'Share on Google+'
-    linkedin:     'Share on LinkedIn'
-    digg:         'Share on Digg'
-    tumblr:       'Share on Tumblr'
-    reddit:       'Share on Reddit'
-    stumbleupon:  'Share on StumbleUpon'
-    hackernews:   'Share on Hacker News'
-  post:
-    updated:        'Updated'
-    minute_read:    'minute read'
-    related_posts:  'Related Posts'
-  index:
-    coming_soon: 'Coming soon...'
-  contact:
-    email:    'Email Address'
-    content:  'What would you like to say?'
-    subject:  'New submission!'
-    submit:   'Say Hello'
-    ajax:
-      sending:  'sending..'
-      sent:     'Message sent!'
-      error:    'Error!'
-  thanks: 'Thanks for contacting us. We will reply as soon as possible.'
-  og_locale: 'en_US'
-
-# Build settings
-markdown:     kramdown
-redcarpet:
-  extensions: ['smart', 'tables', 'with_toc_data']
-permalink:    /blog/:slug
-sass:
-  sass_dir: assets/_sass
-  style: compressed
-plugins:
-  - jekyll-sitemap
-#  - jemoji
-
-# https://github.com/jekyll/jekyll/issues/2938
-exclude: ["Gemfile", "Gemfile.lock", node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/","docker-compose.yml","story_jekyll_theme.gemspec"]
+collections:
+  toys:
+    output: true
+    permalink: /toys/:name/

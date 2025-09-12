@@ -1,0 +1,57 @@
+- title: videogames
+
+  carousel:
+    - image: /assets/images/hero_banner.jpg
+      videoModalId: slide3Modal
+      hasVideo: true
+    - image: /assets/images/image_game1.png
+      hasVideo: false
+    - image: /assets/images/image_game2.png
+      hasVideo: false
+
+  logo: /assets/images/logo_games.png
+
+  highlight:
+    title: Forza Horizon 5
+    description: |
+      First and foremost, brand exposure lies at the heart of this strategic move.
+      By immersing ourselves in this vibrant gaming universe,
+      we connect with a younger audience, introducing them to the
+      exhilarating Can-Am brand from an early age.
+      This initiative not only fosters brand awareness but also cultivates
+      lasting loyalty among a generation of racing enthusiasts.
+
+  modal:
+    id: slide3Modal
+    videoUrl: "https://www.youtube.com/embed/U3mEOHvSUyw?autoplay=1&mute=1&loop=1&controls=1&playlist=U3mEOHvSUyw"
+
+- title: Dakar Rally
+
+  carousel:
+    - image: https://img.youtube.com/vi/SNLE0Eywwv8/hqdefault.jpg
+      videoModalId: slide3Modal-copy
+      hasVideo: true
+    - image: https://i.ibb.co/N6m6P0Cy/dakar-1.png
+      hasVideo: false
+    - image: https://i.ibb.co/3YVYVBmz/dakar-2.jpg
+      hasVideo: false
+
+  logo: https://i.ibb.co/hJqJBS71/dakar-logo.png
+
+  highlight:
+    title: Dakar Rally
+    description: |
+      Players can experience the unique performance and rugged design of
+      Can-Am vehicles, enhancing their gameplay with thrilling off-road adventures.
+      This hands-on interaction deepens their appreciation for our craftsmanship and
+      innovation, creating a strong emotional connection with the brand.
+      As players navigate diverse landscapes and challenges, they associate Can-Am with
+      excitement and adventure, reinforcing our position in the minds of future customers.
+      <br/><br/>
+      Through this dynamic engagement in the gaming world,
+      we lay the groundwork for a robust community of Can-Am fans,
+      ultimately translating into increased brand advocacy and sales in the real world.
+
+  modal:
+    id: slide3Modal-copy
+    videoUrl: "https://www.youtube.com/embed/SNLE0Eywwv8?autoplay=1&mute=1&loop=1&controls=1&playlist=SNLE0Eywwv8"

@@ -1,0 +1,65 @@
+<div id="videogames" class="text-center video-games">
+    <div class="container">
+        <h2>{{ site.data.videogames.title }}</h2>
+
+        <div class="position-relative mt-0 mb-5">
+            <div class="carousel-video" id="carousel-video">
+                {% for slide in site.data.videogames.carousel %}
+                <div>
+                    <img src="{{ slide.image }}" alt="">
+                    {% if slide.hasVideo %}
+                    <button type="button" class="video-overlay"></button>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+
+            <img src="{{ site.data.videogames.logo }}" class="img-logo position-absolute" alt="">
+        </div>
+
+        <div class="my-2 py-2 my-lg-5 py-lg-5">
+            <h3>{{ site.data.videogames.highlight.title }}</h3>
+            <p class="p-primary">{{ site.data.videogames.highlight.description }}</p>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade video-modal" id="{{ site.data.videogames.modal.id }}" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <iframe width="560" height="315" src="{{ site.data.videogames.modal.videoUrl }}" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const buttons = document.querySelectorAll('.video-overlay');
+        const modalId = "{{ site.data.videogames.modal.id }}";
+        const _modal = document.getElementById(modalId);
+        const bootstrapSlide3Modal = new bootstrap.Modal(_modal);
+        const iframe = _modal.querySelector('iframe');
+        const src = iframe.src;
+        iframe.src = '';
+
+        _modal.addEventListener('hidden.bs.modal', () => {
+            if (iframe) {
+                iframe.src = '';
+            }
+        });
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const parentSlide = button.closest('div');
+                if (parentSlide && parentSlide.classList.contains('center')) {
+                    bootstrapSlide3Modal.show();
+                    iframe.src = src;
+                }
+            });
+        });
+    });
+</script>

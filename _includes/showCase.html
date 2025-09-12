@@ -1,0 +1,27 @@
+<div class="my-4 py-4 my-lg-5 py-lg-5" id="showcase">
+    <div class="showcase">
+        <div class="container">
+            <h3 class="mb-lg-4 mb-2">Showcase</h3>
+        </div>
+        <div class="scroller-container">
+            <div class="showcase-track" id="cardShowcase">
+                {% for item in site.data.showcase %}
+                <div class="card">
+                    <div>
+                        <img src="{{ item.image }}" alt="{{ item.name }}" />
+                    </div>
+
+                    {% if item.page %}
+                    <a class="card-action" href="{{ item.page }}">
+                        <span>Explore</span>
+                        <img src="../assets/images/arrow.svg" alt="" />
+                    </a>
+                    {% else %}
+                    <span class="card-action">Coming Soon</span>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

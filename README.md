@@ -1,52 +1,143 @@
-# Jekyllized Story by [HTML5 UP](https://html5up.net/story), [Stevo](https://github.com/smledbetter), and [Creative Directions](https://creativedirections.work)
-This template is free for personal and commercial use under the [CCA 3.0 license](LICENSE.md)
+# 🚀 One Step Licensing Jekyll (4.4.1) Website
 
-**Jekyllized Story** is a Franken-theme created mostly from HTML5 UP's [Story](https://html5up.net/story) with a drawer menu and blog layout from [Phantom](https://html5up.net/phantom), and a custom header menu. Much of the Jekyllization is based on [andrewbanchich's Jekyllized Phantom Theme](https://github.com/andrewbanchich/phantom-jekyll-theme).
+This is a Jekyll-based static website built with modular includes, SCSS styling, and structured content in Markdown files. This guide explains the structure and how to maintain or modify different parts of the website.
 
-# Quick Start
-* documentation and example are available in this [forked version](https://creativedirections.github.io/jekyllized-story/), the [example page](https://creativedirections.github.io/jekyllized-story/examples/items.html#reference-items) is particularly useful!
-* for installation of all the jekyll required toolings, check [this repo](https://github.com/ohjho/ohjho.github.io#getting-started), otherwise a simple `bundle exec jekyll serve --watch` should get your site up on localhost:4000 (pay attention to the `baseurl` setting in `_config.yml`)
+---
 
-# Examples in the wild
-- [habitry.com](https://habitry.com)
-- [smledbetter.com](https://smledbetter.com)
+## 📁 Project Structure Overview
 
-# Technical Notes
-## Production
-	Delete index-demo.html and assets/js/demo.js when you're done messing with the demo
-	as neither are needed in production :)
-## Feature list
-* RSS feeds
-* sitemap
-* Multi-language support
-* [text expand](https://jekyllcodex.org/without-plugin/text-expand/)
+---
+## Web Assets
+most media files are on [Google Drive](https://drive.google.com/drive/u/3/folders/0AHkTIHonbsj8Uk9PVA)
 
-# Credits:
+---
+## TO-DO
 
-	Demo Images:
-		Pexels](https://www.pexels.com/)
+Timeline:
+- [ ] 2020: add the seadoos and skidoos logos
+- [ ] 2022 and 2023: canam logo, BRP, and one of the car
+- [X] 2024: replace porsche logo,
+- [ ] 2024: add a diecast toy (the defender), and add the green outlander
+- [ ] 2025: add Koenigsegg logo
 
-	Icons:
-		[FontAwesome](https://fontawesome.com/)
+Show Cases:
+- [X] canam video game showcase: add dakar above forza in slideshow
+- [X] canam toys add outlander, renegade, maverick 1 and maverick 2
+- [ ] make the hero images bounce around like on the landing page
+- [ ] add toyota showcase
+- [ ] add lexus showcase
 
-	Other:
-		jQuery (jquery.com)
-		Misc. Sass functions (@HugoGiraudel)
-		Skel (skel.io)
+---
 
-### Addition by [Stevo](https://github.com/smledbetter)
-- Docker-Compose development environment.
-- Custom headers.
-- Custom gradient typography, tied to theme colors.
-- Image overlay, "jekyll-story," tied to theme colors.
-- Gradient icons, tied to theme colors.
-- Additional spotlight layout.
-- More transitions.
-- More modifiers.
-- Multiple pages and layouts.
-- Multi-author blogging.
-- Automatically generated Open Graph, Twitter, Schema.org, JSON-LD, SEO meta tags.
-- Automatically generated Social Media footer.
-- Updated to [FontAwesome 5](https://fontawesome.com/) via CDN.
-- [Swiper slideshow](http://idangero.us/swiper/).
-- [CSSgram](https://una.im/CSSgram/) custom image overlays.
+## 🧩 Editing the Website Content
+
+### 🔹 HTML Section Partials (`_includes/can-am/`)
+
+This folder contains reusable HTML components included in layouts or pages.
+
+| File Name        | Description                                  |
+|------------------|----------------------------------------------|
+| `about.html`     | About section content                        |
+| `contact.html`   | Contact section (form, info)                 |
+| `footer.html`    | Site footer                                  |
+| `header.html`    | Navigation/header                            |
+| `hero.html`      | Hero/landing section                         |
+| `services.html`  | List of services                             |
+| `showCase.html`  | Project or product showcase section          |
+| `timeline.html`  | Timeline or process steps section            |
+| `videoGames.html`| Section for listing video games              |
+
+**To edit:** Open the corresponding HTML file inside `_includes/can-am/` and modify the HTML content.
+
+### 🔹 Layouts (`_layouts/`)
+
+Templates that wrap around pages or sections.
+
+| File Name      | Used For                                       |
+|----------------|------------------------------------------------|
+| `default.html` | Base layout (includes header/footer)           |
+| `home.html`    | Homepage-specific layout                       |
+| `page.html`    | Standard page layout                           |
+
+**To edit:** Update layout wrappers, include blocks, or surrounding structure.
+
+---
+
+## 📝 Markdown Pages (`pages/`)
+
+These are individual content pages written in Markdown and rendered using layouts.
+
+| File Name           | Purpose                                    |
+|---------------------|--------------------------------------------|
+| `can-am-details.md` | Details page about Can-Am products         |
+| `can-am-games.md`   | Games-related content                      |
+| `can-am-toys.md`    | Toys-related content                       |
+
+Each page contains YAML front matter and Markdown content. Example:
+
+```markdown
+---
+layout: page
+title: Can-Am Details
+---
+## Product Highlights
+
+This section describes Can-Am features and models...
+
+
+
+## ⚙️ Jekyll Installation & Running Locally
+
+### ✅ Prerequisites
+
+Make sure you have the following installed:
+
+- **Ruby** (v3.4.4 or higher) — check with:
+
+  ```bash
+  ruby -v
+  ```
+
+- **Bundler** — install it via:
+
+  ```bash
+  gem install bundler
+  ```
+
+> 💡 On **Windows**, it's recommended to use [RubyInstaller](https://rubyinstaller.org/) and enable the MSYS2 development toolchain during setup.
+
+---
+
+### 📦 Install Project Dependencies
+
+From the root directory of the project, run:
+
+```bash
+bundle install
+```
+
+This installs Jekyll and all required gems defined in the `Gemfile`.
+
+---
+
+### 🚀 Run Jekyll Locally with Live Reload
+
+To serve the site locally and enable automatic browser refresh on file changes:
+
+```bash
+bundle exec jekyll serve --livereload
+```
+
+Visit your local site at:
+
+```
+http://localhost:4000
+```
+
+or
+
+```
+http://127.0.0.1:4000/
+```
+
+Jekyll will watch for changes in HTML, Markdown, SCSS, and other files, and reload the browser automatically.

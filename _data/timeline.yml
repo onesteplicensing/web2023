@@ -1,0 +1,65 @@
+- year: 2019
+  id: v-2019
+  active: true
+  content:
+    - src: /assets/images/timeline/2019-1.svg
+      text: "Established"
+      extra_src: /assets/images/timeline/2019-2.svg
+
+- year: 2020
+  id: v-2020
+  content:
+    - src: /assets/images/timeline/2021-1.svg # BRP logo
+      text: "OSL start collaboration with BRP, Can-Am, Skidoo & Seadoo"
+
+    # - images:
+    #     - https://i.ibb.co/0R4r2WNR/skidoo.png
+    #     - https://i.ibb.co/p61cLG81/seadoo.png
+    # - extraImages:
+    #     - /assets/images/timeline/2021-1.svg # BRP logo
+    # - text: "OSL start collaboration with BRP, Can-Am, Skidoo & Seadoo"
+
+- year: 2021
+  id: v-2021
+  content:
+    - images:
+        - /assets/images/timeline/2021-1.svg
+        - /assets/images/timeline/2021-2.png
+    - text: |
+        Became BRP Can-Am, Skidoo &<br>Seadoo exclusive brand licensing<br>agent
+        <br><br>BRP Can-Am x Dakar<br>Game 2021
+    - extraImages:
+        - /assets/images/timeline/2021-3.svg
+        - /assets/images/timeline/2021-4.svg
+
+- year: 2022
+  id: v-2022
+  content:
+    - src: /assets/images/timeline/2023.png # Maverick X3
+      text: "BRP launched their brand new<br> Maverick X3 SxS Ride On Toy"
+
+- year: 2023
+  id: v-2023
+  content:
+    - text: |
+        BRP launched their brand new<br>Renegade Ride On Toy
+      src: /assets/images/can-am/renegade/DK-CA002-WH.jpg
+
+- year: 2024
+  id: v-2024
+  content:
+    - text: |
+        OSL start collaborating with<br>Porsche<br><br>
+        BRP launched their Collectable Diecast<br><br>
+        BRP launched their brand new<br>Outlander Ride On Toy
+      src: https://i.ibb.co/SLhgnvz/dcm-logo-grey.png
+
+- year: 2025
+  id: v-2025
+  content:
+    image: https://i.ibb.co/bgNfVJZy/green-porsche.jpg #https://i.ibb.co/5hcZgdWV/porsche-logo.png
+    text: |
+      <br><br>OSL X Porsche 911 992.1 Ride-On Toy<br><br>
+      Became Nilu27's official brand licensing agent<br><br>
+      Became Koenigsegg's official brand licensing agent
+    extraImage: /assets/images/timeline/2025-2.png

@@ -1,0 +1,21 @@
+<div id="services" class="my-5 services">
+    <div class="container">
+        <div>
+            <h3>{{ site.data.services.title }}</h3>
+            <p class="p-primary py-2">{{ site.data.services.description }}</p>
+        </div>
+        <div class="row g-3 boxes">
+            {% for service in site.data.services.items %}
+            <div class="col-sm-6 {% if forloop.index0 > 2 %}col-md-3{% else %}col-md-4{% endif %}">
+                <div class="services-item">
+                    <div class="d-flex align-items-center gap-4">
+                        <img src="{{ service.icon }}" alt="{{ service.alt }}">
+                        <h3>{{ service.title }}</h3>
+                    </div>
+                    {{ service.text }}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

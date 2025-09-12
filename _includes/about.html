@@ -1,0 +1,23 @@
+<div class="container" id="about">
+  <div class="about">
+    <h3 class="mb-4">{{ site.data.about.title }}</h3>
+
+    <div class="d-flex flex-wrap inner-wrapper">
+
+      <div class="inner">
+        {% for paragraph in site.data.about.paragraphs %}
+          <span class="p-primary">{{ paragraph | markdownify }}</span>
+        {% endfor %}
+      </div>
+
+      <div class="inner slider" id="slide-shifter">
+        {% for image in site.data.about.images %}
+          <button type="button" class="slide{% if forloop.first %} active{% endif %}">
+            <img src="{{ image }}" alt="">
+          </button>
+        {% endfor %}
+      </div>
+
+    </div>
+  </div>
+</div>

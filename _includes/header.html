@@ -1,0 +1,14 @@
+<div class="pt-4 pt-lg-5" id="header">
+    <nav class="gap-lg-5 gap-3 mx-auto shadow-sm top-menu" id="topMenu">
+        <div>
+            <a href="/#header">
+                <img src="/assets/images/header_logo.svg" alt="">
+            </a>
+        </div>
+        <ul class="d-flex gap-3">
+            {% for item in site.menu %}
+            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+</div>

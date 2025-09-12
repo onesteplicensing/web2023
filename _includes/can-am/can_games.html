@@ -1,0 +1,55 @@
+<div class="can-header pt-5">
+  <div class="container">
+    <div class="inner-header">
+      <div class="inner d-flex mt-lg-5 mt-3">
+        <div>
+          <div class="d-flex align-items-center">
+            <img src="{{ site.data.can_games.header.image }}" class="w-25 me-3" alt="">
+            <h2 class="fw-bolder border-start ps-3 text-uppercase">{{ site.data.can_games.header.title }}</h2>
+          </div>
+          <p class="p-primary pt-4">{{ site.data.can_games.header.description }}</p>
+        </div>
+
+        <ul class="navigation">
+          {% for nav in site.data.can_games.navigation %}
+          <li>
+            <a href="{{ nav.link }}" class="{% if nav.active %}active{% endif %}">
+              <img src="{{ nav.image }}" alt="">
+              <h4>{{ nav.title }}</h4>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="inner slider" id="slide-shifter">
+        {% for image in site.data.can_games.slider_images %}
+        <button type="button" class="slide {% if forloop.first %}active{% endif %}">
+          <img class="w-100" src="{{ image }}" alt="">
+        </button>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container tab-content">
+  <p class="text-center my-5 p-secondary">{{ site.data.can_games.intro_paragraph }}</p>
+  <h3 class="my-3">explore games</h3>
+  <div class="d-flex flex-column gap-3">
+    {% for game in site.data.can_games.games %}
+    <div class="d-flex flex-wrap item-video py-3 pt-5">
+      <div class="inner">
+        <div class="d-flex align-items-center pt-2 pb-4">
+          <img src="{{ game.logo }}" class="me-3" alt="">
+          <h3>{{ game.title }}</h3>
+        </div>
+        <p class="p-primary pe-3">{{ game.description }}</p>
+      </div>
+      <div class="inner">
+        <img src="{{ game.image }}" class="w-100" alt="">
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
