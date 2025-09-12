@@ -48,8 +48,8 @@
                             <img src="{{ block.extra_src }}" alt="" />
                         </div>
                         <!-- 2021: Special format -->
-                        {% elsif item.id == "v-2021" or item.id == "v-2020" %}
-                        {% for block in item.content %} {% if block.images %}
+                        {% elsif item.id == "v-2021" %} {% for block in
+                        item.content %} {% if block.images %}
                         <ul>
                             {% for img in block.images %}
                             <li>
@@ -91,8 +91,8 @@
                         </ul>
                         {% endif %} {% endfor %}
                         <!-- 2022 and 2020 -->
-                        {% elsif item.id == "v-2022" %} {% assign block =
-                        item.content[0] %}
+                        {% elsif item.id == "v-2022" or item.id == "v-2020" %}
+                        {% assign block = item.content[0] %}
                         <div class="img-container">
                             <img width="120" src="{{ block.src }}" alt="" />
                         </div>
