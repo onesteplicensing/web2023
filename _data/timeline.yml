@@ -17,9 +17,9 @@
 - year: 2020
   template: timeline-template-5
   content:
-    image: /assets/images/timeline/2021-1.svg
-    text: |
-      OSL start collaboration with BRP, Can-Am, Skidoo & Seadoo
+    - src: /assets/images/timeline/2021-1.svg
+      text: |
+        OSL start collaboration with BRP, Can-Am, Skidoo & Seadoo
 
     # - images:
     #     - https://i.ibb.co/0R4r2WNR/skidoo.png
