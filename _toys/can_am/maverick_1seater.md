@@ -1,5 +1,6 @@
 ---
 layout: toy_details
+brand: can_am
 title: Maverick X3 1 Seater
 name: "Maverick X3 1 Seater"
 toy_id: maverick1

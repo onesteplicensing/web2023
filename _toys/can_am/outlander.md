@@ -1,5 +1,6 @@
 ---
 layout: toy_details
+brand: can_am
 title: Outlander
 name: "Outlander"
 toy_id: outlander

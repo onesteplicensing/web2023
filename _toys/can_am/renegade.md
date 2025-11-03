@@ -1,5 +1,6 @@
 ---
 layout: toy_details
+brand: can_am
 title: Renegade
 name: "Renegade"
 toy_id: renegade
