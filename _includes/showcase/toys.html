@@ -5,7 +5,7 @@
                 <div>
                     <div class="d-flex align-items-center">
                         <img
-                            src="{{ toys_data.header.image }}"
+                            src="{{ include.toys_data.header.image }}"
                             class="w-25 me-3"
                             alt=""
                         />
@@ -14,11 +14,11 @@
                         </h2>
                     </div>
                     <p class="p-primary pt-4">
-                        {{ toys_data.header.description }}
+                        {{ include.toys_data.header.description }}
                     </p>
                 </div>
                 <ul class="navigation">
-                    {% for nav in toys_data.navigation %}
+                    {% for nav in include.toys_data.navigation %}
                     <li>
                         <a
                             href="{{ nav.link }}"
@@ -33,7 +33,7 @@
             </div>
 
             <div class="inner toys-hero">
-                {% for img in toys_data.hero_images %}
+                {% for img in include.toys_data.hero_images %}
                 <img src="{{ img }}" alt="" />
                 {% endfor %}
             </div>
@@ -42,10 +42,12 @@
 </div>
 
 <div class="container tab-content">
-    <p class="text-center my-5 p-secondary">{{ toys_data.intro_paragraph }}</p>
+    <p class="text-center my-5 p-secondary">
+        {{ include.toys_data.intro_paragraph }}
+    </p>
     <h3 class="my-5">toys</h3>
     <div class="grid-cards">
-        {% for toy in toys %}
+        {% for toy in include.toys %}
         <div class="toy-card">
             <div class="gallery">
                 <div class="gallery-image">
