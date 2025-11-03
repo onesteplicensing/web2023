@@ -41,13 +41,15 @@
     </div>
 </div>
 
+{% assign can_am_toys = site.toys | where: "brand", "can_am" %}
+
 <div class="container tab-content">
     <p class="text-center my-5 p-secondary">
         {{ site.data.can_toys.intro_paragraph }}
     </p>
     <h3 class="my-5">toys</h3>
     <div class="grid-cards">
-        {% for toy in site.toys %}
+        {% for toy in can_am_toys %}
         <div class="toy-card">
             <div class="gallery">
                 <div class="gallery-image">
