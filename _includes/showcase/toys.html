@@ -5,20 +5,20 @@
                 <div>
                     <div class="d-flex align-items-center">
                         <img
-                            src="{{ site.data.toyota_toys.header.image }}"
+                            src="{{ toys_data.header.image }}"
                             class="w-25 me-3"
                             alt=""
                         />
                         <h2 class="fw-bolder border-start ps-3 text-uppercase">
-                            {{ site.data.toyota_toys.header.title }}
+                            {{ toys_data.header.title }}
                         </h2>
                     </div>
                     <p class="p-primary pt-4">
-                        {{ site.data.toyota_toys.header.description }}
+                        {{ toys_data.header.description }}
                     </p>
                 </div>
                 <ul class="navigation">
-                    {% for nav in site.data.toyota_toys.navigation %}
+                    {% for nav in toys_data.navigation %}
                     <li>
                         <a
                             href="{{ nav.link }}"
@@ -33,7 +33,7 @@
             </div>
 
             <div class="inner toys-hero">
-                {% for img in site.data.toyota_toys.hero_images %}
+                {% for img in toys_data.hero_images %}
                 <img src="{{ img }}" alt="" />
                 {% endfor %}
             </div>
@@ -42,12 +42,10 @@
 </div>
 
 <div class="container tab-content">
-    <p class="text-center my-5 p-secondary">
-        {{ site.data.toyota_toys.intro_paragraph }}
-    </p>
+    <p class="text-center my-5 p-secondary">{{ toys_data.intro_paragraph }}</p>
     <h3 class="my-5">toys</h3>
     <div class="grid-cards">
-        {% for toy in site.toys %}
+        {% for toy in toys %}
         <div class="toy-card">
             <div class="gallery">
                 <div class="gallery-image">
