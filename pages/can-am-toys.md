@@ -5,7 +5,7 @@ permalink: /can-am-toys
 ---
 
 <div class="can-am">
-{% include showcase/toys.html toys_data=site.data.can_toys toys_brand_name="can_am" %}
+{% include showcase/toys.html toys_data=site.data.showcases.can_toys toys_brand_name="can_am" %}
 {% comment %}
 {% include can-am/can_toys.html %}
 {% endcomment %}

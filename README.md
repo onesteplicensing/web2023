@@ -24,8 +24,9 @@ Show Cases:
 - [X] canam video game showcase: add dakar above forza in slideshow
 - [X] canam toys add outlander, renegade, maverick 1 and maverick 2
 - [ ] make the hero images bounce around like on the landing page
-- [ ] add toyota showcase
-- [ ] add lexus showcase
+- [X] add toyota showcase
+- [X] add lexus showcase
+- [ ] refactor `_includes/can-am-video-games.html` to use variable like `_includes/showcase/toys.html`
 
 ---
 
@@ -175,7 +176,7 @@ To add a new toy showcase (e.g., for a new brand or product line), follow these 
 
 ---
 
-**Summary:**  
+**Summary:**
 1. Add new toy objects in `_toys/` (use subfolders for organization, set `brand` in front matter).
 2. Create a new page in `pages/` using the showcase include.
 3. Reference the new page in `_data/showcase.yml`.
