@@ -41,13 +41,15 @@
     </div>
 </div>
 
+{% assign filtered_toys = site.toys | where: "brand", include.toys_brand_name %}
+
 <div class="container tab-content">
     <p class="text-center my-5 p-secondary">
         {{ include.toys_data.intro_paragraph }}
     </p>
     <h3 class="my-5">toys</h3>
     <div class="grid-cards">
-        {% for toy in include.toys %}
+        {% for toy in filtered_toys %}
         <div class="toy-card">
             <div class="gallery">
                 <div class="gallery-image">

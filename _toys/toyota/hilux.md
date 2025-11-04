@@ -1,5 +1,6 @@
 ---
 layout: toy_details
+brand: toyota
 title: Toyota Hilux Ride-On Toys
 name: "Toyota Hilux Ride-On Toys"
 toy_id: hilux
