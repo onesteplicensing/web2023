@@ -23,6 +23,7 @@
 
 - name: "Lexus"
   image: "/assets/images/showcase/showcase_09_lexus.png"
+  page: "/lexus-toys"
 
 - name: "Ducati"
   image: "/assets/images/showcase/showcase_10_ducati.png"

@@ -1,0 +1,29 @@
+header:
+  image: "/assets/images/showcase/showcase_09_lexus.png" # Brand Logo at the Top
+  title: "Toys"
+  description: >
+    Introducing the Lexus Ride-On Toys:
+    Experience the thrill of adventure from an early age with our Lexus Ride-On Toy.
+    Crafted by the esteemed Lexus team, this dynamic toy is designed with a
+    clear purpose in mind.
+navigation:
+  - title: "Explore Toys"
+    link: "#"
+    image: "/assets/images/Layer_1.svg" # Icon for the Nav Tab
+    active: true
+  # - title: "Explore Video Games"
+  #   link: "/can-am-games"
+  #   image: "/assets/images/Group.svg"
+  #   active: false
+
+hero_images:
+  - https://placehold.co/750x550?text=Center+Big&font=roboto
+  - https://placehold.co/800?text=left+small&font=roboto
+  - https://placehold.co/800?text=right+small&font=roboto
+
+intro_paragraph: >
+  By introducing a ride-on toy bearing the Lexus name,
+  we aim to captivate a younger audience and instil a sense of brand loyalty
+  from the outset. This early exposure can lay the foundation for future brand
+  affinity and potentially lead to future sales of Lexus vehicles as these
+  young enthusiasts grow older.
