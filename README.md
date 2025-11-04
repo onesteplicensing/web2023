@@ -72,6 +72,7 @@ These are individual content pages written in Markdown and rendered using layout
 | `can-am-details.md` | Details page about Can-Am products         |
 | `can-am-games.md`   | Games-related content                      |
 | `can-am-toys.md`    | Toys-related content                       |
+| `toyota-toys.md`    | Toyota toys showcase page                  |
 
 Each page contains YAML front matter and Markdown content. Example:
 
@@ -83,6 +84,104 @@ title: Can-Am Details
 ## Product Highlights
 
 This section describes Can-Am features and models...
+
+```
+
+---
+
+## 🧸 Adding a New Toy Showcase Page
+
+To add a new toy showcase (e.g., for a new brand or product line), follow these steps:
+
+### 1. Create Toy Objects in `_toys`
+
+- All toy objects must be placed in the `_toys` directory, as defined in `_config.yml` under `collections`.
+- You can organize toys by brand using subfolders, e.g.:
+  ```
+  _toys/
+    toyota/
+      hilux.md
+      tundra.md
+    can_am/
+      outlander.md
+      maverick.md
+  ```
+- Each toy file should have front matter with at least:
+  ```yaml
+  ---
+  name: Hilux Ride-On
+  brand: toyota
+  main_image: /assets/images/toys/hilux.png
+  thumbnails:
+    - /assets/images/toys/hilux_thumb1.png
+    - /assets/images/toys/hilux_thumb2.png
+  description: "A rugged ride-on toy inspired by the Toyota Hilux."
+  permalink: /toys/hilux/
+  ---
+  ```
+- The `brand` field is used to filter toys by brand in the showcase include.
+
+### 2. Create a New Toy Page in `pages/`
+
+- Add a new Markdown file in the `pages/` directory, e.g. `toyota-toys.md`.
+- Use the following front matter and include:
+  ```markdown
+  ---
+  layout: page
+  title: Toyota Toys
+  permalink: /toyota-toys
+  ---
+
+  <div class="can-am">
+  {% include showcase/toys.html toys_data=site.data.showcases.toyota_toys toys_brand_name="toyota" %}
+  </div>
+
+  <script src="{{ '/assets/js/toysGallery.js' | relative_url }}" defer></script>
+  ```
+- Adjust `toys_data` and `toys_brand_name` as needed for your brand.
+
+### 3. Reference the New Page in `_data/showcase.yml`
+
+- Add an entry for your new showcase page in `_data/showcase.yml`:
+  ```yaml
+  - name: "Toyota"
+    image: "/assets/images/showcase/showcase_08_toyota.png"
+    page: "/toyota-toys"
+  ```
+- This ensures your new toy page appears in the showcase navigation and listings.
+
+---
+
+### 4. Verify Collection Setup
+
+- The `_config.yml` already includes:
+  ```yaml
+  collections:
+    toys:
+      output: true
+      permalink: /toys/:name/
+  ```
+- No changes are needed to support subfolders; all files under `_toys/` and its subfolders are automatically included in the `site.toys` collection.
+
+---
+
+### 5. Filtering Toys by Brand
+
+- The `showcase/toys.html` include uses the `brand` field to filter toys:
+  ```liquid
+  {% assign filtered_toys = site.toys | where: "brand", include.toys_brand_name %}
+  ```
+- Make sure each toy object has the correct `brand` value in its front matter.
+
+---
+
+**Summary:**  
+1. Add new toy objects in `_toys/` (use subfolders for organization, set `brand` in front matter).
+2. Create a new page in `pages/` using the showcase include.
+3. Reference the new page in `_data/showcase.yml`.
+4. No changes needed in `_config.yml` for subfolders.
+5. Ensure toy objects have the correct `brand` field for filtering.
+
 
 
 
