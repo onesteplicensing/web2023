@@ -14,6 +14,8 @@ most media files are on [Google Drive](https://drive.google.com/drive/u/3/folder
 ## TO-DO
 
 Timeline:
+- [ ] try using [figma](https://www.figma.com/) to fix timeline
+- [ ] try using Claude 4.5 Haiku to create the includes and template for me
 - [ ] 2020: add the seadoos and skidoos logos
 - [ ] 2022 and 2023: canam logo, BRP, and one of the car
 - [X] 2024: replace porsche logo,
