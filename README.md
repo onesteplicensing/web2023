@@ -14,6 +14,7 @@ most media files are on [Google Drive](https://drive.google.com/drive/u/3/folder
 ## TO-DO
 
 Timeline:
+- [ ] try setting up a SWE agent with Github Co-pilot for this issue
 - [ ] try using [figma](https://www.figma.com/) to fix timeline
 - [ ] try using Claude 4.5 Haiku to create the includes and template for me
 - [ ] 2020: add the seadoos and skidoos logos

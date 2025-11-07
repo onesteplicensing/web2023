@@ -1,0 +1,43 @@
+header:
+  image: "/assets/images/showcase/showcase_05_porsche.png" # Brand Logo at the Top
+  title: "Toys"
+  description: >
+    Join the Porsche Adventure!<br><br>
+    Welcome to the world of the Porsche Ride-On for Kids—where every
+    ride is an adventure! Designed for young explorers,
+    our ride-on toy combines thrilling fun with safety and style,
+    making it the perfect companion for your child’s outdoor escapades.
+
+navigation:
+  - title: "Explore Toys"
+    link: "#"
+    image: "/assets/images/Layer_1.svg" # Icon for the Nav Tab
+    active: true
+  # - title: "Explore Video Games"
+  #   link: "/can-am-games"
+  #   image: "/assets/images/Group.svg"
+  #   active: false
+
+hero_images:
+  - https://i.ibb.co/wr0bskHX/XCS-8967.jpg
+  - https://i.ibb.co/pjGwqHpQ/Red.jpg
+  - https://i.ibb.co/9jmsz7M/804792937df52782b962381b0ec99d6a.jpg
+  # - https://placehold.co/750x550?text=Center+Big&font=roboto
+  # - https://placehold.co/800?text=left+small&font=roboto
+  # - https://placehold.co/800?text=right+small&font=roboto
+
+intro_paragraph: >
+  Inspired by the sleek designs of luxury cars,
+  the Porsche Ride-On is not just a toy; it's a statement!
+  With its eye-catching aesthetics, your child will feel like a superstar on wheels.
+  But we know that safety is paramount.
+  That’s why our ride-on features: <br>
+  <ul>
+  <li>Sturdy Frame: Built to withstand the rigours of play.</li>
+  <li>Safety Seatbelt: Keeps your little adventurer secure while they zoom around.</li>
+  <li>Non-Slip Wheels: Designed for stable rides on various terrains.</li>
+  </ul><br><br>
+  The Posche Ride-On for Kids is more than just a toy;
+  it’s a gateway to adventure, creativity, and social interaction.
+  Give your child the ultimate ride experience and watch them thrive in
+  their very own world of excitement!

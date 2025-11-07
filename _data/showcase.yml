@@ -13,6 +13,7 @@
 
 - name: "Porsche"
   image: "/assets/images/showcase/showcase_05_porsche.png"
+  page: "/porsche-toys"
 
 - name: "Nilu27"
   image: "/assets/images/showcase/showcase_06_nilu27.png"
