@@ -1,16 +1,12 @@
 ---
 layout: toy_details
 brand: porsche
-title: Macan EV
-name: Macan EV
+title: Macan Electric 1 Seater
+name: Macan Electric 1 Seater
 toy_id: macan-ev
 main_image: https://i.ibb.co/9jmsz7M/804792937df52782b962381b0ec99d6a.jpg
 description: >
-    <b>Introducing the Porsche Macan EV Ride-On!</b>
-    <b>The Future of Fun for Kids</b><br>
-    Experience the thrill of driving with the Porsche Macan EV Ride-On—a stylish and eco-friendly ride designed for young adventurers! This electric vehicle combines modern design, advanced features, and safety, making it the perfect choice for aspiring drivers.<br>
-    Start the Adventure!<br>
-    The Porsche Macan EV Ride-On is more than just a toy; it’s an exciting journey into the future of driving! Give your child the chance to explore and enjoy the ride of a lifetime today!
+    Introducing the Porsche Macan Electric Ride-On: The Future of Fun for Kids! Experience the thrill of driving with the Porsche Macan Electric Ride-On, a stylish and eco-friendly vehicle designed specifically for young adventurers. This electric ride combines modern design, advanced features, and safety, making it the perfect choice for aspiring drivers. Start the Adventure! The Porsche Macan Electric Ride-On is more than just a toy; it’s an exciting journey into the future of driving. Give your child the opportunity to explore and enjoy the ride of a lifetime today!
 thumbnails:
     - https://i.ibb.co/twNpvkCQ/889f4068974a4684a6f141cf9c8ac0c7.jpg
     - https://i.ibb.co/yn6zTcVr/c358a379950dde8a31c1b817e0f862b6.jpg
