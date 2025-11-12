@@ -30,6 +30,8 @@ Show Cases:
 - [X] add toyota showcase
 - [X] add lexus showcase
 - [ ] refactor `_includes/can-am-video-games.html` to use variable like `_includes/showcase/toys.html`
+- [ ] add toyota showcase
+- [ ] add lexus showcase
 
 ---
 

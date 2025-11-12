@@ -56,7 +56,7 @@ social_icons:
   - name: whatsapp
     url: "https://wa.me/85267138400?text=I'm%20interested%20in%20ONESTEP%20LICENSING"
     icon: "/assets/images/whatsapp.svg"
-
+    
 contact_section:
   title: "Get ready. <br> Contact us!"
   address: "OneStep Licensing, <br> Kowloon, Hong Kong"
