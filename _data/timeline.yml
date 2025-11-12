@@ -1,5 +1,13 @@
+# guide to timeline-template
+# 1: one big image and one small image
+# 2: for multi images, extraImages are for longer text type logos
+# 3: single image (small)
+# 4: single image (big & left)
+# 5: single image (big & right)
+# catch-all: one big images, extraImages are smaller
+
 - year: 2019
-  id: v-2019
+  template: timeline-template-1
   active: true
   content:
     - src: /assets/images/timeline/2019-1.svg
@@ -7,10 +15,11 @@
       extra_src: /assets/images/timeline/2019-2.svg
 
 - year: 2020
-  id: v-2020
+  template: timeline-template-5
   content:
-    - src: /assets/images/timeline/2021-1.svg # BRP logo
-      text: "OSL start collaboration with BRP, Can-Am, Skidoo & Seadoo"
+    - src: /assets/images/timeline/2021-1.svg
+      text: |
+        OSL start collaboration with BRP, Can-Am, Skidoo & Seadoo
 
     # - images:
     #     - https://i.ibb.co/0R4r2WNR/skidoo.png
@@ -20,7 +29,7 @@
     # - text: "OSL start collaboration with BRP, Can-Am, Skidoo & Seadoo"
 
 - year: 2021
-  id: v-2021
+  template: timeline-template-2
   content:
     - images:
         - /assets/images/timeline/2021-1.svg
@@ -33,20 +42,20 @@
         - /assets/images/timeline/2021-4.svg
 
 - year: 2022
-  id: v-2022
+  template: timeline-template-3
   content:
     - src: /assets/images/timeline/2023.png # Maverick X3
       text: "BRP launched their brand new<br> Maverick X3 SxS Ride On Toy"
 
 - year: 2023
-  id: v-2023
+  template: timeline-template-4
   content:
     - text: |
         BRP launched their brand new<br>Renegade Ride On Toy
       src: /assets/images/can-am/renegade/DK-CA002-WH.jpg
 
 - year: 2024
-  id: v-2024
+  template: timeline-template-5
   content:
     - text: |
         OSL start collaborating with<br>Porsche<br><br>
@@ -55,7 +64,7 @@
       src: https://i.ibb.co/SLhgnvz/dcm-logo-grey.png
 
 - year: 2025
-  id: v-2025
+  template: timeline-template-6
   content:
     image: https://i.ibb.co/bgNfVJZy/green-porsche.jpg #https://i.ibb.co/5hcZgdWV/porsche-logo.png
     text: |

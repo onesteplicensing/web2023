@@ -13,16 +13,18 @@
 
 - name: "Porsche"
   image: "/assets/images/showcase/showcase_05_porsche.png"
+  page: "/porsche-toys"
 
 - name: "Nilu27"
   image: "/assets/images/showcase/showcase_06_nilu27.png"
 
 - name: "Toyota"
   image: "/assets/images/showcase/showcase_08_toyota.png"
-  # page: "/toyota-toys"
+  page: "/toyota-toys"
 
 - name: "Lexus"
   image: "/assets/images/showcase/showcase_09_lexus.png"
+  page: "/lexus-toys"
 
 - name: "Ducati"
   image: "/assets/images/showcase/showcase_10_ducati.png"

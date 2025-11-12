@@ -1,0 +1,36 @@
+header:
+  image: "/assets/images/showcase/showcase_05_porsche.png" # Brand Logo at the Top
+  title: "Toys"
+  description: >
+    Join the Porsche Adventure!<br><br>
+    Welcome to the world of the Porsche Ride-On for Kids—where every
+    ride is an adventure! Designed for young explorers,
+    our ride-on toy combines thrilling fun with safety and style,
+    making it the perfect companion for your child’s outdoor escapades.
+
+navigation:
+  - title: "Explore Toys"
+    link: "#"
+    image: "/assets/images/Layer_1.svg" # Icon for the Nav Tab
+    active: true
+  # - title: "Explore Video Games"
+  #   link: "/can-am-games"
+  #   image: "/assets/images/Group.svg"
+  #   active: false
+
+hero_images:
+  - https://i.ibb.co/wr0bskHX/XCS-8967.jpg
+  - https://i.ibb.co/9jmsz7M/804792937df52782b962381b0ec99d6a.jpg
+  - https://i.ibb.co/zH8W2PXq/Green.jpg
+  # - https://placehold.co/750x550?text=Center+Big&font=roboto
+  # - https://placehold.co/800?text=left+small&font=roboto
+  # - https://placehold.co/800?text=right+small&font=roboto
+
+intro_paragraph: >
+  Inspired by the sleek designs of luxury cars, the Porsche Ride-On is not just a toy;
+  it's a statement! With its eye-catching aesthetics,
+  your child will feel like a superstar on wheels.
+  The Porsche Ride-On for Kids is more than just a toy;
+  it’s a gateway to adventure, creativity, and social interaction.
+  Give your child the ultimate ride experience and watch them thrive in
+  their very own world of excitement!
