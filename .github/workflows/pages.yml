@@ -23,11 +23,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          # Ruby version comes from .ruby-version
+          # Not .ruby-version: newer runners only ship the latest patch of
+          # each series, so pin the series and always get the newest 3.4.x.
+          ruby-version: "3.4"
           bundler-cache: true
           cache-version: 0
       - name: Setup Pages
