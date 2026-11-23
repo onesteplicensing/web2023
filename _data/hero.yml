@@ -6,7 +6,7 @@ carousel:
       — your partner<br>for increasing brand awareness, revenue,<br>
       and driving customer loyalty.
     images:
-      - https://i.ibb.co/9H2NN2Cb/slide1-img1.jpg
+      - https://i.ibb.co/Q3DFrh8g/Hero.jpg # Orange Hilux Rugged
       - https://i.ibb.co/TDK6qB05/maverick2-Blue-Grey-RS.jpg # https://i.ibb.co/dJkxTW65/makerick-x3-grey.jpg
       - /assets/images/slider/slide-1/img-3.png
 
@@ -16,7 +16,7 @@ carousel:
       your partner<br>for increasing brand awareness, revenue,<br>
       and driving customer loyalty.
     images:
-      - /assets/images/slider/slide-2/img-1.png
+      - https://i.ibb.co/tMxw8Xtm/canam-maverick-green.jpg
       - /assets/images/slider/slide-2/img-2.png
       - /assets/images/slider/slide-2/img-3.png
 
@@ -27,5 +27,5 @@ carousel:
       and driving customer loyalty.
     images:
       - /assets/images/slider/slide-3/img-1.png
-      - https://i.ibb.co/KpRqFN4g/slide2-img2.jpg # white porsche
+      - https://i.ibb.co/XxVyxdcD/08.jpg # white hilux
       - /assets/images/slider/slide-3/img-3.png
