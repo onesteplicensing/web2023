@@ -68,3 +68,8 @@ collections:
   toys:
     output: true
     permalink: /toys/:name/
+
+# Files that must not be published. Jekyll 4 always adds its own defaults
+# (Gemfile, Gemfile.lock, vendor/...) on top of this list.
+exclude:
+  - CLAUDE.md
